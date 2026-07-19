@@ -71,6 +71,8 @@
             this.ribbonSistem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonFirmalar = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -118,7 +120,8 @@
             this.ribbonAlis,
             this.ribbonCariİslermler,
             this.ribbonRaporlar,
-            this.ribbonSistem});
+            this.ribbonSistem,
+            this.ribbonFirmalar});
             this.ribbonControl1.Size = new System.Drawing.Size(1482, 199);
             // 
             // BtnUrunler
@@ -543,6 +546,21 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // ribbonFirmalar
+            // 
+            this.ribbonFirmalar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ribbonFirmalar.Appearance.Options.UseFont = true;
+            this.ribbonFirmalar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup8});
+            this.ribbonFirmalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
+            this.ribbonFirmalar.Name = "ribbonFirmalar";
+            this.ribbonFirmalar.Text = "FİRMALAR";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
+            // 
             // FrmAnaModul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -605,6 +623,8 @@
         private DevExpress.XtraBars.BarButtonItem BtnAyarlar;
         private DevExpress.XtraBars.BarButtonItem barButtonItem20;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonFirmalar;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
     }
 }
 
