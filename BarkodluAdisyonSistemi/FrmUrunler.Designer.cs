@@ -252,7 +252,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1432, 653);
+            this.ClientSize = new System.Drawing.Size(1482, 753);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
