@@ -33,7 +33,7 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtUrunID = new DevExpress.XtraEditors.TextEdit();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -49,7 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUrunID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceSatisFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceAlisFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueKategori.Properties)).BeginInit();
@@ -63,7 +63,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(966, 653);
+            this.gridControl1.Size = new System.Drawing.Size(850, 661);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -80,7 +80,7 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.label1);
-            this.groupControl1.Controls.Add(this.txtID);
+            this.groupControl1.Controls.Add(this.txtUrunID);
             this.groupControl1.Controls.Add(this.BtnGuncelle);
             this.groupControl1.Controls.Add(this.BtnSil);
             this.groupControl1.Controls.Add(this.BtnKaydet);
@@ -92,12 +92,12 @@
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.textUrunAd);
-            this.groupControl1.Location = new System.Drawing.Point(973, 0);
+            this.groupControl1.Location = new System.Drawing.Point(858, 0);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(447, 653);
+            this.groupControl1.Size = new System.Drawing.Size(424, 661);
             this.groupControl1.TabIndex = 1;
-            this.groupControl1.Text = "groupControl1";
+            this.groupControl1.Text = "Ürün İşlemleri";
             // 
             // label1
             // 
@@ -110,15 +110,15 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "ID:";
             // 
-            // txtID
+            // txtUrunID
             // 
-            this.txtID.Location = new System.Drawing.Point(114, 54);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtID.Name = "txtID";
-            this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtID.Properties.Appearance.Options.UseFont = true;
-            this.txtID.Size = new System.Drawing.Size(133, 30);
-            this.txtID.TabIndex = 21;
+            this.txtUrunID.Location = new System.Drawing.Point(114, 54);
+            this.txtUrunID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUrunID.Name = "txtUrunID";
+            this.txtUrunID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUrunID.Properties.Appearance.Options.UseFont = true;
+            this.txtUrunID.Size = new System.Drawing.Size(163, 30);
+            this.txtUrunID.TabIndex = 21;
             // 
             // BtnGuncelle
             // 
@@ -127,7 +127,7 @@
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
             this.BtnGuncelle.Location = new System.Drawing.Point(114, 377);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(132, 29);
+            this.BtnGuncelle.Size = new System.Drawing.Size(162, 29);
             this.BtnGuncelle.TabIndex = 20;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
@@ -139,7 +139,7 @@
             this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
             this.BtnSil.Location = new System.Drawing.Point(114, 328);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(132, 29);
+            this.BtnSil.Size = new System.Drawing.Size(162, 29);
             this.BtnSil.TabIndex = 19;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
@@ -151,7 +151,7 @@
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
             this.BtnKaydet.Location = new System.Drawing.Point(114, 279);
             this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(132, 29);
+            this.BtnKaydet.Size = new System.Drawing.Size(162, 29);
             this.BtnKaydet.TabIndex = 18;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
@@ -164,7 +164,7 @@
             this.ceSatisFiyat.Properties.Appearance.Options.UseFont = true;
             this.ceSatisFiyat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.ceSatisFiyat.Size = new System.Drawing.Size(133, 28);
+            this.ceSatisFiyat.Size = new System.Drawing.Size(163, 28);
             this.ceSatisFiyat.TabIndex = 17;
             // 
             // ceAlisFiyat
@@ -175,7 +175,7 @@
             this.ceAlisFiyat.Properties.Appearance.Options.UseFont = true;
             this.ceAlisFiyat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.ceAlisFiyat.Size = new System.Drawing.Size(133, 28);
+            this.ceAlisFiyat.Size = new System.Drawing.Size(163, 28);
             this.ceAlisFiyat.TabIndex = 16;
             // 
             // lueKategori
@@ -190,7 +190,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriID", "ID", 30, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriAdi", "Kategori Adı", 140, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.lueKategori.Properties.DisplayMember = "KategoriAdi";
-            this.lueKategori.Size = new System.Drawing.Size(133, 28);
+            this.lueKategori.Size = new System.Drawing.Size(163, 28);
             this.lueKategori.TabIndex = 15;
             // 
             // label3
@@ -245,14 +245,14 @@
             this.textUrunAd.Name = "textUrunAd";
             this.textUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textUrunAd.Properties.Appearance.Options.UseFont = true;
-            this.textUrunAd.Size = new System.Drawing.Size(133, 30);
+            this.textUrunAd.Size = new System.Drawing.Size(163, 30);
             this.textUrunAd.TabIndex = 3;
             // 
             // FrmUrunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 753);
+            this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -265,7 +265,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUrunID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceSatisFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceAlisFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueKategori.Properties)).EndInit();
@@ -291,6 +291,6 @@
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.TextEdit txtID;
+        private DevExpress.XtraEditors.TextEdit txtUrunID;
     }
 }

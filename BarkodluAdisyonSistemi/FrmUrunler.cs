@@ -78,7 +78,7 @@ namespace BarkodluAdisyonSistemi
         private void BtnSil_Click(object sender, EventArgs e)
         {
             SqlCommand komutsil = new SqlCommand("Delete From Tbl_URUNLER where UrunID=@p1", bgl.baglanti());
-            komutsil.Parameters.AddWithValue("@p1", txtID.Text);
+            komutsil.Parameters.AddWithValue("@p1", txtUrunID.Text);
             komutsil.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Ürün Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -88,7 +88,7 @@ namespace BarkodluAdisyonSistemi
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
-            txtID.Text = dr["UrunID"].ToString();
+            txtUrunID.Text = dr["UrunID"].ToString();
             textUrunAd.Text = dr["UrunAd"].ToString();
             lueKategori.EditValue = dr["KategoriID"].ToString();
             ceAlisFiyat.EditValue = dr["AlisFiyat"].ToString();
@@ -102,7 +102,7 @@ namespace BarkodluAdisyonSistemi
             komut.Parameters.AddWithValue("@p2", lueKategori.EditValue);
             komut.Parameters.AddWithValue("@p3", ceAlisFiyat.EditValue);
             komut.Parameters.AddWithValue("@p4", ceSatisFiyat.EditValue);
-            komut.Parameters.Add("@p5", txtID.Text);
+            komut.Parameters.Add("@p5", txtUrunID.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Ürün Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
