@@ -32,6 +32,13 @@
             this.XtraTabControl = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.rtbKod1 = new System.Windows.Forms.RichTextBox();
+            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.rtbKod2 = new System.Windows.Forms.RichTextBox();
+            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
+            this.rtbKod3 = new System.Windows.Forms.RichTextBox();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.label22 = new System.Windows.Forms.Label();
             this.textKod3 = new DevExpress.XtraEditors.TextEdit();
@@ -65,6 +72,9 @@
             this.textFirmaAd = new DevExpress.XtraEditors.TextEdit();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.rtbAdres = new System.Windows.Forms.RichTextBox();
+            this.lueIlce = new DevExpress.XtraEditors.LookUpEdit();
+            this.lueIL = new DevExpress.XtraEditors.LookUpEdit();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -75,21 +85,16 @@
             this.label17 = new System.Windows.Forms.Label();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
-            this.rtbKod1 = new System.Windows.Forms.RichTextBox();
-            this.rtbKod2 = new System.Windows.Forms.RichTextBox();
-            this.rtbKod3 = new System.Windows.Forms.RichTextBox();
-            this.lueIL = new DevExpress.XtraEditors.LookUpEdit();
-            this.lueIlce = new DevExpress.XtraEditors.LookUpEdit();
-            this.rtbAdres = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.XtraTabControl)).BeginInit();
             this.XtraTabControl.SuspendLayout();
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage4.SuspendLayout();
+            this.xtraTabPage5.SuspendLayout();
+            this.xtraTabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textKod3.Properties)).BeginInit();
@@ -115,24 +120,20 @@
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lueIlce.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueIL.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textVergiDairesi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
-            this.xtraTabControl1.SuspendLayout();
-            this.xtraTabPage4.SuspendLayout();
-            this.xtraTabPage5.SuspendLayout();
-            this.xtraTabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lueIL.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lueIlce.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // XtraTabControl
             // 
-            this.XtraTabControl.Location = new System.Drawing.Point(857, 1);
+            this.XtraTabControl.Dock = System.Windows.Forms.DockStyle.Right;
+            this.XtraTabControl.Location = new System.Drawing.Point(858, 0);
             this.XtraTabControl.Name = "XtraTabControl";
             this.XtraTabControl.SelectedTabPage = this.xtraTabPage3;
-            this.XtraTabControl.Size = new System.Drawing.Size(424, 655);
+            this.XtraTabControl.Size = new System.Drawing.Size(424, 653);
             this.XtraTabControl.TabIndex = 23;
             this.XtraTabControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -144,7 +145,7 @@
             this.xtraTabPage3.Controls.Add(this.groupControl7);
             this.xtraTabPage3.Controls.Add(this.groupControl6);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(422, 625);
+            this.xtraTabPage3.Size = new System.Drawing.Size(422, 623);
             this.xtraTabPage3.Text = "Özel Kodlar";
             // 
             // groupControl7
@@ -155,6 +156,63 @@
             this.groupControl7.Size = new System.Drawing.Size(420, 410);
             this.groupControl7.TabIndex = 25;
             this.groupControl7.Text = "Özel Kodlar ve Anlamları";
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Location = new System.Drawing.Point(5, 31);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage4;
+            this.xtraTabControl1.Size = new System.Drawing.Size(410, 300);
+            this.xtraTabControl1.TabIndex = 29;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage4,
+            this.xtraTabPage5,
+            this.xtraTabPage6});
+            // 
+            // xtraTabPage4
+            // 
+            this.xtraTabPage4.Controls.Add(this.rtbKod1);
+            this.xtraTabPage4.Name = "xtraTabPage4";
+            this.xtraTabPage4.Size = new System.Drawing.Size(408, 270);
+            this.xtraTabPage4.Text = "Özel Kod 1";
+            // 
+            // rtbKod1
+            // 
+            this.rtbKod1.Location = new System.Drawing.Point(0, 3);
+            this.rtbKod1.Name = "rtbKod1";
+            this.rtbKod1.Size = new System.Drawing.Size(410, 267);
+            this.rtbKod1.TabIndex = 1;
+            this.rtbKod1.Text = "";
+            // 
+            // xtraTabPage5
+            // 
+            this.xtraTabPage5.Controls.Add(this.rtbKod2);
+            this.xtraTabPage5.Name = "xtraTabPage5";
+            this.xtraTabPage5.Size = new System.Drawing.Size(408, 270);
+            this.xtraTabPage5.Text = "Özel Kod 2";
+            // 
+            // rtbKod2
+            // 
+            this.rtbKod2.Location = new System.Drawing.Point(-1, 0);
+            this.rtbKod2.Name = "rtbKod2";
+            this.rtbKod2.Size = new System.Drawing.Size(410, 267);
+            this.rtbKod2.TabIndex = 2;
+            this.rtbKod2.Text = "";
+            // 
+            // xtraTabPage6
+            // 
+            this.xtraTabPage6.Controls.Add(this.rtbKod3);
+            this.xtraTabPage6.Name = "xtraTabPage6";
+            this.xtraTabPage6.Size = new System.Drawing.Size(408, 270);
+            this.xtraTabPage6.Text = "Özel Kod 3";
+            // 
+            // rtbKod3
+            // 
+            this.rtbKod3.Location = new System.Drawing.Point(0, 0);
+            this.rtbKod3.Name = "rtbKod3";
+            this.rtbKod3.Size = new System.Drawing.Size(414, 271);
+            this.rtbKod3.TabIndex = 2;
+            this.rtbKod3.Text = "";
             // 
             // groupControl6
             // 
@@ -240,7 +298,7 @@
             this.xtraTabPage1.Controls.Add(this.groupControl3);
             this.xtraTabPage1.Controls.Add(this.groupControl2);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(422, 625);
+            this.xtraTabPage1.Size = new System.Drawing.Size(422, 623);
             this.xtraTabPage1.Text = "Firma Bilgileri";
             // 
             // groupControl4
@@ -523,7 +581,7 @@
             // 
             this.xtraTabPage2.Controls.Add(this.groupControl5);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(422, 625);
+            this.xtraTabPage2.Size = new System.Drawing.Size(422, 623);
             this.xtraTabPage2.Text = "Adres Bilgileri";
             // 
             // groupControl5
@@ -546,11 +604,49 @@
             this.groupControl5.TabIndex = 24;
             this.groupControl5.Text = "groupControl5";
             // 
+            // rtbAdres
+            // 
+            this.rtbAdres.Location = new System.Drawing.Point(136, 175);
+            this.rtbAdres.Name = "rtbAdres";
+            this.rtbAdres.Size = new System.Drawing.Size(253, 177);
+            this.rtbAdres.TabIndex = 33;
+            this.rtbAdres.Text = "";
+            // 
+            // lueIlce
+            // 
+            this.lueIlce.Location = new System.Drawing.Point(136, 72);
+            this.lueIlce.Name = "lueIlce";
+            this.lueIlce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lueIlce.Properties.Appearance.Options.UseFont = true;
+            this.lueIlce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueIlce.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriID", "ID", 30, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriAdi", "Kategori Adı", 140, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.lueIlce.Properties.DisplayMember = "KategoriAdi";
+            this.lueIlce.Size = new System.Drawing.Size(253, 28);
+            this.lueIlce.TabIndex = 32;
+            // 
+            // lueIL
+            // 
+            this.lueIL.Location = new System.Drawing.Point(136, 31);
+            this.lueIL.Name = "lueIL";
+            this.lueIL.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lueIL.Properties.Appearance.Options.UseFont = true;
+            this.lueIL.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueIL.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriID", "ID", 30, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriAdi", "Kategori Adı", 140, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.lueIL.Properties.DisplayMember = "KategoriAdi";
+            this.lueIL.Size = new System.Drawing.Size(253, 28);
+            this.lueIL.TabIndex = 31;
+            // 
             // btnGuncelle
             // 
             this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGuncelle.Appearance.Options.UseFont = true;
-            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
             this.btnGuncelle.Location = new System.Drawing.Point(136, 473);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(253, 29);
@@ -561,7 +657,7 @@
             // 
             this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.Appearance.Options.UseFont = true;
-            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
             this.btnSil.Location = new System.Drawing.Point(136, 424);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(253, 29);
@@ -572,7 +668,7 @@
             // 
             this.btnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKaydet.Appearance.Options.UseFont = true;
-            this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
             this.btnKaydet.Location = new System.Drawing.Point(136, 375);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(253, 29);
@@ -635,10 +731,11 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(1, 1);
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(850, 654);
+            this.gridControl1.Size = new System.Drawing.Size(858, 653);
             this.gridControl1.TabIndex = 24;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -647,101 +744,6 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            // 
-            // xtraTabControl1
-            // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(5, 31);
-            this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage4;
-            this.xtraTabControl1.Size = new System.Drawing.Size(410, 300);
-            this.xtraTabControl1.TabIndex = 29;
-            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage4,
-            this.xtraTabPage5,
-            this.xtraTabPage6});
-            // 
-            // xtraTabPage4
-            // 
-            this.xtraTabPage4.Controls.Add(this.rtbKod1);
-            this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(408, 270);
-            this.xtraTabPage4.Text = "Özel Kod 1";
-            // 
-            // xtraTabPage5
-            // 
-            this.xtraTabPage5.Controls.Add(this.rtbKod2);
-            this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(408, 270);
-            this.xtraTabPage5.Text = "Özel Kod 2";
-            // 
-            // xtraTabPage6
-            // 
-            this.xtraTabPage6.Controls.Add(this.rtbKod3);
-            this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(408, 270);
-            this.xtraTabPage6.Text = "Özel Kod 3";
-            // 
-            // rtbKod1
-            // 
-            this.rtbKod1.Location = new System.Drawing.Point(0, 3);
-            this.rtbKod1.Name = "rtbKod1";
-            this.rtbKod1.Size = new System.Drawing.Size(410, 267);
-            this.rtbKod1.TabIndex = 1;
-            this.rtbKod1.Text = "";
-            // 
-            // rtbKod2
-            // 
-            this.rtbKod2.Location = new System.Drawing.Point(-1, 0);
-            this.rtbKod2.Name = "rtbKod2";
-            this.rtbKod2.Size = new System.Drawing.Size(410, 267);
-            this.rtbKod2.TabIndex = 2;
-            this.rtbKod2.Text = "";
-            // 
-            // rtbKod3
-            // 
-            this.rtbKod3.Location = new System.Drawing.Point(0, 0);
-            this.rtbKod3.Name = "rtbKod3";
-            this.rtbKod3.Size = new System.Drawing.Size(414, 271);
-            this.rtbKod3.TabIndex = 2;
-            this.rtbKod3.Text = "";
-            // 
-            // lueIL
-            // 
-            this.lueIL.Location = new System.Drawing.Point(136, 31);
-            this.lueIL.Name = "lueIL";
-            this.lueIL.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lueIL.Properties.Appearance.Options.UseFont = true;
-            this.lueIL.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lueIL.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriID", "ID", 30, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriAdi", "Kategori Adı", 140, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.lueIL.Properties.DisplayMember = "KategoriAdi";
-            this.lueIL.Size = new System.Drawing.Size(253, 28);
-            this.lueIL.TabIndex = 31;
-            // 
-            // lueIlce
-            // 
-            this.lueIlce.Location = new System.Drawing.Point(136, 72);
-            this.lueIlce.Name = "lueIlce";
-            this.lueIlce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lueIlce.Properties.Appearance.Options.UseFont = true;
-            this.lueIlce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lueIlce.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriID", "ID", 30, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("KategoriAdi", "Kategori Adı", 140, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.lueIlce.Properties.DisplayMember = "KategoriAdi";
-            this.lueIlce.Size = new System.Drawing.Size(253, 28);
-            this.lueIlce.TabIndex = 32;
-            // 
-            // rtbAdres
-            // 
-            this.rtbAdres.Location = new System.Drawing.Point(136, 175);
-            this.rtbAdres.Name = "rtbAdres";
-            this.rtbAdres.Size = new System.Drawing.Size(253, 177);
-            this.rtbAdres.TabIndex = 33;
-            this.rtbAdres.Text = "";
             // 
             // FrmFirmalar
             // 
@@ -756,6 +758,11 @@
             this.xtraTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage4.ResumeLayout(false);
+            this.xtraTabPage5.ResumeLayout(false);
+            this.xtraTabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
@@ -786,16 +793,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lueIlce.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lueIL.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textVergiDairesi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
-            this.xtraTabControl1.ResumeLayout(false);
-            this.xtraTabPage4.ResumeLayout(false);
-            this.xtraTabPage5.ResumeLayout(false);
-            this.xtraTabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lueIL.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lueIlce.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

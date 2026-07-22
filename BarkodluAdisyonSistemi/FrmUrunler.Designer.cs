@@ -45,6 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textUrunAd = new DevExpress.XtraEditors.TextEdit();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -54,16 +55,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ceAlisFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueKategori.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textUrunAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.Location = new System.Drawing.Point(2, 2);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(850, 661);
+            this.gridControl1.Size = new System.Drawing.Size(848, 649);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -92,10 +96,11 @@
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label2);
             this.groupControl1.Controls.Add(this.textUrunAd);
-            this.groupControl1.Location = new System.Drawing.Point(858, 0);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupControl1.Location = new System.Drawing.Point(850, 2);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(424, 661);
+            this.groupControl1.Size = new System.Drawing.Size(430, 649);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Ürün İşlemleri";
             // 
@@ -248,13 +253,22 @@
             this.textUrunAd.Size = new System.Drawing.Size(163, 30);
             this.textUrunAd.TabIndex = 3;
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.gridControl1);
+            this.panelControl1.Controls.Add(this.groupControl1);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(1282, 653);
+            this.panelControl1.TabIndex = 2;
+            // 
             // FrmUrunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 653);
-            this.Controls.Add(this.groupControl1);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.panelControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmUrunler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -270,6 +284,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ceAlisFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueKategori.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textUrunAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -292,5 +308,6 @@
         private DevExpress.XtraEditors.SimpleButton BtnSil;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.TextEdit txtUrunID;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
     }
 }

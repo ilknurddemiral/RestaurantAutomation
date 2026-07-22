@@ -39,11 +39,16 @@ namespace BarkodluAdisyonSistemi
                 fr.Show();
             }
         }
-        
 
+        FrmStoklar fr2;
         private void btnStoklar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            if (fr2 == null)
+            {
+                fr2 = new FrmStoklar();
+                fr2.MdiParent = this;
+                fr2.Show();
+            }
         }
         FrmFirmalar fr3;
         private void btnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
