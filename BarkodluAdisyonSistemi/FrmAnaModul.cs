@@ -50,12 +50,12 @@ namespace BarkodluAdisyonSistemi
                 fr2.Show();
             }
         }
-        FrmFirmalar fr3;
+        FrmSubeler fr3;
         private void btnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (fr3 == null)
             {
-                fr3 = new FrmFirmalar();
+                fr3 = new FrmSubeler();
                 fr3.MdiParent = this;
                 fr3.Show();
             }

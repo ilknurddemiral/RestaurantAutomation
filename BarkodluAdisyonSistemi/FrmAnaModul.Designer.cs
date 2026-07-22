@@ -77,7 +77,7 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(45, 42, 45, 42);
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(41, 38, 41, 38);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -110,7 +110,7 @@
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControl1.MaxItemId = 26;
             this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.OptionsMenuMinWidth = 495;
+            this.ribbonControl1.OptionsMenuMinWidth = 450;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonAnaSayfa,
             this.ribbonUrunYonetici,
@@ -119,7 +119,7 @@
             this.ribbonCariİslermler,
             this.ribbonRaporlar,
             this.ribbonSistem});
-            this.ribbonControl1.Size = new System.Drawing.Size(1282, 199);
+            this.ribbonControl1.Size = new System.Drawing.Size(1165, 199);
             // 
             // BtnUrunler
             // 
@@ -160,7 +160,7 @@
             // 
             // BtnFirmalar
             // 
-            this.BtnFirmalar.Caption = "FİRMALAR";
+            this.BtnFirmalar.Caption = "ŞUBELER";
             this.BtnFirmalar.Id = 4;
             this.BtnFirmalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnFirmalar.ImageOptions.Image")));
             this.BtnFirmalar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnFirmalar.ImageOptions.LargeImage")));
@@ -544,11 +544,11 @@
             // 
             // FrmAnaModul
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1282, 653);
+            this.ClientSize = new System.Drawing.Size(1165, 599);
             this.Controls.Add(this.ribbonControl1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IsMdiContainer = true;
             this.Name = "FrmAnaModul";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

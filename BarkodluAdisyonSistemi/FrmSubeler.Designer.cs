@@ -1,6 +1,6 @@
 ﻿namespace BarkodluAdisyonSistemi
 {
-    partial class FrmFirmalar
+    partial class FrmSubeler
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFirmalar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSubeler));
             this.XtraTabControl = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
@@ -299,7 +299,7 @@
             this.xtraTabPage1.Controls.Add(this.groupControl2);
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(422, 623);
-            this.xtraTabPage1.Text = "Firma Bilgileri";
+            this.xtraTabPage1.Text = "Şube Bilgileri";
             // 
             // groupControl4
             // 
@@ -745,14 +745,14 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // FrmFirmalar
+            // FrmSubeler
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.XtraTabControl);
-            this.Name = "FrmFirmalar";
-            this.Text = "Firmalar";
+            this.Name = "FrmSubeler";
+            this.Text = "Şubeler";
             ((System.ComponentModel.ISupportInitialize)(this.XtraTabControl)).EndInit();
             this.XtraTabControl.ResumeLayout(false);
             this.xtraTabPage3.ResumeLayout(false);

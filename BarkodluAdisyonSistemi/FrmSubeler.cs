@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BarkodluAdisyonSistemi
 {
-    public partial class FrmFirmalar : Form
+    public partial class FrmSubeler : Form
     {
-        public FrmFirmalar()
+        public FrmSubeler()
         {
             InitializeComponent();
         }

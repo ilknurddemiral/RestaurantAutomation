@@ -71,11 +71,11 @@
     <Compile Include="FrmAnaModul.Designer.cs">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFirmalar.cs">
+    <Compile Include="FrmSubeler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFirmalar.Designer.cs">
-      <DependentUpon>FrmFirmalar.cs</DependentUpon>
+    <Compile Include="FrmSubeler.Designer.cs">
+      <DependentUpon>FrmSubeler.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmStoklar.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,8 @@
     <EmbeddedResource Include="FrmAnaModul.resx">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFirmalar.resx">
-      <DependentUpon>FrmFirmalar.cs</DependentUpon>
+    <EmbeddedResource Include="FrmSubeler.resx">
+      <DependentUpon>FrmSubeler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStoklar.resx">
       <DependentUpon>FrmStoklar.cs</DependentUpon>
