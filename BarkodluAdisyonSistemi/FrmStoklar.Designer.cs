@@ -67,6 +67,7 @@
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.chartControl1.Location = new System.Drawing.Point(714, 0);
             this.chartControl1.Name = "chartControl1";
+            series1.LegendTextPattern = "{A}";
             series1.Name = "Series 1";
             series1.SeriesID = 1;
             series1.View = pie3DSeriesView1;
