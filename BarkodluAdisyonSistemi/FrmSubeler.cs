@@ -16,5 +16,10 @@ namespace BarkodluAdisyonSistemi
         {
             InitializeComponent();
         }
+
+        private void FrmSubeler_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

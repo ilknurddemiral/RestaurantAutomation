@@ -753,6 +753,7 @@
             this.Controls.Add(this.XtraTabControl);
             this.Name = "FrmSubeler";
             this.Text = "Şubeler";
+            this.Load += new System.EventHandler(this.FrmSubeler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.XtraTabControl)).EndInit();
             this.XtraTabControl.ResumeLayout(false);
             this.xtraTabPage3.ResumeLayout(false);
