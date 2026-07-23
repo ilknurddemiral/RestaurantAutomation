@@ -20,34 +20,41 @@ namespace BarkodluAdisyonSistemi
         }
 
         sqlBaglantisi bgl = new sqlBaglantisi();
-        private void FrmStoklar1_Load(object sender, EventArgs e)
+        private void FrmStoklar_Load(object sender, EventArgs e)
         {
-            chartControl1.Series["Series 1"].Points.AddPoint("İstanbul", 4);
-            chartControl1.Series["Series 1"].Points.AddPoint("İzmir", 8);
-            chartControl1.Series["Series 1"].Points.AddPoint("Ankara", 6);
-
-            SqlDataAdapter da = new SqlDataAdapter(
-                                                    @"Select
-                                                       U.UrunAd, 
-                                                       Sum(S.StokAdet) As ToplamStok
-                                                      From TBL_URUNLER U
-                                                      Inner Join TBL_STOKLAR S
-                                                        On U.UrunID = S.UrunID
-                                                      Group By U.UrunAd",
-                                                     bgl.baglanti());
-
+            
             DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(
+            @"Select
+              U.UrunAd, 
+              Sum(S.StokAdet) As ToplamStok
+             From TBL_URUNLER U
+             Inner Join TBL_STOKLAR S
+                On U.UrunID = S.UrunID
+             Group By U.UrunAd",
+             bgl.baglanti());
+
             da.Fill(dt);
-            gridControl1.DataSource = null;
-
-            gridView1.Columns.Clear();
-
             gridControl1.DataSource = dt;
-            gridView1.PopulateColumns();
-            gridView1.Columns["UrunAd"].Caption = "Ürün Adı";
-            gridView1.Columns["ToplamStok"].Caption = "Toplam Stok";
+            gridView1.OptionsBehavior.Editable = false;
 
-            gridView1.BestFitColumns();
+            SqlCommand komut = new SqlCommand (
+             @"Select
+              U.UrunAd, 
+              Sum(S.StokAdet) As ToplamStok
+             From TBL_URUNLER U
+             Inner Join TBL_STOKLAR S
+                On U.UrunID = S.UrunID
+             Group By U.UrunAd",
+             bgl.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                chartControl1.Series["Series 1"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
+            }
+            bgl.baglanti().Close();
         }
+
+       
     }
 }
