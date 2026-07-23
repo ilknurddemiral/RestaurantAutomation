@@ -56,6 +56,8 @@
             this.BtnKullanıcılar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnAyarlar = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMasalar = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMasaIslemleri = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonAnaSayfa = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonUrunYonetici = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -70,11 +72,9 @@
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonSistem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonMasalar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -110,8 +110,8 @@
             this.BtnKullanıcılar,
             this.BtnAyarlar,
             this.barButtonItem20,
-            this.barButtonItem1,
-            this.barButtonItem2});
+            this.btnMasalar,
+            this.btnMasaIslemleri});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControl1.MaxItemId = 28;
@@ -125,7 +125,7 @@
             this.ribbonCariİslermler,
             this.ribbonRaporlar,
             this.ribbonSistem,
-            this.ribbonPage1});
+            this.ribbonMasalar});
             this.ribbonControl1.Size = new System.Drawing.Size(1165, 199);
             // 
             // BtnUrunler
@@ -421,6 +421,30 @@
             this.barButtonItem20.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem20.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem20_ItemClick);
             // 
+            // btnMasalar
+            // 
+            this.btnMasalar.Caption = "MASALAR";
+            this.btnMasalar.Id = 26;
+            this.btnMasalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMasalar.ImageOptions.Image")));
+            this.btnMasalar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMasalar.ImageOptions.LargeImage")));
+            this.btnMasalar.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMasalar.ItemAppearance.Disabled.Options.UseFont = true;
+            this.btnMasalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMasalar.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMasalar.Name = "btnMasalar";
+            this.btnMasalar.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // btnMasaIslemleri
+            // 
+            this.btnMasaIslemleri.Caption = "MASA İŞLEMLERİ";
+            this.btnMasaIslemleri.Id = 27;
+            this.btnMasaIslemleri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMasaIslemleri.ImageOptions.Image")));
+            this.btnMasaIslemleri.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMasaIslemleri.ImageOptions.LargeImage")));
+            this.btnMasaIslemleri.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMasaIslemleri.ItemAppearance.Normal.Options.UseFont = true;
+            this.btnMasaIslemleri.Name = "btnMasaIslemleri";
+            this.btnMasaIslemleri.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // ribbonAnaSayfa
             // 
             this.ribbonAnaSayfa.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -545,41 +569,28 @@
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "ribbonPageGroup7";
             // 
-            // xtraTabbedMdiManager1
+            // ribbonMasalar
             // 
-            this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ribbonPage1.Appearance.Options.UseFont = true;
-            this.ribbonPage1.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ribbonPage1.AppearanceHovered.Options.UseFont = true;
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonMasalar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ribbonMasalar.Appearance.Options.UseFont = true;
+            this.ribbonMasalar.AppearanceHovered.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ribbonMasalar.AppearanceHovered.Options.UseFont = true;
+            this.ribbonMasalar.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup8});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "MASA İŞLEMELERİ";
+            this.ribbonMasalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonMasalar.ImageOptions.Image")));
+            this.ribbonMasalar.Name = "ribbonMasalar";
+            this.ribbonMasalar.Text = "MASA İŞLEMELERİ";
             // 
             // ribbonPageGroup8
             // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnMasalar);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnMasaIslemleri);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.Text = "ribbonPageGroup8";
             // 
-            // barButtonItem1
+            // xtraTabbedMdiManager1
             // 
-            this.barButtonItem1.Caption = "MASALAR";
-            this.barButtonItem1.Id = 26;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "MASA İŞLEMLERİ";
-            this.barButtonItem2.Id = 27;
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.xtraTabbedMdiManager1.MdiParent = this;
             // 
             // FrmAnaModul
             // 
@@ -644,10 +655,10 @@
         private DevExpress.XtraBars.BarButtonItem BtnAyarlar;
         private DevExpress.XtraBars.BarButtonItem barButtonItem20;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonMasalar;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem btnMasalar;
+        private DevExpress.XtraBars.BarButtonItem btnMasaIslemleri;
     }
 }
 
