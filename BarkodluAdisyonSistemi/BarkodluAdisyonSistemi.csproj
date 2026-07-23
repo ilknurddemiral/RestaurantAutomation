@@ -101,6 +101,9 @@
     <EmbeddedResource Include="FrmAnaModul.resx">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasalar.resx">
+      <DependentUpon>FrmMasalar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSubeler.resx">
       <DependentUpon>FrmSubeler.cs</DependentUpon>
     </EmbeddedResource>
