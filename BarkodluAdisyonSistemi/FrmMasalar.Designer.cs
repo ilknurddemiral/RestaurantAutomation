@@ -28,56 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpMasalar = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlMasa1 = new DevExpress.XtraEditors.PanelControl();
             this.lblMasaAdi1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblMasaKisi1 = new DevExpress.XtraEditors.LabelControl();
             this.pnlMasa2 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.lblMasaKisi2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum2 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa2 = new DevExpress.XtraEditors.LabelControl();
             this.pnlMasa3 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.lblMasaKisi3 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum3 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa3 = new DevExpress.XtraEditors.LabelControl();
             this.pnlMasa4 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.lblMasaKisi4 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum4 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa4 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa5 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi5 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum5 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa5 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa6 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi6 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum6 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa6 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa7 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi7 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum7 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa7 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa8 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi8 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum8 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa8 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa9 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi9 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum9 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa9 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa10 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi10 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum10 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa10 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa11 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi11 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum11 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa11 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
+            this.pnlMasa12 = new DevExpress.XtraEditors.PanelControl();
+            this.lblMasaKisi12 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum12 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasa12 = new DevExpress.XtraEditors.LabelControl();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flpMasalar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlMasa1)).BeginInit();
             this.pnlMasa1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlMasa2)).BeginInit();
@@ -86,52 +86,52 @@
             this.pnlMasa3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlMasa4)).BeginInit();
             this.pnlMasa4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
-            this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
-            this.panelControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
-            this.panelControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
-            this.panelControl7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).BeginInit();
-            this.panelControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa5)).BeginInit();
+            this.pnlMasa5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa6)).BeginInit();
+            this.pnlMasa6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa7)).BeginInit();
+            this.pnlMasa7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa8)).BeginInit();
+            this.pnlMasa8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa9)).BeginInit();
+            this.pnlMasa9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa10)).BeginInit();
+            this.pnlMasa10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa11)).BeginInit();
+            this.pnlMasa11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa12)).BeginInit();
+            this.pnlMasa12.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flpMasalar
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.pnlMasa1);
-            this.flowLayoutPanel1.Controls.Add(this.pnlMasa2);
-            this.flowLayoutPanel1.Controls.Add(this.pnlMasa3);
-            this.flowLayoutPanel1.Controls.Add(this.pnlMasa4);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl1);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl2);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl3);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl4);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl5);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl6);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl7);
-            this.flowLayoutPanel1.Controls.Add(this.panelControl8);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(20);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1282, 653);
-            this.flowLayoutPanel1.TabIndex = 0;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            this.flpMasalar.AutoScroll = true;
+            this.flpMasalar.Controls.Add(this.pnlMasa1);
+            this.flpMasalar.Controls.Add(this.pnlMasa2);
+            this.flpMasalar.Controls.Add(this.pnlMasa3);
+            this.flpMasalar.Controls.Add(this.pnlMasa4);
+            this.flpMasalar.Controls.Add(this.pnlMasa5);
+            this.flpMasalar.Controls.Add(this.pnlMasa6);
+            this.flpMasalar.Controls.Add(this.pnlMasa7);
+            this.flpMasalar.Controls.Add(this.pnlMasa8);
+            this.flpMasalar.Controls.Add(this.pnlMasa9);
+            this.flpMasalar.Controls.Add(this.pnlMasa10);
+            this.flpMasalar.Controls.Add(this.pnlMasa11);
+            this.flpMasalar.Controls.Add(this.pnlMasa12);
+            this.flpMasalar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpMasalar.Location = new System.Drawing.Point(0, 0);
+            this.flpMasalar.Name = "flpMasalar";
+            this.flpMasalar.Padding = new System.Windows.Forms.Padding(20);
+            this.flpMasalar.Size = new System.Drawing.Size(1282, 653);
+            this.flpMasalar.TabIndex = 0;
+            this.flpMasalar.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // pnlMasa1
             // 
             this.pnlMasa1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pnlMasa1.Controls.Add(this.labelControl2);
-            this.pnlMasa1.Controls.Add(this.labelControl1);
+            this.pnlMasa1.Controls.Add(this.lblMasaKisi1);
+            this.pnlMasa1.Controls.Add(this.lblDurum1);
             this.pnlMasa1.Controls.Add(this.lblMasaAdi1);
             this.pnlMasa1.Location = new System.Drawing.Point(32, 32);
             this.pnlMasa1.Margin = new System.Windows.Forms.Padding(12);
@@ -159,45 +159,45 @@
             this.lblMasaAdi1.TabIndex = 0;
             this.lblMasaAdi1.Text = "Masa 1";
             // 
-            // labelControl1
+            // lblDurum1
             // 
-            this.labelControl1.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.Options.UseBackColor = true;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseTextOptions = true;
-            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl1.Location = new System.Drawing.Point(2, 113);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(221, 35);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Boş";
+            this.lblDurum1.Appearance.BackColor = System.Drawing.Color.SpringGreen;
+            this.lblDurum1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum1.Appearance.Options.UseBackColor = true;
+            this.lblDurum1.Appearance.Options.UseFont = true;
+            this.lblDurum1.Appearance.Options.UseTextOptions = true;
+            this.lblDurum1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum1.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum1.Name = "lblDurum1";
+            this.lblDurum1.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum1.TabIndex = 1;
+            this.lblDurum1.Text = "Boş";
             // 
-            // labelControl2
+            // lblMasaKisi1
             // 
-            this.labelControl2.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.Options.UseBackColor = true;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseTextOptions = true;
-            this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl2.Location = new System.Drawing.Point(2, 47);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(221, 66);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "4 kişilik";
+            this.lblMasaKisi1.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi1.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi1.Appearance.Options.UseFont = true;
+            this.lblMasaKisi1.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi1.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi1.Name = "lblMasaKisi1";
+            this.lblMasaKisi1.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi1.TabIndex = 2;
+            this.lblMasaKisi1.Text = "4 kişilik";
             // 
             // pnlMasa2
             // 
             this.pnlMasa2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pnlMasa2.Controls.Add(this.labelControl3);
-            this.pnlMasa2.Controls.Add(this.labelControl4);
+            this.pnlMasa2.Controls.Add(this.lblMasaKisi2);
+            this.pnlMasa2.Controls.Add(this.lblDurum2);
             this.pnlMasa2.Controls.Add(this.lblMasa2);
             this.pnlMasa2.Location = new System.Drawing.Point(281, 32);
             this.pnlMasa2.Margin = new System.Windows.Forms.Padding(12);
@@ -205,39 +205,39 @@
             this.pnlMasa2.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa2.TabIndex = 1;
             // 
-            // labelControl3
+            // lblMasaKisi2
             // 
-            this.labelControl3.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.Options.UseBackColor = true;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseTextOptions = true;
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.Location = new System.Drawing.Point(2, 47);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(221, 66);
-            this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "4 kişilik";
+            this.lblMasaKisi2.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi2.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi2.Appearance.Options.UseFont = true;
+            this.lblMasaKisi2.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi2.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi2.Name = "lblMasaKisi2";
+            this.lblMasaKisi2.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi2.TabIndex = 2;
+            this.lblMasaKisi2.Text = "4 kişilik";
             // 
-            // labelControl4
+            // lblDurum2
             // 
-            this.labelControl4.Appearance.BackColor = System.Drawing.Color.LightCoral;
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.Options.UseBackColor = true;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseTextOptions = true;
-            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl4.Location = new System.Drawing.Point(2, 113);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(221, 35);
-            this.labelControl4.TabIndex = 1;
-            this.labelControl4.Text = "Dolu";
+            this.lblDurum2.Appearance.BackColor = System.Drawing.Color.LightCoral;
+            this.lblDurum2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum2.Appearance.Options.UseBackColor = true;
+            this.lblDurum2.Appearance.Options.UseFont = true;
+            this.lblDurum2.Appearance.Options.UseTextOptions = true;
+            this.lblDurum2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum2.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum2.Name = "lblDurum2";
+            this.lblDurum2.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum2.TabIndex = 1;
+            this.lblDurum2.Text = "Dolu";
             // 
             // lblMasa2
             // 
@@ -262,8 +262,8 @@
             // pnlMasa3
             // 
             this.pnlMasa3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pnlMasa3.Controls.Add(this.labelControl6);
-            this.pnlMasa3.Controls.Add(this.labelControl7);
+            this.pnlMasa3.Controls.Add(this.lblMasaKisi3);
+            this.pnlMasa3.Controls.Add(this.lblDurum3);
             this.pnlMasa3.Controls.Add(this.lblMasa3);
             this.pnlMasa3.Location = new System.Drawing.Point(530, 32);
             this.pnlMasa3.Margin = new System.Windows.Forms.Padding(12);
@@ -271,39 +271,39 @@
             this.pnlMasa3.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa3.TabIndex = 2;
             // 
-            // labelControl6
+            // lblMasaKisi3
             // 
-            this.labelControl6.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl6.Appearance.Options.UseBackColor = true;
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseTextOptions = true;
-            this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl6.Location = new System.Drawing.Point(2, 47);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(221, 66);
-            this.labelControl6.TabIndex = 2;
-            this.labelControl6.Text = "4 kişilik";
+            this.lblMasaKisi3.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi3.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi3.Appearance.Options.UseFont = true;
+            this.lblMasaKisi3.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi3.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi3.Name = "lblMasaKisi3";
+            this.lblMasaKisi3.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi3.TabIndex = 2;
+            this.lblMasaKisi3.Text = "4 kişilik";
             // 
-            // labelControl7
+            // lblDurum3
             // 
-            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Khaki;
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl7.Appearance.Options.UseBackColor = true;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseTextOptions = true;
-            this.labelControl7.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl7.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl7.Location = new System.Drawing.Point(2, 113);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(221, 35);
-            this.labelControl7.TabIndex = 1;
-            this.labelControl7.Text = "Rezerve";
+            this.lblDurum3.Appearance.BackColor = System.Drawing.Color.Khaki;
+            this.lblDurum3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum3.Appearance.Options.UseBackColor = true;
+            this.lblDurum3.Appearance.Options.UseFont = true;
+            this.lblDurum3.Appearance.Options.UseTextOptions = true;
+            this.lblDurum3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum3.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum3.Name = "lblDurum3";
+            this.lblDurum3.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum3.TabIndex = 1;
+            this.lblDurum3.Text = "Rezerve";
             // 
             // lblMasa3
             // 
@@ -328,8 +328,8 @@
             // pnlMasa4
             // 
             this.pnlMasa4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.pnlMasa4.Controls.Add(this.labelControl9);
-            this.pnlMasa4.Controls.Add(this.labelControl10);
+            this.pnlMasa4.Controls.Add(this.lblMasaKisi4);
+            this.pnlMasa4.Controls.Add(this.lblDurum4);
             this.pnlMasa4.Controls.Add(this.lblMasa4);
             this.pnlMasa4.Location = new System.Drawing.Point(779, 32);
             this.pnlMasa4.Margin = new System.Windows.Forms.Padding(12);
@@ -337,39 +337,39 @@
             this.pnlMasa4.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa4.TabIndex = 3;
             // 
-            // labelControl9
+            // lblMasaKisi4
             // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl9.Appearance.Options.UseBackColor = true;
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Appearance.Options.UseTextOptions = true;
-            this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl9.Location = new System.Drawing.Point(2, 47);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(221, 66);
-            this.labelControl9.TabIndex = 2;
-            this.labelControl9.Text = "4 kişilik";
+            this.lblMasaKisi4.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi4.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi4.Appearance.Options.UseFont = true;
+            this.lblMasaKisi4.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi4.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi4.Name = "lblMasaKisi4";
+            this.lblMasaKisi4.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi4.TabIndex = 2;
+            this.lblMasaKisi4.Text = "4 kişilik";
             // 
-            // labelControl10
+            // lblDurum4
             // 
-            this.labelControl10.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl10.Appearance.Options.UseBackColor = true;
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseTextOptions = true;
-            this.labelControl10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl10.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl10.Location = new System.Drawing.Point(2, 113);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(221, 35);
-            this.labelControl10.TabIndex = 1;
-            this.labelControl10.Text = "Boş";
+            this.lblDurum4.Appearance.BackColor = System.Drawing.Color.SpringGreen;
+            this.lblDurum4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum4.Appearance.Options.UseBackColor = true;
+            this.lblDurum4.Appearance.Options.UseFont = true;
+            this.lblDurum4.Appearance.Options.UseTextOptions = true;
+            this.lblDurum4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum4.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum4.Name = "lblDurum4";
+            this.lblDurum4.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum4.TabIndex = 1;
+            this.lblDurum4.Text = "Boş";
             // 
             // lblMasa4
             // 
@@ -391,51 +391,51 @@
             this.lblMasa4.TabIndex = 0;
             this.lblMasa4.Text = "Masa 4";
             // 
-            // panelControl1
+            // pnlMasa5
             // 
-            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl1.Controls.Add(this.labelControl5);
-            this.panelControl1.Controls.Add(this.labelControl8);
-            this.panelControl1.Controls.Add(this.lblMasa5);
-            this.panelControl1.Location = new System.Drawing.Point(32, 206);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(225, 150);
-            this.panelControl1.TabIndex = 4;
+            this.pnlMasa5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa5.Controls.Add(this.lblMasaKisi5);
+            this.pnlMasa5.Controls.Add(this.lblDurum5);
+            this.pnlMasa5.Controls.Add(this.lblMasa5);
+            this.pnlMasa5.Location = new System.Drawing.Point(32, 206);
+            this.pnlMasa5.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa5.Name = "pnlMasa5";
+            this.pnlMasa5.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa5.TabIndex = 4;
             // 
-            // labelControl5
+            // lblMasaKisi5
             // 
-            this.labelControl5.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseBackColor = true;
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseTextOptions = true;
-            this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl5.Location = new System.Drawing.Point(2, 47);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(221, 66);
-            this.labelControl5.TabIndex = 2;
-            this.labelControl5.Text = "4 kişilik";
+            this.lblMasaKisi5.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi5.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi5.Appearance.Options.UseFont = true;
+            this.lblMasaKisi5.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi5.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi5.Name = "lblMasaKisi5";
+            this.lblMasaKisi5.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi5.TabIndex = 2;
+            this.lblMasaKisi5.Text = "4 kişilik";
             // 
-            // labelControl8
+            // lblDurum5
             // 
-            this.labelControl8.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl8.Appearance.Options.UseBackColor = true;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseTextOptions = true;
-            this.labelControl8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl8.Location = new System.Drawing.Point(2, 113);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(221, 35);
-            this.labelControl8.TabIndex = 1;
-            this.labelControl8.Text = "Boş";
+            this.lblDurum5.Appearance.BackColor = System.Drawing.Color.SpringGreen;
+            this.lblDurum5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum5.Appearance.Options.UseBackColor = true;
+            this.lblDurum5.Appearance.Options.UseFont = true;
+            this.lblDurum5.Appearance.Options.UseTextOptions = true;
+            this.lblDurum5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum5.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum5.Name = "lblDurum5";
+            this.lblDurum5.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum5.TabIndex = 1;
+            this.lblDurum5.Text = "Boş";
             // 
             // lblMasa5
             // 
@@ -457,51 +457,51 @@
             this.lblMasa5.TabIndex = 0;
             this.lblMasa5.Text = "Masa 5";
             // 
-            // panelControl2
+            // pnlMasa6
             // 
-            this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl2.Controls.Add(this.labelControl12);
-            this.panelControl2.Controls.Add(this.labelControl13);
-            this.panelControl2.Controls.Add(this.lblMasa6);
-            this.panelControl2.Location = new System.Drawing.Point(281, 206);
-            this.panelControl2.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(225, 150);
-            this.panelControl2.TabIndex = 3;
+            this.pnlMasa6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa6.Controls.Add(this.lblMasaKisi6);
+            this.pnlMasa6.Controls.Add(this.lblDurum6);
+            this.pnlMasa6.Controls.Add(this.lblMasa6);
+            this.pnlMasa6.Location = new System.Drawing.Point(281, 206);
+            this.pnlMasa6.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa6.Name = "pnlMasa6";
+            this.pnlMasa6.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa6.TabIndex = 3;
             // 
-            // labelControl12
+            // lblMasaKisi6
             // 
-            this.labelControl12.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl12.Appearance.Options.UseBackColor = true;
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Appearance.Options.UseTextOptions = true;
-            this.labelControl12.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl12.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl12.Location = new System.Drawing.Point(2, 47);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(221, 66);
-            this.labelControl12.TabIndex = 2;
-            this.labelControl12.Text = "4 kişilik";
+            this.lblMasaKisi6.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi6.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi6.Appearance.Options.UseFont = true;
+            this.lblMasaKisi6.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi6.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi6.Name = "lblMasaKisi6";
+            this.lblMasaKisi6.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi6.TabIndex = 2;
+            this.lblMasaKisi6.Text = "4 kişilik";
             // 
-            // labelControl13
+            // lblDurum6
             // 
-            this.labelControl13.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl13.Appearance.Options.UseBackColor = true;
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Appearance.Options.UseTextOptions = true;
-            this.labelControl13.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl13.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl13.Location = new System.Drawing.Point(2, 113);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(221, 35);
-            this.labelControl13.TabIndex = 1;
-            this.labelControl13.Text = "Boş";
+            this.lblDurum6.Appearance.BackColor = System.Drawing.Color.SpringGreen;
+            this.lblDurum6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum6.Appearance.Options.UseBackColor = true;
+            this.lblDurum6.Appearance.Options.UseFont = true;
+            this.lblDurum6.Appearance.Options.UseTextOptions = true;
+            this.lblDurum6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum6.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum6.Name = "lblDurum6";
+            this.lblDurum6.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum6.TabIndex = 1;
+            this.lblDurum6.Text = "Boş";
             // 
             // lblMasa6
             // 
@@ -523,51 +523,51 @@
             this.lblMasa6.TabIndex = 0;
             this.lblMasa6.Text = "Masa 6";
             // 
-            // panelControl3
+            // pnlMasa7
             // 
-            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl3.Controls.Add(this.labelControl15);
-            this.panelControl3.Controls.Add(this.labelControl16);
-            this.panelControl3.Controls.Add(this.lblMasa7);
-            this.panelControl3.Location = new System.Drawing.Point(530, 206);
-            this.panelControl3.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(225, 150);
-            this.panelControl3.TabIndex = 5;
+            this.pnlMasa7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa7.Controls.Add(this.lblMasaKisi7);
+            this.pnlMasa7.Controls.Add(this.lblDurum7);
+            this.pnlMasa7.Controls.Add(this.lblMasa7);
+            this.pnlMasa7.Location = new System.Drawing.Point(530, 206);
+            this.pnlMasa7.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa7.Name = "pnlMasa7";
+            this.pnlMasa7.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa7.TabIndex = 5;
             // 
-            // labelControl15
+            // lblMasaKisi7
             // 
-            this.labelControl15.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl15.Appearance.Options.UseBackColor = true;
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Appearance.Options.UseTextOptions = true;
-            this.labelControl15.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl15.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl15.Location = new System.Drawing.Point(2, 47);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(221, 66);
-            this.labelControl15.TabIndex = 2;
-            this.labelControl15.Text = "4 kişilik";
+            this.lblMasaKisi7.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi7.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi7.Appearance.Options.UseFont = true;
+            this.lblMasaKisi7.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi7.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi7.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi7.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi7.Name = "lblMasaKisi7";
+            this.lblMasaKisi7.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi7.TabIndex = 2;
+            this.lblMasaKisi7.Text = "4 kişilik";
             // 
-            // labelControl16
+            // lblDurum7
             // 
-            this.labelControl16.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl16.Appearance.Options.UseBackColor = true;
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Appearance.Options.UseTextOptions = true;
-            this.labelControl16.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl16.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl16.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl16.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl16.Location = new System.Drawing.Point(2, 113);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(221, 35);
-            this.labelControl16.TabIndex = 1;
-            this.labelControl16.Text = "Boş";
+            this.lblDurum7.Appearance.BackColor = System.Drawing.Color.SpringGreen;
+            this.lblDurum7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum7.Appearance.Options.UseBackColor = true;
+            this.lblDurum7.Appearance.Options.UseFont = true;
+            this.lblDurum7.Appearance.Options.UseTextOptions = true;
+            this.lblDurum7.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum7.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum7.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum7.Name = "lblDurum7";
+            this.lblDurum7.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum7.TabIndex = 1;
+            this.lblDurum7.Text = "Boş";
             // 
             // lblMasa7
             // 
@@ -589,51 +589,51 @@
             this.lblMasa7.TabIndex = 0;
             this.lblMasa7.Text = "Masa 7";
             // 
-            // panelControl4
+            // pnlMasa8
             // 
-            this.panelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl4.Controls.Add(this.labelControl18);
-            this.panelControl4.Controls.Add(this.labelControl19);
-            this.panelControl4.Controls.Add(this.lblMasa8);
-            this.panelControl4.Location = new System.Drawing.Point(779, 206);
-            this.panelControl4.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(225, 150);
-            this.panelControl4.TabIndex = 6;
+            this.pnlMasa8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa8.Controls.Add(this.lblMasaKisi8);
+            this.pnlMasa8.Controls.Add(this.lblDurum8);
+            this.pnlMasa8.Controls.Add(this.lblMasa8);
+            this.pnlMasa8.Location = new System.Drawing.Point(779, 206);
+            this.pnlMasa8.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa8.Name = "pnlMasa8";
+            this.pnlMasa8.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa8.TabIndex = 6;
             // 
-            // labelControl18
+            // lblMasaKisi8
             // 
-            this.labelControl18.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl18.Appearance.Options.UseBackColor = true;
-            this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Appearance.Options.UseTextOptions = true;
-            this.labelControl18.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl18.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl18.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl18.Location = new System.Drawing.Point(2, 47);
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(221, 66);
-            this.labelControl18.TabIndex = 2;
-            this.labelControl18.Text = "4 kişilik";
+            this.lblMasaKisi8.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi8.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi8.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi8.Appearance.Options.UseFont = true;
+            this.lblMasaKisi8.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi8.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi8.Name = "lblMasaKisi8";
+            this.lblMasaKisi8.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi8.TabIndex = 2;
+            this.lblMasaKisi8.Text = "4 kişilik";
             // 
-            // labelControl19
+            // lblDurum8
             // 
-            this.labelControl19.Appearance.BackColor = System.Drawing.Color.LightCoral;
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl19.Appearance.Options.UseBackColor = true;
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Appearance.Options.UseTextOptions = true;
-            this.labelControl19.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl19.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl19.Location = new System.Drawing.Point(2, 113);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(221, 35);
-            this.labelControl19.TabIndex = 1;
-            this.labelControl19.Text = "Dolu";
+            this.lblDurum8.Appearance.BackColor = System.Drawing.Color.LightCoral;
+            this.lblDurum8.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum8.Appearance.Options.UseBackColor = true;
+            this.lblDurum8.Appearance.Options.UseFont = true;
+            this.lblDurum8.Appearance.Options.UseTextOptions = true;
+            this.lblDurum8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum8.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum8.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum8.Name = "lblDurum8";
+            this.lblDurum8.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum8.TabIndex = 1;
+            this.lblDurum8.Text = "Dolu";
             // 
             // lblMasa8
             // 
@@ -655,51 +655,51 @@
             this.lblMasa8.TabIndex = 0;
             this.lblMasa8.Text = "Masa 8";
             // 
-            // panelControl5
+            // pnlMasa9
             // 
-            this.panelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl5.Controls.Add(this.labelControl21);
-            this.panelControl5.Controls.Add(this.labelControl22);
-            this.panelControl5.Controls.Add(this.lblMasa9);
-            this.panelControl5.Location = new System.Drawing.Point(32, 380);
-            this.panelControl5.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(225, 150);
-            this.panelControl5.TabIndex = 3;
+            this.pnlMasa9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa9.Controls.Add(this.lblMasaKisi9);
+            this.pnlMasa9.Controls.Add(this.lblDurum9);
+            this.pnlMasa9.Controls.Add(this.lblMasa9);
+            this.pnlMasa9.Location = new System.Drawing.Point(32, 380);
+            this.pnlMasa9.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa9.Name = "pnlMasa9";
+            this.pnlMasa9.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa9.TabIndex = 3;
             // 
-            // labelControl21
+            // lblMasaKisi9
             // 
-            this.labelControl21.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl21.Appearance.Options.UseBackColor = true;
-            this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Appearance.Options.UseTextOptions = true;
-            this.labelControl21.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl21.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl21.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl21.Location = new System.Drawing.Point(2, 47);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(221, 66);
-            this.labelControl21.TabIndex = 2;
-            this.labelControl21.Text = "4 kişilik";
+            this.lblMasaKisi9.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi9.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi9.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi9.Appearance.Options.UseFont = true;
+            this.lblMasaKisi9.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi9.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi9.Name = "lblMasaKisi9";
+            this.lblMasaKisi9.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi9.TabIndex = 2;
+            this.lblMasaKisi9.Text = "4 kişilik";
             // 
-            // labelControl22
+            // lblDurum9
             // 
-            this.labelControl22.Appearance.BackColor = System.Drawing.Color.LightCoral;
-            this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl22.Appearance.Options.UseBackColor = true;
-            this.labelControl22.Appearance.Options.UseFont = true;
-            this.labelControl22.Appearance.Options.UseTextOptions = true;
-            this.labelControl22.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl22.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl22.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl22.Location = new System.Drawing.Point(2, 113);
-            this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(221, 35);
-            this.labelControl22.TabIndex = 1;
-            this.labelControl22.Text = "Dolu";
+            this.lblDurum9.Appearance.BackColor = System.Drawing.Color.LightCoral;
+            this.lblDurum9.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum9.Appearance.Options.UseBackColor = true;
+            this.lblDurum9.Appearance.Options.UseFont = true;
+            this.lblDurum9.Appearance.Options.UseTextOptions = true;
+            this.lblDurum9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum9.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum9.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum9.Name = "lblDurum9";
+            this.lblDurum9.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum9.TabIndex = 1;
+            this.lblDurum9.Text = "Dolu";
             // 
             // lblMasa9
             // 
@@ -721,51 +721,51 @@
             this.lblMasa9.TabIndex = 0;
             this.lblMasa9.Text = "Masa 9";
             // 
-            // panelControl6
+            // pnlMasa10
             // 
-            this.panelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl6.Controls.Add(this.labelControl24);
-            this.panelControl6.Controls.Add(this.labelControl25);
-            this.panelControl6.Controls.Add(this.lblMasa10);
-            this.panelControl6.Location = new System.Drawing.Point(281, 380);
-            this.panelControl6.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(225, 150);
-            this.panelControl6.TabIndex = 7;
+            this.pnlMasa10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa10.Controls.Add(this.lblMasaKisi10);
+            this.pnlMasa10.Controls.Add(this.lblDurum10);
+            this.pnlMasa10.Controls.Add(this.lblMasa10);
+            this.pnlMasa10.Location = new System.Drawing.Point(281, 380);
+            this.pnlMasa10.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa10.Name = "pnlMasa10";
+            this.pnlMasa10.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa10.TabIndex = 7;
             // 
-            // labelControl24
+            // lblMasaKisi10
             // 
-            this.labelControl24.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl24.Appearance.Options.UseBackColor = true;
-            this.labelControl24.Appearance.Options.UseFont = true;
-            this.labelControl24.Appearance.Options.UseTextOptions = true;
-            this.labelControl24.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl24.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl24.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl24.Location = new System.Drawing.Point(2, 47);
-            this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(221, 66);
-            this.labelControl24.TabIndex = 2;
-            this.labelControl24.Text = "4 kişilik";
+            this.lblMasaKisi10.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi10.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi10.Appearance.Options.UseFont = true;
+            this.lblMasaKisi10.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi10.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi10.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi10.Name = "lblMasaKisi10";
+            this.lblMasaKisi10.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi10.TabIndex = 2;
+            this.lblMasaKisi10.Text = "4 kişilik";
             // 
-            // labelControl25
+            // lblDurum10
             // 
-            this.labelControl25.Appearance.BackColor = System.Drawing.Color.Khaki;
-            this.labelControl25.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl25.Appearance.Options.UseBackColor = true;
-            this.labelControl25.Appearance.Options.UseFont = true;
-            this.labelControl25.Appearance.Options.UseTextOptions = true;
-            this.labelControl25.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl25.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl25.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl25.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl25.Location = new System.Drawing.Point(2, 113);
-            this.labelControl25.Name = "labelControl25";
-            this.labelControl25.Size = new System.Drawing.Size(221, 35);
-            this.labelControl25.TabIndex = 1;
-            this.labelControl25.Text = "Rezerve";
+            this.lblDurum10.Appearance.BackColor = System.Drawing.Color.Khaki;
+            this.lblDurum10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum10.Appearance.Options.UseBackColor = true;
+            this.lblDurum10.Appearance.Options.UseFont = true;
+            this.lblDurum10.Appearance.Options.UseTextOptions = true;
+            this.lblDurum10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum10.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum10.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum10.Name = "lblDurum10";
+            this.lblDurum10.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum10.TabIndex = 1;
+            this.lblDurum10.Text = "Rezerve";
             // 
             // lblMasa10
             // 
@@ -787,51 +787,51 @@
             this.lblMasa10.TabIndex = 0;
             this.lblMasa10.Text = "Masa 10";
             // 
-            // panelControl7
+            // pnlMasa11
             // 
-            this.panelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl7.Controls.Add(this.labelControl27);
-            this.panelControl7.Controls.Add(this.labelControl28);
-            this.panelControl7.Controls.Add(this.lblMasa11);
-            this.panelControl7.Location = new System.Drawing.Point(530, 380);
-            this.panelControl7.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl7.Name = "panelControl7";
-            this.panelControl7.Size = new System.Drawing.Size(225, 150);
-            this.panelControl7.TabIndex = 3;
+            this.pnlMasa11.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa11.Controls.Add(this.lblMasaKisi11);
+            this.pnlMasa11.Controls.Add(this.lblDurum11);
+            this.pnlMasa11.Controls.Add(this.lblMasa11);
+            this.pnlMasa11.Location = new System.Drawing.Point(530, 380);
+            this.pnlMasa11.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa11.Name = "pnlMasa11";
+            this.pnlMasa11.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa11.TabIndex = 3;
             // 
-            // labelControl27
+            // lblMasaKisi11
             // 
-            this.labelControl27.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl27.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl27.Appearance.Options.UseBackColor = true;
-            this.labelControl27.Appearance.Options.UseFont = true;
-            this.labelControl27.Appearance.Options.UseTextOptions = true;
-            this.labelControl27.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl27.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl27.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl27.Location = new System.Drawing.Point(2, 47);
-            this.labelControl27.Name = "labelControl27";
-            this.labelControl27.Size = new System.Drawing.Size(221, 66);
-            this.labelControl27.TabIndex = 2;
-            this.labelControl27.Text = "4 kişilik";
+            this.lblMasaKisi11.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi11.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi11.Appearance.Options.UseFont = true;
+            this.lblMasaKisi11.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi11.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi11.Name = "lblMasaKisi11";
+            this.lblMasaKisi11.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi11.TabIndex = 2;
+            this.lblMasaKisi11.Text = "4 kişilik";
             // 
-            // labelControl28
+            // lblDurum11
             // 
-            this.labelControl28.Appearance.BackColor = System.Drawing.Color.Khaki;
-            this.labelControl28.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl28.Appearance.Options.UseBackColor = true;
-            this.labelControl28.Appearance.Options.UseFont = true;
-            this.labelControl28.Appearance.Options.UseTextOptions = true;
-            this.labelControl28.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl28.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl28.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl28.Location = new System.Drawing.Point(2, 113);
-            this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(221, 35);
-            this.labelControl28.TabIndex = 1;
-            this.labelControl28.Text = "Rezerve";
+            this.lblDurum11.Appearance.BackColor = System.Drawing.Color.Khaki;
+            this.lblDurum11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum11.Appearance.Options.UseBackColor = true;
+            this.lblDurum11.Appearance.Options.UseFont = true;
+            this.lblDurum11.Appearance.Options.UseTextOptions = true;
+            this.lblDurum11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum11.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum11.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum11.Name = "lblDurum11";
+            this.lblDurum11.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum11.TabIndex = 1;
+            this.lblDurum11.Text = "Rezerve";
             // 
             // lblMasa11
             // 
@@ -853,51 +853,51 @@
             this.lblMasa11.TabIndex = 0;
             this.lblMasa11.Text = "Masa 11";
             // 
-            // panelControl8
+            // pnlMasa12
             // 
-            this.panelControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl8.Controls.Add(this.labelControl30);
-            this.panelControl8.Controls.Add(this.labelControl31);
-            this.panelControl8.Controls.Add(this.lblMasa12);
-            this.panelControl8.Location = new System.Drawing.Point(779, 380);
-            this.panelControl8.Margin = new System.Windows.Forms.Padding(12);
-            this.panelControl8.Name = "panelControl8";
-            this.panelControl8.Size = new System.Drawing.Size(225, 150);
-            this.panelControl8.TabIndex = 8;
+            this.pnlMasa12.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.pnlMasa12.Controls.Add(this.lblMasaKisi12);
+            this.pnlMasa12.Controls.Add(this.lblDurum12);
+            this.pnlMasa12.Controls.Add(this.lblMasa12);
+            this.pnlMasa12.Location = new System.Drawing.Point(779, 380);
+            this.pnlMasa12.Margin = new System.Windows.Forms.Padding(12);
+            this.pnlMasa12.Name = "pnlMasa12";
+            this.pnlMasa12.Size = new System.Drawing.Size(225, 150);
+            this.pnlMasa12.TabIndex = 8;
             // 
-            // labelControl30
+            // lblMasaKisi12
             // 
-            this.labelControl30.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.labelControl30.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl30.Appearance.Options.UseBackColor = true;
-            this.labelControl30.Appearance.Options.UseFont = true;
-            this.labelControl30.Appearance.Options.UseTextOptions = true;
-            this.labelControl30.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl30.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl30.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl30.Location = new System.Drawing.Point(2, 47);
-            this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(221, 66);
-            this.labelControl30.TabIndex = 2;
-            this.labelControl30.Text = "4 kişilik";
+            this.lblMasaKisi12.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi12.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi12.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi12.Appearance.Options.UseFont = true;
+            this.lblMasaKisi12.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi12.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi12.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi12.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi12.Name = "lblMasaKisi12";
+            this.lblMasaKisi12.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi12.TabIndex = 2;
+            this.lblMasaKisi12.Text = "4 kişilik";
             // 
-            // labelControl31
+            // lblDurum12
             // 
-            this.labelControl31.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.labelControl31.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl31.Appearance.Options.UseBackColor = true;
-            this.labelControl31.Appearance.Options.UseFont = true;
-            this.labelControl31.Appearance.Options.UseTextOptions = true;
-            this.labelControl31.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl31.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.labelControl31.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl31.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.labelControl31.Location = new System.Drawing.Point(2, 113);
-            this.labelControl31.Name = "labelControl31";
-            this.labelControl31.Size = new System.Drawing.Size(221, 35);
-            this.labelControl31.TabIndex = 1;
-            this.labelControl31.Text = "Boş";
+            this.lblDurum12.Appearance.BackColor = System.Drawing.Color.SpringGreen;
+            this.lblDurum12.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum12.Appearance.Options.UseBackColor = true;
+            this.lblDurum12.Appearance.Options.UseFont = true;
+            this.lblDurum12.Appearance.Options.UseTextOptions = true;
+            this.lblDurum12.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum12.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum12.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum12.Name = "lblDurum12";
+            this.lblDurum12.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum12.TabIndex = 1;
+            this.lblDurum12.Text = "Boş";
             // 
             // lblMasa12
             // 
@@ -924,11 +924,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 653);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flpMasalar);
             this.Name = "FrmMasalar";
             this.Text = "FrmMasalar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FrmMasalar_Load);
+            this.flpMasalar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pnlMasa1)).EndInit();
             this.pnlMasa1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pnlMasa2)).EndInit();
@@ -937,76 +938,76 @@
             this.pnlMasa3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pnlMasa4)).EndInit();
             this.pnlMasa4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
-            this.panelControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
-            this.panelControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
-            this.panelControl6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
-            this.panelControl7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).EndInit();
-            this.panelControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa5)).EndInit();
+            this.pnlMasa5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa6)).EndInit();
+            this.pnlMasa6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa7)).EndInit();
+            this.pnlMasa7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa8)).EndInit();
+            this.pnlMasa8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa9)).EndInit();
+            this.pnlMasa9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa10)).EndInit();
+            this.pnlMasa10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa11)).EndInit();
+            this.pnlMasa11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlMasa12)).EndInit();
+            this.pnlMasa12.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpMasalar;
         private DevExpress.XtraEditors.PanelControl pnlMasa1;
         private DevExpress.XtraEditors.LabelControl lblMasaAdi1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi1;
+        private DevExpress.XtraEditors.LabelControl lblDurum1;
         private DevExpress.XtraEditors.PanelControl pnlMasa2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi2;
+        private DevExpress.XtraEditors.LabelControl lblDurum2;
         private DevExpress.XtraEditors.LabelControl lblMasa2;
         private DevExpress.XtraEditors.PanelControl pnlMasa3;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi3;
+        private DevExpress.XtraEditors.LabelControl lblDurum3;
         private DevExpress.XtraEditors.LabelControl lblMasa3;
         private DevExpress.XtraEditors.PanelControl pnlMasa4;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi4;
+        private DevExpress.XtraEditors.LabelControl lblDurum4;
         private DevExpress.XtraEditors.LabelControl lblMasa4;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.PanelControl pnlMasa5;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi5;
+        private DevExpress.XtraEditors.LabelControl lblDurum5;
         private DevExpress.XtraEditors.LabelControl lblMasa5;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.PanelControl pnlMasa6;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi6;
+        private DevExpress.XtraEditors.LabelControl lblDurum6;
         private DevExpress.XtraEditors.LabelControl lblMasa6;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private DevExpress.XtraEditors.PanelControl pnlMasa7;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi7;
+        private DevExpress.XtraEditors.LabelControl lblDurum7;
         private DevExpress.XtraEditors.LabelControl lblMasa7;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private DevExpress.XtraEditors.PanelControl pnlMasa8;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi8;
+        private DevExpress.XtraEditors.LabelControl lblDurum8;
         private DevExpress.XtraEditors.LabelControl lblMasa8;
-        private DevExpress.XtraEditors.PanelControl panelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl21;
-        private DevExpress.XtraEditors.LabelControl labelControl22;
+        private DevExpress.XtraEditors.PanelControl pnlMasa9;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi9;
+        private DevExpress.XtraEditors.LabelControl lblDurum9;
         private DevExpress.XtraEditors.LabelControl lblMasa9;
-        private DevExpress.XtraEditors.PanelControl panelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl24;
-        private DevExpress.XtraEditors.LabelControl labelControl25;
+        private DevExpress.XtraEditors.PanelControl pnlMasa10;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi10;
+        private DevExpress.XtraEditors.LabelControl lblDurum10;
         private DevExpress.XtraEditors.LabelControl lblMasa10;
-        private DevExpress.XtraEditors.PanelControl panelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl27;
-        private DevExpress.XtraEditors.LabelControl labelControl28;
+        private DevExpress.XtraEditors.PanelControl pnlMasa11;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi11;
+        private DevExpress.XtraEditors.LabelControl lblDurum11;
         private DevExpress.XtraEditors.LabelControl lblMasa11;
-        private DevExpress.XtraEditors.PanelControl panelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl30;
-        private DevExpress.XtraEditors.LabelControl labelControl31;
+        private DevExpress.XtraEditors.PanelControl pnlMasa12;
+        private DevExpress.XtraEditors.LabelControl lblMasaKisi12;
+        private DevExpress.XtraEditors.LabelControl lblDurum12;
         private DevExpress.XtraEditors.LabelControl lblMasa12;
     }
 }
