@@ -77,6 +77,12 @@
     <Compile Include="FrmMasalar.Designer.cs">
       <DependentUpon>FrmMasalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiparis.Designer.cs">
+      <DependentUpon>FrmSiparis.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSubeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMasalar.resx">
       <DependentUpon>FrmMasalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiparis.resx">
+      <DependentUpon>FrmSiparis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSubeler.resx">
       <DependentUpon>FrmSubeler.cs</DependentUpon>

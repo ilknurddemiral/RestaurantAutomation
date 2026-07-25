@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace BarkodluAdisyonSistemi
 {
-    public partial class FrmMasalar : Form
+    public partial class FrmSiparis : Form
     {
-        public FrmMasalar()
+        public FrmSiparis()
         {
             InitializeComponent();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
         {
 
         }
