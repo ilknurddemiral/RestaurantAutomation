@@ -60,7 +60,26 @@ namespace BarkodluAdisyonSistemi
                 fr3.Show();
             }
         }
-
+        FrmMasalar fr4;
+        private void btnMasalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr4 == null)
+            {
+                fr4 = new FrmMasalar();
+                fr4.MdiParent = this;
+                fr4.Show();
+            }
+        }
+        FrmSiparis fr5;
+        private void btnSiparis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr5 == null)
+            {
+                fr5 = new FrmSiparis();
+                fr5.MdiParent = this;
+                fr5.Show();
+            }
+        }
         private void btnKategoriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
@@ -145,5 +164,7 @@ namespace BarkodluAdisyonSistemi
         {
 
         }
+
+        
     }
 }
