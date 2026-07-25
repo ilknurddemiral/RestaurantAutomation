@@ -926,7 +926,7 @@
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.flpMasalar);
             this.Name = "FrmMasalar";
-            this.Text = "FrmMasalar";
+            this.Text = "MASALAR";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMasalar_Load);
             this.flpMasalar.ResumeLayout(false);
