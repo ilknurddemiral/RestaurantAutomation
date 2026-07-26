@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSiparis));
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControlUrunler = new DevExpress.XtraGrid.GridControl();
+            this.gridViewUrunler = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControlSiparis = new DevExpress.XtraGrid.GridControl();
+            this.gridViewSiparis = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblMasaAdi = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -42,48 +42,48 @@
             this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlUrunler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewUrunler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlSiparis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewSiparis)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtToplamTutar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridControl1
+            // gridControlUrunler
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(3, 47);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(634, 414);
-            this.gridControl1.TabIndex = 1;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
+            this.gridControlUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlUrunler.Location = new System.Drawing.Point(3, 47);
+            this.gridControlUrunler.MainView = this.gridViewUrunler;
+            this.gridControlUrunler.Name = "gridControlUrunler";
+            this.gridControlUrunler.Size = new System.Drawing.Size(634, 414);
+            this.gridControlUrunler.TabIndex = 1;
+            this.gridControlUrunler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewUrunler});
+            this.gridControlUrunler.Click += new System.EventHandler(this.gridControl1_Click);
             // 
-            // gridView1
+            // gridViewUrunler
             // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
+            this.gridViewUrunler.GridControl = this.gridControlUrunler;
+            this.gridViewUrunler.Name = "gridViewUrunler";
             // 
-            // gridControl2
+            // gridControlSiparis
             // 
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.Location = new System.Drawing.Point(643, 47);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(636, 414);
-            this.gridControl2.TabIndex = 2;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
+            this.gridControlSiparis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlSiparis.Location = new System.Drawing.Point(643, 47);
+            this.gridControlSiparis.MainView = this.gridViewSiparis;
+            this.gridControlSiparis.Name = "gridControlSiparis";
+            this.gridControlSiparis.Size = new System.Drawing.Size(636, 414);
+            this.gridControlSiparis.TabIndex = 2;
+            this.gridControlSiparis.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewSiparis});
             // 
-            // gridView2
+            // gridViewSiparis
             // 
-            this.gridView2.GridControl = this.gridControl2;
-            this.gridView2.Name = "gridView2";
+            this.gridViewSiparis.GridControl = this.gridControlSiparis;
+            this.gridViewSiparis.Name = "gridViewSiparis";
             // 
             // tableLayoutPanel1
             // 
@@ -92,8 +92,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.078F));
             this.tableLayoutPanel1.Controls.Add(this.lblMasaAdi, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panelControl1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.gridControl1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.gridControl2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.gridControlUrunler, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.gridControlSiparis, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -207,10 +207,10 @@
             this.Text = "SİPARİŞ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmSiparis_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewUrunler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlSiparis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewSiparis)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -221,10 +221,10 @@
         }
 
         #endregion
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.GridControl gridControlUrunler;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewUrunler;
+        private DevExpress.XtraGrid.GridControl gridControlSiparis;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewSiparis;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.LabelControl lblMasaAdi;

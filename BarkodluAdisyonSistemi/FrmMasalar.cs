@@ -144,9 +144,9 @@ namespace BarkodluAdisyonSistemi
                 return;
             }
 
-            Form anaForm = this.MdiParent;
+            Form anaModul = this.MdiParent;
 
-            if (anaForm == null)
+            if (anaModul == null)
             {
                 MessageBox.Show("Ana form bulunamadı.");
                 return;
@@ -155,7 +155,7 @@ namespace BarkodluAdisyonSistemi
             FrmSiparis frm = new FrmSiparis();
 
             frm.SecilenMasaID = masaID;
-            frm.MdiParent = anaForm; 
+            frm.MdiParent = anaModul; 
             frm.Show();
 
             this.Hide();
