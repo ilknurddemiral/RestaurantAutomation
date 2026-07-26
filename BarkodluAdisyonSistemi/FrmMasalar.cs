@@ -89,18 +89,47 @@ namespace BarkodluAdisyonSistemi
 
         private void Masa_Click(object sender, EventArgs e)
         {
-            PanelControl tiklananPanel = sender as PanelControl;
-            
-            if (tiklananPanel == null)
+            Control kontrol = sender as Control;
+
+            if (kontrol == null)
                 return;
 
-            int masaID = Convert.ToInt32(tiklananPanel.Tag);
+            PanelControl masaPaneli = null;
+            while (kontrol != null)
+            {
+                if (kontrol is PanelControl panel &&
+                    panel.Name.StartsWith("pnlmasa"))
+                {
+                    masaPaneli = panel;
+                    break;
+                }
+                kontrol = kontrol.Parent;      
+            }
 
-            FrmSiparis frm = new FrmSiparis();
-            frm.SecilenMasaID = masaID;
-            frm.ShowDialog();
+            if (masaPaneli == null)
+                return;
+
+            if (!int.TryParse(masaPaneli.Tag?.ToString(), out int masaID))
+            {
+                MessageBox.Show(
+                    "Masa numarası bulunamadı. Panelin Tag değerini kontrol edin.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            using (FrmSiparis frm = new FrmSiparis())
+            {
+                frm.SecilenMasaID = masaID;
+                frm.ShowDialog();
+            }
 
             MasaDurumlariniGetir();
+
         }
+
+        
     }
 }

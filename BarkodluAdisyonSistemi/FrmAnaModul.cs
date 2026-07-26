@@ -70,15 +70,10 @@ namespace BarkodluAdisyonSistemi
                 fr4.Show();
             }
         }
-        FrmSiparis fr5;
+        
         private void btnSiparis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (fr5 == null)
-            {
-                fr5 = new FrmSiparis();
-                fr5.MdiParent = this;
-                fr5.Show();
-            }
+            
         }
         private void btnKategoriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {

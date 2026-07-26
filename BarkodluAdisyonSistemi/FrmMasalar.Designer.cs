@@ -157,6 +157,7 @@
             this.lblMasaKisi1.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi1.TabIndex = 2;
             this.lblMasaKisi1.Text = "4 kişilik";
+            this.lblMasaKisi1.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum1
             // 
@@ -174,6 +175,7 @@
             this.lblDurum1.Size = new System.Drawing.Size(221, 35);
             this.lblDurum1.TabIndex = 1;
             this.lblDurum1.Text = "Boş";
+            this.lblDurum1.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaAdi1
             // 
@@ -194,6 +196,7 @@
             this.lblMasaAdi1.Size = new System.Drawing.Size(221, 45);
             this.lblMasaAdi1.TabIndex = 0;
             this.lblMasaAdi1.Text = "Masa 1";
+            this.lblMasaAdi1.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa2
             // 
@@ -225,6 +228,7 @@
             this.lblMasaKisi2.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi2.TabIndex = 2;
             this.lblMasaKisi2.Text = "4 kişilik";
+            this.lblMasaKisi2.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum2
             // 
@@ -242,6 +246,7 @@
             this.lblDurum2.Size = new System.Drawing.Size(221, 35);
             this.lblDurum2.TabIndex = 1;
             this.lblDurum2.Text = "Dolu";
+            this.lblDurum2.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa2
             // 
@@ -262,6 +267,7 @@
             this.lblMasa2.Size = new System.Drawing.Size(221, 45);
             this.lblMasa2.TabIndex = 0;
             this.lblMasa2.Text = "Masa 2";
+            this.lblMasa2.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa3
             // 
@@ -293,6 +299,7 @@
             this.lblMasaKisi3.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi3.TabIndex = 2;
             this.lblMasaKisi3.Text = "4 kişilik";
+            this.lblMasaKisi3.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum3
             // 
@@ -310,6 +317,7 @@
             this.lblDurum3.Size = new System.Drawing.Size(221, 35);
             this.lblDurum3.TabIndex = 1;
             this.lblDurum3.Text = "Rezerve";
+            this.lblDurum3.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa3
             // 
@@ -330,6 +338,7 @@
             this.lblMasa3.Size = new System.Drawing.Size(221, 45);
             this.lblMasa3.TabIndex = 0;
             this.lblMasa3.Text = "Masa 3";
+            this.lblMasa3.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa4
             // 
@@ -361,6 +370,7 @@
             this.lblMasaKisi4.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi4.TabIndex = 2;
             this.lblMasaKisi4.Text = "4 kişilik";
+            this.lblMasaKisi4.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum4
             // 
@@ -378,6 +388,7 @@
             this.lblDurum4.Size = new System.Drawing.Size(221, 35);
             this.lblDurum4.TabIndex = 1;
             this.lblDurum4.Text = "Boş";
+            this.lblDurum4.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa4
             // 
@@ -398,6 +409,7 @@
             this.lblMasa4.Size = new System.Drawing.Size(221, 45);
             this.lblMasa4.TabIndex = 0;
             this.lblMasa4.Text = "Masa 4";
+            this.lblMasa4.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa5
             // 
@@ -429,6 +441,7 @@
             this.lblMasaKisi5.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi5.TabIndex = 2;
             this.lblMasaKisi5.Text = "4 kişilik";
+            this.lblMasaKisi5.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum5
             // 
@@ -446,6 +459,7 @@
             this.lblDurum5.Size = new System.Drawing.Size(221, 35);
             this.lblDurum5.TabIndex = 1;
             this.lblDurum5.Text = "Boş";
+            this.lblDurum5.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa5
             // 
@@ -466,6 +480,7 @@
             this.lblMasa5.Size = new System.Drawing.Size(221, 45);
             this.lblMasa5.TabIndex = 0;
             this.lblMasa5.Text = "Masa 5";
+            this.lblMasa5.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa6
             // 
@@ -497,6 +512,7 @@
             this.lblMasaKisi6.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi6.TabIndex = 2;
             this.lblMasaKisi6.Text = "4 kişilik";
+            this.lblMasaKisi6.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum6
             // 
@@ -514,6 +530,7 @@
             this.lblDurum6.Size = new System.Drawing.Size(221, 35);
             this.lblDurum6.TabIndex = 1;
             this.lblDurum6.Text = "Boş";
+            this.lblDurum6.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa6
             // 
@@ -534,6 +551,7 @@
             this.lblMasa6.Size = new System.Drawing.Size(221, 45);
             this.lblMasa6.TabIndex = 0;
             this.lblMasa6.Text = "Masa 6";
+            this.lblMasa6.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa7
             // 
@@ -565,6 +583,7 @@
             this.lblMasaKisi7.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi7.TabIndex = 2;
             this.lblMasaKisi7.Text = "4 kişilik";
+            this.lblMasaKisi7.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum7
             // 
@@ -582,6 +601,7 @@
             this.lblDurum7.Size = new System.Drawing.Size(221, 35);
             this.lblDurum7.TabIndex = 1;
             this.lblDurum7.Text = "Boş";
+            this.lblDurum7.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa7
             // 
@@ -602,6 +622,7 @@
             this.lblMasa7.Size = new System.Drawing.Size(221, 45);
             this.lblMasa7.TabIndex = 0;
             this.lblMasa7.Text = "Masa 7";
+            this.lblMasa7.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa8
             // 
@@ -633,6 +654,7 @@
             this.lblMasaKisi8.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi8.TabIndex = 2;
             this.lblMasaKisi8.Text = "4 kişilik";
+            this.lblMasaKisi8.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum8
             // 
@@ -650,6 +672,7 @@
             this.lblDurum8.Size = new System.Drawing.Size(221, 35);
             this.lblDurum8.TabIndex = 1;
             this.lblDurum8.Text = "Dolu";
+            this.lblDurum8.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa8
             // 
@@ -670,6 +693,7 @@
             this.lblMasa8.Size = new System.Drawing.Size(221, 45);
             this.lblMasa8.TabIndex = 0;
             this.lblMasa8.Text = "Masa 8";
+            this.lblMasa8.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa9
             // 
@@ -701,6 +725,7 @@
             this.lblMasaKisi9.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi9.TabIndex = 2;
             this.lblMasaKisi9.Text = "4 kişilik";
+            this.lblMasaKisi9.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum9
             // 
@@ -718,6 +743,7 @@
             this.lblDurum9.Size = new System.Drawing.Size(221, 35);
             this.lblDurum9.TabIndex = 1;
             this.lblDurum9.Text = "Dolu";
+            this.lblDurum9.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa9
             // 
@@ -738,6 +764,7 @@
             this.lblMasa9.Size = new System.Drawing.Size(221, 45);
             this.lblMasa9.TabIndex = 0;
             this.lblMasa9.Text = "Masa 9";
+            this.lblMasa9.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa10
             // 
@@ -769,6 +796,7 @@
             this.lblMasaKisi10.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi10.TabIndex = 2;
             this.lblMasaKisi10.Text = "4 kişilik";
+            this.lblMasaKisi10.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum10
             // 
@@ -786,6 +814,7 @@
             this.lblDurum10.Size = new System.Drawing.Size(221, 35);
             this.lblDurum10.TabIndex = 1;
             this.lblDurum10.Text = "Rezerve";
+            this.lblDurum10.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa10
             // 
@@ -806,6 +835,7 @@
             this.lblMasa10.Size = new System.Drawing.Size(221, 45);
             this.lblMasa10.TabIndex = 0;
             this.lblMasa10.Text = "Masa 10";
+            this.lblMasa10.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa11
             // 
@@ -837,6 +867,7 @@
             this.lblMasaKisi11.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi11.TabIndex = 2;
             this.lblMasaKisi11.Text = "4 kişilik";
+            this.lblMasaKisi11.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum11
             // 
@@ -854,6 +885,7 @@
             this.lblDurum11.Size = new System.Drawing.Size(221, 35);
             this.lblDurum11.TabIndex = 1;
             this.lblDurum11.Text = "Rezerve";
+            this.lblDurum11.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa11
             // 
@@ -874,6 +906,7 @@
             this.lblMasa11.Size = new System.Drawing.Size(221, 45);
             this.lblMasa11.TabIndex = 0;
             this.lblMasa11.Text = "Masa 11";
+            this.lblMasa11.Click += new System.EventHandler(this.Masa_Click);
             // 
             // pnlMasa12
             // 
@@ -905,6 +938,7 @@
             this.lblMasaKisi12.Size = new System.Drawing.Size(221, 66);
             this.lblMasaKisi12.TabIndex = 2;
             this.lblMasaKisi12.Text = "4 kişilik";
+            this.lblMasaKisi12.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblDurum12
             // 
@@ -922,6 +956,7 @@
             this.lblDurum12.Size = new System.Drawing.Size(221, 35);
             this.lblDurum12.TabIndex = 1;
             this.lblDurum12.Text = "Boş";
+            this.lblDurum12.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasa12
             // 
@@ -942,6 +977,7 @@
             this.lblMasa12.Size = new System.Drawing.Size(221, 45);
             this.lblMasa12.TabIndex = 0;
             this.lblMasa12.Text = "Masa 12";
+            this.lblMasa12.Click += new System.EventHandler(this.Masa_Click);
             // 
             // FrmMasalar
             // 

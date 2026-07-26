@@ -17,6 +17,10 @@ namespace BarkodluAdisyonSistemi
         {
             InitializeComponent();
         }
+        private void FrmSiparis_Load(object sender, EventArgs e)
+        {
+            lblMasaAdi.Text = "Masa " + SecilenMasaID;
+        }
 
         private void labelControl1_Click(object sender, EventArgs e)
         {
@@ -38,9 +42,6 @@ namespace BarkodluAdisyonSistemi
 
         }
 
-        private void FrmSiparis_Load(object sender, EventArgs e)
-        {
-            lblMasaAdi.Text = "Masa " + SecilenMasaID;
-        }
+        
     }
 }
