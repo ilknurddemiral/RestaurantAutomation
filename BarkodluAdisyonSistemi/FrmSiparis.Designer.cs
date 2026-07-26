@@ -205,6 +205,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmSiparis";
             this.Text = "SİPARİŞ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmSiparis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

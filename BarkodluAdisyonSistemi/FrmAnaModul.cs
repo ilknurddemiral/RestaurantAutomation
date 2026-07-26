@@ -18,16 +18,11 @@ namespace BarkodluAdisyonSistemi
             InitializeComponent();
 
         }
-
-        private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void FrmAnaModul_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         FrmUrunler fr;
         private void btnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -159,7 +154,11 @@ namespace BarkodluAdisyonSistemi
         {
 
         }
+        private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
 
-        
+        }
+
+
     }
 }

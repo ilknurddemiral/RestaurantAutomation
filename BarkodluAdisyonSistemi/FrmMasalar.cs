@@ -28,6 +28,25 @@ namespace BarkodluAdisyonSistemi
         private void FrmMasalar_Load(object sender, EventArgs e)
         {
             MasaDurumlariniGetir();
+
+            for (int i =1; i<=20; i++)
+            {
+                PanelControl panel =
+                    this.Controls.Find("pnlMasa" + i, true)
+                    .FirstOrDefault() as PanelControl;
+
+                if (panel == null)
+                    continue;
+
+                panel.Click -= Masa_Click;
+                panel.Click += Masa_Click;
+
+                foreach (Control kontrol in panel.Controls)
+                {
+                    panel.Click -= Masa_Click;
+                    panel.Click += Masa_Click;
+                }
+            }
         }
         public void MasaDurumlariniGetir()
         {
@@ -95,16 +114,21 @@ namespace BarkodluAdisyonSistemi
                 return;
 
             PanelControl masaPaneli = null;
+
             while (kontrol != null)
             {
-                if (kontrol is PanelControl panel &&
-                    panel.Name.StartsWith("pnlmasa"))
+                PanelControl panel = kontrol as PanelControl;
+
+                if (panel != null && 
+                    panel.Name.StartsWith("pnlMasa"))
                 {
                     masaPaneli = panel;
                     break;
                 }
+
                 kontrol = kontrol.Parent;      
             }
+
 
             if (masaPaneli == null)
                 return;
@@ -120,13 +144,21 @@ namespace BarkodluAdisyonSistemi
                 return;
             }
 
-            using (FrmSiparis frm = new FrmSiparis())
+            Form anaForm = this.MdiParent;
+
+            if (anaForm == null)
             {
-                frm.SecilenMasaID = masaID;
-                frm.ShowDialog();
+                MessageBox.Show("Ana form bulunamadı.");
+                return;
             }
 
-            MasaDurumlariniGetir();
+            FrmSiparis frm = new FrmSiparis();
+
+            frm.SecilenMasaID = masaID;
+            frm.MdiParent = anaForm; 
+            frm.Show();
+
+            this.Hide();
 
         }
 
