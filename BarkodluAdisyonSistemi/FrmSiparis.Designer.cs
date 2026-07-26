@@ -34,8 +34,8 @@
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.lblMasaAdi = new DevExpress.XtraEditors.LabelControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnArttır = new DevExpress.XtraEditors.SimpleButton();
             this.btnEksilt = new DevExpress.XtraEditors.SimpleButton();
             this.btnHesabiKapat = new DevExpress.XtraEditors.SimpleButton();
@@ -105,21 +105,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1282, 653);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
-            // panelControl1
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panelControl1, 2);
-            this.panelControl1.Controls.Add(this.btnArttır);
-            this.panelControl1.Controls.Add(this.btnEksilt);
-            this.panelControl1.Controls.Add(this.btnHesabiKapat);
-            this.panelControl1.Controls.Add(this.txtToplamTutar);
-            this.panelControl1.Controls.Add(this.btnkaydet);
-            this.panelControl1.Controls.Add(this.btnSil);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(3, 467);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1276, 183);
-            this.panelControl1.TabIndex = 10;
-            // 
             // lblMasaAdi
             // 
             this.lblMasaAdi.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -134,6 +119,21 @@
             this.lblMasaAdi.Size = new System.Drawing.Size(1276, 38);
             this.lblMasaAdi.TabIndex = 11;
             this.lblMasaAdi.Text = "Masa 1";
+            // 
+            // panelControl1
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.panelControl1, 2);
+            this.panelControl1.Controls.Add(this.btnArttır);
+            this.panelControl1.Controls.Add(this.btnEksilt);
+            this.panelControl1.Controls.Add(this.btnHesabiKapat);
+            this.panelControl1.Controls.Add(this.txtToplamTutar);
+            this.panelControl1.Controls.Add(this.btnkaydet);
+            this.panelControl1.Controls.Add(this.btnSil);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(3, 467);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(1276, 183);
+            this.panelControl1.TabIndex = 10;
             // 
             // btnArttır
             // 
@@ -205,6 +205,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmSiparis";
             this.Text = "SİPARİŞ";
+            this.Load += new System.EventHandler(this.FrmSiparis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();

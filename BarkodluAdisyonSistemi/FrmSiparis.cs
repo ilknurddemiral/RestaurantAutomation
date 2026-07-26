@@ -12,6 +12,7 @@ namespace BarkodluAdisyonSistemi
 {
     public partial class FrmSiparis : Form
     {
+        public int SecilenMasaID { get; set; }
         public FrmSiparis()
         {
             InitializeComponent();
@@ -35,6 +36,11 @@ namespace BarkodluAdisyonSistemi
         private void gridControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmSiparis_Load(object sender, EventArgs e)
+        {
+            lblMasaAdi.Text = "Masa " + SecilenMasaID;
         }
     }
 }
