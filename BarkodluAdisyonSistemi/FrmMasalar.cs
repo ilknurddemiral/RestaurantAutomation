@@ -89,7 +89,18 @@ namespace BarkodluAdisyonSistemi
 
         private void Masa_Click(object sender, EventArgs e)
         {
+            PanelControl tiklananPanel = sender as PanelControl;
+            
+            if (tiklananPanel == null)
+                return;
 
+            int masaID = Convert.ToInt32(tiklananPanel.Tag);
+
+            FrmSiparis frm = new FrmSiparis();
+            frm.SecilenMasaID = masaID;
+            frm.ShowDialog();
+
+            MasaDurumlariniGetir();
         }
     }
 }
