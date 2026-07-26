@@ -15,12 +15,13 @@ namespace BarkodluAdisyonSistemi
     public partial class FrmSiparis : Form
     {
         public int SecilenMasaID { get; set; }
+
         sqlBaglantisi bgl = new sqlBaglantisi();
-        private int masaID;
-        public FrmSiparis(int gelenMasaID)
+    
+        public FrmSiparis()
         {
             InitializeComponent();
-            masaID = gelenMasaID;
+            
         }
         private void FrmSiparis_Load(object sender, EventArgs e)
         {
@@ -33,9 +34,13 @@ namespace BarkodluAdisyonSistemi
             try
             {
                 SqlDataAdapter da = new SqlDataAdapter(
-                    @"Select UrunID, UrunAdi, SatisAdi,Stok
-                      From TBL_URUNLER
-                      Where AktifMi =1",
+                    @"Select
+                      UrunID, 
+                      UrunAd,
+                      KategoriID,
+                      AlisFiyat,
+                      SatisFiyat
+                      From TBL_URUNLER",
                     bgl.baglanti());
 
                 DataTable dt = new DataTable();

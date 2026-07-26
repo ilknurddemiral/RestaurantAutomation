@@ -55,6 +55,7 @@
             // gridControlUrunler
             // 
             this.gridControlUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlUrunler.Font = new System.Drawing.Font("Tahoma", 7.8F);
             this.gridControlUrunler.Location = new System.Drawing.Point(3, 47);
             this.gridControlUrunler.MainView = this.gridViewUrunler;
             this.gridControlUrunler.Name = "gridControlUrunler";
@@ -68,6 +69,8 @@
             // 
             this.gridViewUrunler.GridControl = this.gridControlUrunler;
             this.gridViewUrunler.Name = "gridViewUrunler";
+            this.gridViewUrunler.OptionsBehavior.Editable = false;
+            this.gridViewUrunler.OptionsView.ShowGroupPanel = false;
             // 
             // gridControlSiparis
             // 
@@ -84,6 +87,8 @@
             // 
             this.gridViewSiparis.GridControl = this.gridControlSiparis;
             this.gridViewSiparis.Name = "gridViewSiparis";
+            this.gridViewSiparis.OptionsBehavior.Editable = false;
+            this.gridViewSiparis.OptionsView.ShowGroupPanel = false;
             // 
             // tableLayoutPanel1
             // 
@@ -137,6 +142,7 @@
             // 
             // btnArttır
             // 
+            this.btnArttır.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnArttır.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnArttır.Appearance.Options.UseFont = true;
             this.btnArttır.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnArttır.ImageOptions.Image")));
@@ -148,6 +154,7 @@
             // 
             // btnEksilt
             // 
+            this.btnEksilt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEksilt.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEksilt.Appearance.Options.UseFont = true;
             this.btnEksilt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEksilt.ImageOptions.Image")));
@@ -159,6 +166,7 @@
             // 
             // btnHesabiKapat
             // 
+            this.btnHesabiKapat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHesabiKapat.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHesabiKapat.Appearance.Options.UseFont = true;
             this.btnHesabiKapat.Location = new System.Drawing.Point(565, 145);
@@ -169,6 +177,7 @@
             // 
             // txtToplamTutar
             // 
+            this.txtToplamTutar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtToplamTutar.Enabled = false;
             this.txtToplamTutar.Location = new System.Drawing.Point(455, 61);
             this.txtToplamTutar.Name = "txtToplamTutar";
@@ -178,6 +187,7 @@
             // 
             // btnkaydet
             // 
+            this.btnkaydet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnkaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnkaydet.Appearance.Options.UseFont = true;
             this.btnkaydet.Location = new System.Drawing.Point(565, 99);
@@ -188,6 +198,7 @@
             // 
             // btnSil
             // 
+            this.btnSil.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.Appearance.Options.UseFont = true;
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
