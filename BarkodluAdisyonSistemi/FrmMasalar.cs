@@ -86,5 +86,10 @@ namespace BarkodluAdisyonSistemi
             bgl.baglanti().Close();
 
         }
+
+        private void Masa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

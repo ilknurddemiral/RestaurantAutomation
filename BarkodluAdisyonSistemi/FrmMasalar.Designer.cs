@@ -30,9 +30,9 @@
         {
             this.flpMasalar = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlMasa1 = new DevExpress.XtraEditors.PanelControl();
-            this.lblMasaAdi1 = new DevExpress.XtraEditors.LabelControl();
-            this.lblDurum1 = new DevExpress.XtraEditors.LabelControl();
             this.lblMasaKisi1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDurum1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblMasaAdi1 = new DevExpress.XtraEditors.LabelControl();
             this.pnlMasa2 = new DevExpress.XtraEditors.PanelControl();
             this.lblMasaKisi2 = new DevExpress.XtraEditors.LabelControl();
             this.lblDurum2 = new DevExpress.XtraEditors.LabelControl();
@@ -138,6 +138,42 @@
             this.pnlMasa1.Name = "pnlMasa1";
             this.pnlMasa1.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa1.TabIndex = 0;
+            this.pnlMasa1.Tag = "1";
+            this.pnlMasa1.Click += new System.EventHandler(this.Masa_Click);
+            // 
+            // lblMasaKisi1
+            // 
+            this.lblMasaKisi1.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMasaKisi1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMasaKisi1.Appearance.Options.UseBackColor = true;
+            this.lblMasaKisi1.Appearance.Options.UseFont = true;
+            this.lblMasaKisi1.Appearance.Options.UseTextOptions = true;
+            this.lblMasaKisi1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblMasaKisi1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblMasaKisi1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblMasaKisi1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMasaKisi1.Location = new System.Drawing.Point(2, 47);
+            this.lblMasaKisi1.Name = "lblMasaKisi1";
+            this.lblMasaKisi1.Size = new System.Drawing.Size(221, 66);
+            this.lblMasaKisi1.TabIndex = 2;
+            this.lblMasaKisi1.Text = "4 kişilik";
+            // 
+            // lblDurum1
+            // 
+            this.lblDurum1.Appearance.BackColor = System.Drawing.Color.SpringGreen;
+            this.lblDurum1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum1.Appearance.Options.UseBackColor = true;
+            this.lblDurum1.Appearance.Options.UseFont = true;
+            this.lblDurum1.Appearance.Options.UseTextOptions = true;
+            this.lblDurum1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.lblDurum1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.lblDurum1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblDurum1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblDurum1.Location = new System.Drawing.Point(2, 113);
+            this.lblDurum1.Name = "lblDurum1";
+            this.lblDurum1.Size = new System.Drawing.Size(221, 35);
+            this.lblDurum1.TabIndex = 1;
+            this.lblDurum1.Text = "Boş";
             // 
             // lblMasaAdi1
             // 
@@ -159,40 +195,6 @@
             this.lblMasaAdi1.TabIndex = 0;
             this.lblMasaAdi1.Text = "Masa 1";
             // 
-            // lblDurum1
-            // 
-            this.lblDurum1.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.lblDurum1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDurum1.Appearance.Options.UseBackColor = true;
-            this.lblDurum1.Appearance.Options.UseFont = true;
-            this.lblDurum1.Appearance.Options.UseTextOptions = true;
-            this.lblDurum1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lblDurum1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.lblDurum1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblDurum1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblDurum1.Location = new System.Drawing.Point(2, 113);
-            this.lblDurum1.Name = "lblDurum1";
-            this.lblDurum1.Size = new System.Drawing.Size(221, 35);
-            this.lblDurum1.TabIndex = 1;
-            this.lblDurum1.Text = "Boş";
-            // 
-            // lblMasaKisi1
-            // 
-            this.lblMasaKisi1.Appearance.BackColor = System.Drawing.Color.LightSlateGray;
-            this.lblMasaKisi1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMasaKisi1.Appearance.Options.UseBackColor = true;
-            this.lblMasaKisi1.Appearance.Options.UseFont = true;
-            this.lblMasaKisi1.Appearance.Options.UseTextOptions = true;
-            this.lblMasaKisi1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lblMasaKisi1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.lblMasaKisi1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblMasaKisi1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMasaKisi1.Location = new System.Drawing.Point(2, 47);
-            this.lblMasaKisi1.Name = "lblMasaKisi1";
-            this.lblMasaKisi1.Size = new System.Drawing.Size(221, 66);
-            this.lblMasaKisi1.TabIndex = 2;
-            this.lblMasaKisi1.Text = "4 kişilik";
-            // 
             // pnlMasa2
             // 
             this.pnlMasa2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -204,6 +206,8 @@
             this.pnlMasa2.Name = "pnlMasa2";
             this.pnlMasa2.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa2.TabIndex = 1;
+            this.pnlMasa2.Tag = "2";
+            this.pnlMasa2.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi2
             // 
@@ -270,6 +274,8 @@
             this.pnlMasa3.Name = "pnlMasa3";
             this.pnlMasa3.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa3.TabIndex = 2;
+            this.pnlMasa3.Tag = "3";
+            this.pnlMasa3.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi3
             // 
@@ -336,6 +342,8 @@
             this.pnlMasa4.Name = "pnlMasa4";
             this.pnlMasa4.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa4.TabIndex = 3;
+            this.pnlMasa4.Tag = "4";
+            this.pnlMasa4.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi4
             // 
@@ -402,6 +410,8 @@
             this.pnlMasa5.Name = "pnlMasa5";
             this.pnlMasa5.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa5.TabIndex = 4;
+            this.pnlMasa5.Tag = "5";
+            this.pnlMasa5.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi5
             // 
@@ -468,6 +478,8 @@
             this.pnlMasa6.Name = "pnlMasa6";
             this.pnlMasa6.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa6.TabIndex = 3;
+            this.pnlMasa6.Tag = "6";
+            this.pnlMasa6.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi6
             // 
@@ -534,6 +546,8 @@
             this.pnlMasa7.Name = "pnlMasa7";
             this.pnlMasa7.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa7.TabIndex = 5;
+            this.pnlMasa7.Tag = "7";
+            this.pnlMasa7.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi7
             // 
@@ -600,6 +614,8 @@
             this.pnlMasa8.Name = "pnlMasa8";
             this.pnlMasa8.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa8.TabIndex = 6;
+            this.pnlMasa8.Tag = "8";
+            this.pnlMasa8.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi8
             // 
@@ -666,6 +682,8 @@
             this.pnlMasa9.Name = "pnlMasa9";
             this.pnlMasa9.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa9.TabIndex = 3;
+            this.pnlMasa9.Tag = "9";
+            this.pnlMasa9.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi9
             // 
@@ -732,6 +750,8 @@
             this.pnlMasa10.Name = "pnlMasa10";
             this.pnlMasa10.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa10.TabIndex = 7;
+            this.pnlMasa10.Tag = "10";
+            this.pnlMasa10.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi10
             // 
@@ -798,6 +818,8 @@
             this.pnlMasa11.Name = "pnlMasa11";
             this.pnlMasa11.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa11.TabIndex = 3;
+            this.pnlMasa11.Tag = "11";
+            this.pnlMasa11.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi11
             // 
@@ -864,6 +886,8 @@
             this.pnlMasa12.Name = "pnlMasa12";
             this.pnlMasa12.Size = new System.Drawing.Size(225, 150);
             this.pnlMasa12.TabIndex = 8;
+            this.pnlMasa12.Tag = "12";
+            this.pnlMasa12.Click += new System.EventHandler(this.Masa_Click);
             // 
             // lblMasaKisi12
             // 
