@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DevExpress.XtraEditors;
+using DevExpress.LookAndFeel.Design;
 
 namespace BarkodluAdisyonSistemi
 {
@@ -27,7 +28,6 @@ namespace BarkodluAdisyonSistemi
 
         private void FrmMasalar_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Masa durumları çalıştı");
             MasaDurumlariniGetir();
 
             for (int i =1; i<=20; i++)
@@ -69,44 +69,41 @@ namespace BarkodluAdisyonSistemi
                 LabelControl lblDurum =
                     this.Controls.Find("lblDurum" + id, true).FirstOrDefault() as LabelControl;
 
-                if ( panel != null)
+                if (panel != null)
                 {
+                    panel.LookAndFeel.UseDefaultLookAndFeel = false;
+                    panel.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+
+                    panel.Appearance.Options.UseBackColor = true;
+
                     switch (durum)
                     {
                         case 0:
-                            panel.Appearance.BackColor = Color.LightGreen;
-
                             if (lblDurum != null)
                             {
-                            lblDurum.Text = "DOLU";
-                            lblDurum.Appearance.ForeColor = Color.DarkGreen;
+                            lblDurum.Text = "BOŞ";
+                            lblDurum.Appearance.BackColor = Color.LightGreen;
                             }
                             break;
 
                         case 1:
-                            panel.Appearance.BackColor = Color.IndianRed;
-
                             if (lblDurum != null)
                             {
-                                lblDurum.Text = "BOŞ";
-                                lblDurum.Appearance.ForeColor = Color.DarkRed;
+                                lblDurum.Text = "DOLU";
+                                lblDurum.Appearance.BackColor = Color.IndianRed;
                             }
                             break;
 
                         case 2:
-                            panel.Appearance.BackColor = Color.Orange;
-
                             if (lblDurum != null)
                             {
                                 lblDurum.Text = "REZERVE";
-                                lblDurum.Appearance.ForeColor = Color.DarkOrange;
+                                lblDurum.Appearance.BackColor = Color.Orange;
                             }
                             break;
 
                         default:
-                            panel.Appearance.BackColor = Color.LightGray;
-
-                            if(lblDurum != null)
+                           if(lblDurum != null)
                             {
                                 lblDurum.Text = "BİLİNMİYOR";
                                 lblDurum.Appearance.ForeColor = Color.DimGray;
