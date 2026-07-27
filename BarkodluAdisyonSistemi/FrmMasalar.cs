@@ -51,10 +51,10 @@ namespace BarkodluAdisyonSistemi
         }
         public void MasaDurumlariniGetir()
         {
-            SqlConnection baglanti = bgl.baglanti();
+            
             SqlCommand komut = new SqlCommand(
                 "Select MasaID, Durum From TBL_MASALAR",
-                baglanti);
+                bgl.baglanti());
 
             SqlDataReader dr = komut.ExecuteReader();
 
@@ -123,7 +123,7 @@ namespace BarkodluAdisyonSistemi
                 }
             }
             dr.Close();
-            baglanti.Close();
+            bgl.baglanti().Close();
 
         }
 

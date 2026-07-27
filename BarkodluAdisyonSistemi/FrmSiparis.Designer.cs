@@ -42,6 +42,7 @@
             this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSiparis)).BeginInit();
@@ -128,6 +129,7 @@
             // panelControl1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panelControl1, 2);
+            this.panelControl1.Controls.Add(this.simpleButton1);
             this.panelControl1.Controls.Add(this.btnArttır);
             this.panelControl1.Controls.Add(this.btnEksilt);
             this.panelControl1.Controls.Add(this.btnHesabiKapat);
@@ -146,9 +148,9 @@
             this.btnArttır.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnArttır.Appearance.Options.UseFont = true;
             this.btnArttır.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnArttır.ImageOptions.Image")));
-            this.btnArttır.Location = new System.Drawing.Point(455, 5);
+            this.btnArttır.Location = new System.Drawing.Point(642, 7);
             this.btnArttır.Name = "btnArttır";
-            this.btnArttır.Size = new System.Drawing.Size(101, 35);
+            this.btnArttır.Size = new System.Drawing.Size(100, 35);
             this.btnArttır.TabIndex = 9;
             this.btnArttır.Text = "Arttır";
             // 
@@ -158,9 +160,9 @@
             this.btnEksilt.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEksilt.Appearance.Options.UseFont = true;
             this.btnEksilt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEksilt.ImageOptions.Image")));
-            this.btnEksilt.Location = new System.Drawing.Point(605, 5);
+            this.btnEksilt.Location = new System.Drawing.Point(748, 7);
             this.btnEksilt.Name = "btnEksilt";
-            this.btnEksilt.Size = new System.Drawing.Size(101, 35);
+            this.btnEksilt.Size = new System.Drawing.Size(100, 35);
             this.btnEksilt.TabIndex = 10;
             this.btnEksilt.Text = "Eksilt";
             // 
@@ -179,10 +181,11 @@
             // 
             this.txtToplamTutar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtToplamTutar.Enabled = false;
-            this.txtToplamTutar.Location = new System.Drawing.Point(455, 61);
+            this.txtToplamTutar.Location = new System.Drawing.Point(470, 58);
             this.txtToplamTutar.Name = "txtToplamTutar";
+            this.txtToplamTutar.Properties.AutoHeight = false;
             this.txtToplamTutar.Properties.ReadOnly = true;
-            this.txtToplamTutar.Size = new System.Drawing.Size(376, 22);
+            this.txtToplamTutar.Size = new System.Drawing.Size(340, 35);
             this.txtToplamTutar.TabIndex = 14;
             // 
             // btnkaydet
@@ -202,11 +205,23 @@
             this.btnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.Appearance.Options.UseFont = true;
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(740, 8);
+            this.btnSil.Location = new System.Drawing.Point(536, 7);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(94, 29);
+            this.btnSil.Size = new System.Drawing.Size(100, 35);
             this.btnSil.TabIndex = 11;
             this.btnSil.Text = "Sil";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(430, 7);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(100, 35);
+            this.simpleButton1.TabIndex = 15;
+            this.simpleButton1.Text = "Ekle";
             // 
             // FrmSiparis
             // 
@@ -245,5 +260,6 @@
         private DevExpress.XtraEditors.TextEdit txtToplamTutar;
         private DevExpress.XtraEditors.SimpleButton btnkaydet;
         private DevExpress.XtraEditors.SimpleButton btnSil;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
