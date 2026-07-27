@@ -27,6 +27,7 @@ namespace BarkodluAdisyonSistemi
 
         private void FrmMasalar_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Masa durumları çalıştı");
             MasaDurumlariniGetir();
 
             for (int i =1; i<=20; i++)
@@ -50,16 +51,17 @@ namespace BarkodluAdisyonSistemi
         }
         public void MasaDurumlariniGetir()
         {
+            SqlConnection baglanti = bgl.baglanti();
             SqlCommand komut = new SqlCommand(
                 "Select MasaID, Durum From TBL_MASALAR",
-                bgl.baglanti());
+                baglanti);
 
             SqlDataReader dr = komut.ExecuteReader();
 
             while (dr.Read())
             {
                 int id = Convert.ToInt32(dr["MasaID"]);
-                bool durum = Convert.ToBoolean(dr["Durum"]);
+                byte durum = Convert.ToByte(dr["Durum"]);
 
                 PanelControl panel =
                     this.Controls.Find("pnlMasa" + id, true).FirstOrDefault() as PanelControl;
@@ -69,28 +71,50 @@ namespace BarkodluAdisyonSistemi
 
                 if ( panel != null)
                 {
-                    if (durum)
+                    switch (durum)
                     {
-                        panel.Appearance.BackColor = Color.IndianRed;
+                        case 0:
+                            panel.Appearance.BackColor = Color.LightGreen;
 
-                        if (lblDurum != null)
-                        {
+                            if (lblDurum != null)
+                            {
                             lblDurum.Text = "DOLU";
-                            lblDurum.Appearance.ForeColor = Color.DarkRed;
-                        }
-                    }
-
-                    else
-                    {
-                        panel.Appearance.BackColor = Color.LightGreen;
-
-                        if (lblDurum != null)
-                        {
-                            lblDurum.Text = "BOŞ";
                             lblDurum.Appearance.ForeColor = Color.DarkGreen;
-                        }
+                            }
+                            break;
+
+                        case 1:
+                            panel.Appearance.BackColor = Color.IndianRed;
+
+                            if (lblDurum != null)
+                            {
+                                lblDurum.Text = "BOŞ";
+                                lblDurum.Appearance.ForeColor = Color.DarkRed;
+                            }
+                            break;
+
+                        case 2:
+                            panel.Appearance.BackColor = Color.Orange;
+
+                            if (lblDurum != null)
+                            {
+                                lblDurum.Text = "REZERVE";
+                                lblDurum.Appearance.ForeColor = Color.DarkOrange;
+                            }
+                            break;
+
+                        default:
+                            panel.Appearance.BackColor = Color.LightGray;
+
+                            if(lblDurum != null)
+                            {
+                                lblDurum.Text = "BİLİNMİYOR";
+                                lblDurum.Appearance.ForeColor = Color.DimGray;
+                            }
+                            break;
+
                     }
-                       
+
 
                     panel.Appearance.Options.UseBackColor = true;
 
@@ -102,7 +126,7 @@ namespace BarkodluAdisyonSistemi
                 }
             }
             dr.Close();
-            bgl.baglanti().Close();
+            baglanti.Close();
 
         }
 
