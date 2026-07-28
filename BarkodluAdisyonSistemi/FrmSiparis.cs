@@ -219,8 +219,8 @@ namespace BarkodluAdisyonSistemi
                                   Output Inserted.SiparisID
                                   Values
                                   (
-                                    @MasaID
-                                    Getdate(),
+                                    @MasaID,
+                                    GETDATE(),
                                     0,
                                     N'Açık'
                                    )",
@@ -239,7 +239,7 @@ namespace BarkodluAdisyonSistemi
                         SqlCommand detayBulKomutu = new SqlCommand(
                             @"Select SiparisDetayID
                               From TBL_SIPARISDETAY
-                              Where SiparisID = @SipraisID
+                              Where SiparisID = @SiparisID
                               And UrunId = @UrunID",
                             baglanti,
                             transaction);
@@ -265,7 +265,7 @@ namespace BarkodluAdisyonSistemi
                                   (
                                       @SiparisID,
                                       @UrunID,
-                                      1
+                                      1,
                                       @BirimFiyat,
                                       @BirimFiyat
                                    )",
@@ -282,7 +282,7 @@ namespace BarkodluAdisyonSistemi
                         else
                         {
                             MessageBox.Show("Bu ürün zaten bulunuyor.\n" +
-                                "Miktarı arttırmak için Artır butonunu kullanın.",
+                                "Miktarı artırmak için Artır butonunu kullanın.",
                                 "Bilgi",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
