@@ -121,19 +121,22 @@ namespace BarkodluAdisyonSistemi
             txtToplamTutar.Text = "Toplam: " + SatisToplam.ToString("C2", new System.Globalization.CultureInfo("tr-TR"));
         }
 
-        private void SiparisToplaminiGuncelle(SqlConnection baglanti, int siparisID)
+        private void SiparisToplaminiGuncelle(SqlConnection baglanti, SqlTransaction transaction, int siparisID)
         {
             SqlCommand komut = new SqlCommand(
-                @"Update TBL_SIPARISLER
-                  Set ToplamTutar = 
-                  (  
-                     Select IsNull(Sum(SatisToplam), 0)
-                     From TBL_SIPARISDETAY
-                     Where SiparisID = @SiparisID
-                  )
-                  Where SiparisID = @SiparisID",
-                 baglanti);
-            komut.Parameters.AddWithValue("@SiparisId", siparisID);
+                @"UPDATE TBL_SIPARISLER
+                 SET ToplamTutar =
+                (
+                   SELECT ISNULL(SUM(SatisToplam), 0)
+                   FROM TBL_SIPARISDETAY
+                   WHERE SiparisID = @SiparisID
+                )
+                WHERE SiparisID = @SiparisID",
+                baglanti,
+                transaction);
+
+            komut.Parameters.AddWithValue("@SiparisID", siparisID);
+
             komut.ExecuteNonQuery();
         }
         private int AcikSiparisIDGetir(SqlConnection baglanti)
@@ -159,10 +162,159 @@ namespace BarkodluAdisyonSistemi
         }
         private void btnEkle_Click(object sender, EventArgs e)
         {
+            if (gridViewUrunler.FocusedRowHandle < 0)
+            {
+                MessageBox.Show("Lütfen ürün listesinden bir ürün seçiniz",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
 
+            object urunIDDegeri = gridViewUrunler.GetFocusedRowCellValue("UrunId");
+            object fiyatDegeri = gridViewUrunler.GetFocusedRowCellValue("SatisFiyati");
+
+            if (urunIDDegeri == null || fiyatDegeri == null)
+            {
+                MessageBox.Show("Seçilen ürün bilgileri alınamadı");
+
+                return;
+            }
+
+            int urunID = Convert.ToInt32(urunIDDegeri);
+            decimal birimFiyat = Convert.ToDecimal(fiyatDegeri);
+
+            try
+            {
+                using (SqlConnection baglanti = bgl.baglanti())
+                {
+                    SqlTransaction transaction = baglanti.BeginTransaction();
+                    try
+                    {
+                        //bu masaya ait açık sipariş aranıyor
+                        SqlCommand siparisBulKomutu = new SqlCommand(
+                            @"Select top 1 siparisID
+                              From TBL_SIPARISLER
+                              Where MasaID = @MasaID
+                              And SiparisDurumu = N'Açık'
+                              Order By SiparisID DESC",
+                            baglanti, transaction);
+
+                        siparisBulKomutu.Parameters.AddWithValue("@MasaID", SecilenMasaID);
+
+                        object siparisSonucu = siparisBulKomutu.ExecuteScalar();
+
+                        int siparisID;
+
+                        if (siparisSonucu == null || siparisSonucu == DBNull.Value)
+                        {
+                            SqlCommand siparisEkleKomutu = new SqlCommand(
+                                @"Insert Into TBL_SIPARISLER
+                                  (
+                                    MasaID,
+                                    SiparisTarihi,
+                                    ToplamTutar,
+                                    SiparisDurumu
+                                  )
+                                  Output Inserted.SiparisID
+                                  Values
+                                  (
+                                    @MasaID
+                                    Getdate(),
+                                    0,
+                                    N'Açık'
+                                   )",
+                                baglanti,
+                                transaction);
+
+                            siparisEkleKomutu.Parameters.AddWithValue("@MasaID", SecilenMasaID);
+                            siparisID = Convert.ToInt32(siparisEkleKomutu.ExecuteScalar());
+                        }
+                        else
+                        {
+                            siparisID = Convert.ToInt32(siparisSonucu);
+                        }
+
+                        // Aynı ürün daha önce eklenmiş mi?
+                        SqlCommand detayBulKomutu = new SqlCommand(
+                            @"Select SiparisDetayID
+                              From TBL_SIPARISDETAY
+                              Where SiparisID = @SipraisID
+                              And UrunId = @UrunID",
+                            baglanti,
+                            transaction);
+
+                        detayBulKomutu.Parameters.AddWithValue("@SiparisID", siparisID);
+                        detayBulKomutu.Parameters.AddWithValue("@UrunID", urunID);
+
+                        object detaySonucu = detayBulKomutu.ExecuteScalar();
+
+                        if (detaySonucu == null || detaySonucu == DBNull.Value)
+                        {
+                            //ürün ilk kez ekleniyorsa yeni satır oluştur
+                            SqlCommand detayEkleKomutu = new SqlCommand(
+                                @"Insert Into TBl_SIPARISDETAY
+                                  (
+                                      SiparisID,
+                                      UrunID,
+                                      Miktar,
+                                      BirimFiyat,
+                                      SatisToplam
+                                  )
+                                  Values
+                                  (
+                                      @SiparisID,
+                                      @UrunID,
+                                      1
+                                      @BirimFiyat,
+                                      @BirimFiyat
+                                   )",
+                                baglanti,
+                                transaction);
+
+                            detayEkleKomutu.Parameters.AddWithValue("@SiparisID", siparisID);
+                            detayEkleKomutu.Parameters.AddWithValue("@UrunID", urunID);
+                            detayEkleKomutu.Parameters.AddWithValue("@BirimFiyat", birimFiyat);
+
+                            detayEkleKomutu.ExecuteNonQuery();
+                            SiparisToplaminiGuncelle(baglanti, transaction, siparisID);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bu ürün zaten bulunuyor.\n" +
+                                "Miktarı arttırmak için Artır butonunu kullanın.",
+                                "Bilgi",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            transaction.Rollback();
+                            return;
+                        }
+                        SqlCommand masaGuncelleKomutu = new SqlCommand(
+                            @"Update TBL_MASALAR
+                              Set Durum = 1
+                              Where MasaID = @MasaID",
+                            baglanti,
+                            transaction);
+
+                        masaGuncelleKomutu.Parameters.AddWithValue("@MasaID", SecilenMasaID);
+                        masaGuncelleKomutu.ExecuteNonQuery();
+
+                        transaction.Commit();
+                    }
+                    catch
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+                SiparisleriListele();
+            }
+            catch(Exception hata)
+            {
+                MessageBox.Show("Ürün eklenirken hata oluştu:\n" + hata.Message);
+            }
         }
-
-
+        
         
 
         
