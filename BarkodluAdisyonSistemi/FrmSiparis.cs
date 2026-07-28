@@ -157,6 +157,10 @@ namespace BarkodluAdisyonSistemi
 
             return Convert.ToInt32(sonuc);
         }
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void labelControl1_Click(object sender, EventArgs e)
         {
