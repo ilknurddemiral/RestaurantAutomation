@@ -36,13 +36,13 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblMasaAdi = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnEkle = new DevExpress.XtraEditors.SimpleButton();
             this.btnArttır = new DevExpress.XtraEditors.SimpleButton();
             this.btnEksilt = new DevExpress.XtraEditors.SimpleButton();
             this.btnHesabiKapat = new DevExpress.XtraEditors.SimpleButton();
             this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSiparis)).BeginInit();
@@ -129,7 +129,7 @@
             // panelControl1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panelControl1, 2);
-            this.panelControl1.Controls.Add(this.simpleButton1);
+            this.panelControl1.Controls.Add(this.btnEkle);
             this.panelControl1.Controls.Add(this.btnArttır);
             this.panelControl1.Controls.Add(this.btnEksilt);
             this.panelControl1.Controls.Add(this.btnHesabiKapat);
@@ -141,6 +141,18 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1276, 183);
             this.panelControl1.TabIndex = 10;
+            // 
+            // btnEkle
+            // 
+            this.btnEkle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEkle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.Appearance.Options.UseFont = true;
+            this.btnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnEkle.Location = new System.Drawing.Point(430, 7);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(100, 35);
+            this.btnEkle.TabIndex = 15;
+            this.btnEkle.Text = "Ekle";
             // 
             // btnArttır
             // 
@@ -211,18 +223,6 @@
             this.btnSil.TabIndex = 11;
             this.btnSil.Text = "Sil";
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(430, 7);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(100, 35);
-            this.simpleButton1.TabIndex = 15;
-            this.simpleButton1.Text = "Ekle";
-            // 
             // FrmSiparis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -260,6 +260,6 @@
         private DevExpress.XtraEditors.TextEdit txtToplamTutar;
         private DevExpress.XtraEditors.SimpleButton btnkaydet;
         private DevExpress.XtraEditors.SimpleButton btnSil;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnEkle;
     }
 }

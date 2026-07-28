@@ -162,25 +162,8 @@ namespace BarkodluAdisyonSistemi
 
         }
 
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         
     }
