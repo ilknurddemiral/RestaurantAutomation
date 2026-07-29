@@ -171,7 +171,7 @@ namespace BarkodluAdisyonSistemi
                 return;
             }
 
-            object urunIDDegeri = gridViewUrunler.GetFocusedRowCellValue("UrunId");
+            object urunIDDegeri = gridViewUrunler.GetFocusedRowCellValue("UrunID");
             object fiyatDegeri = gridViewUrunler.GetFocusedRowCellValue("SatisFiyati");
 
             if (urunIDDegeri == null || fiyatDegeri == null)
@@ -314,9 +314,11 @@ namespace BarkodluAdisyonSistemi
                 MessageBox.Show("Ürün eklenirken hata oluştu:\n" + hata.Message);
             }
         }
-        
-        
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+        }
 
-        
+
+
     }
 }
