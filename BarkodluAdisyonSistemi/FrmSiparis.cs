@@ -75,7 +75,7 @@ namespace BarkodluAdisyonSistemi
                     @"Select 
                        SD.SiparisDetayID,
                        SD.UrunID,
-                       U.UrunAdi,
+                       U.UrunAd,
                        SD.Miktar,
                        SD.BirimFiyat,
                        SD.SatisToplam
@@ -85,7 +85,7 @@ namespace BarkodluAdisyonSistemi
                       Inner Join TBL_URUNLER U
                        On SD.UrunID = U.UrunID
                       Where S.MasaID =@masaID
-                       And S.SiparisDurum ='Açık'",
+                       And S.SiparisDurumu ='Açık'",
                       bgl.baglanti());
 
                 da.SelectCommand.Parameters.AddWithValue("@masaID", SecilenMasaID);
@@ -172,7 +172,7 @@ namespace BarkodluAdisyonSistemi
             }
 
             object urunIDDegeri = gridViewUrunler.GetFocusedRowCellValue("UrunID");
-            object fiyatDegeri = gridViewUrunler.GetFocusedRowCellValue("SatisFiyati");
+            object fiyatDegeri = gridViewUrunler.GetFocusedRowCellValue("SatisFiyat");
 
             if (urunIDDegeri == null || fiyatDegeri == null)
             {
@@ -208,6 +208,7 @@ namespace BarkodluAdisyonSistemi
 
                         if (siparisSonucu == null || siparisSonucu == DBNull.Value)
                         {
+                            //yeni sipariş oluştur
                             SqlCommand siparisEkleKomutu = new SqlCommand(
                                 @"Insert Into TBL_SIPARISLER
                                   (
@@ -240,7 +241,7 @@ namespace BarkodluAdisyonSistemi
                             @"Select SiparisDetayID
                               From TBL_SIPARISDETAY
                               Where SiparisID = @SiparisID
-                              And UrunId = @UrunID",
+                              And UrunID = @UrunID",
                             baglanti,
                             transaction);
 
@@ -312,6 +313,112 @@ namespace BarkodluAdisyonSistemi
             catch(Exception hata)
             {
                 MessageBox.Show("Ürün eklenirken hata oluştu:\n" + hata.Message);
+            }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            //siparis gridinde satır seçilmiş mi
+            if (gridViewSiparis.FocusedRowHandle < 0)
+            {
+                MessageBox.Show("Lütfen sipariş listesinden silmek istediğiniz ürünü seçiniz.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            object detayIDDegeri = gridViewSiparis.GetFocusedRowCellValue("SiparisDetayID");
+
+            if (detayIDDegeri == null || detayIDDegeri == DBNull.Value)
+            {
+                MessageBox.Show("Seçilen sipariş detay bilgisi alınamadı.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            int siparisDetayID = Convert.ToInt32(detayIDDegeri);
+
+            DialogResult cevap = MessageBox.Show("Seçilen ürünü siparişten silmek istediğinize emin misiniz?",
+                "Silme Onayı",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (cevap != DialogResult.Yes)
+            {
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection baglanti = bgl.baglanti())
+                {
+                    
+                    int siparisID = AcikSiparisIDGetir(baglanti);
+
+                    if (siparisID == 0)
+                    {
+                        MessageBox.Show(
+                            "Silinecek açık sipariş bulunamadı.",
+                            "Uyarı",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+
+                        return;
+                    }
+
+                    SqlTransaction transaction = baglanti.BeginTransaction();
+
+                    try
+                    {
+                        // Seçilen ürünü sipariş detay tablosundan sil
+                        SqlCommand detaySilKomutu = new SqlCommand(
+                            @"Delete From TBL_SIPARISDETAY
+                              Where SiparisDetayID = @SiparisDetayID
+                              AND SiparisID = @SiparisID",
+                            baglanti,
+                            transaction);
+
+                        detaySilKomutu.Parameters.AddWithValue("@SiparisDetayID", siparisDetayID);
+                        detaySilKomutu.Parameters.AddWithValue("@SiparisID", siparisID);
+                        int etkilenenSatir = detaySilKomutu.ExecuteNonQuery();
+
+                        if(etkilenenSatir == 0)
+                        {
+                            MessageBox.Show("Silinecek ürün bulunamadı",
+                                "Uyarı",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+
+                            transaction.Rollback();
+                            return;
+                        }
+
+                        SiparisToplaminiGuncelle(baglanti, transaction, siparisID);
+                        transaction.Commit();
+                    }
+                    catch
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+
+                SiparisleriListele();
+
+                MessageBox.Show("Seçilenürün siparişten silindi.",
+                    "Başarılı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show("Ürün silinirken hata oluştu:\n" + hata.Message, "Hata",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
         private void gridControl1_Click(object sender, EventArgs e)
