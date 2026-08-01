@@ -409,7 +409,7 @@ namespace BarkodluAdisyonSistemi
 
                 SiparisleriListele();
 
-                MessageBox.Show("Seçilenürün siparişten silindi.",
+                MessageBox.Show("Seçilen ürün siparişten silindi.",
                     "Başarılı",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
@@ -425,7 +425,9 @@ namespace BarkodluAdisyonSistemi
         {
         }
 
+        private void btnArtir_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

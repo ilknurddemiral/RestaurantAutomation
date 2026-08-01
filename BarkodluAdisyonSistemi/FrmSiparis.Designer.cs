@@ -166,6 +166,7 @@
             this.btnArttır.Size = new System.Drawing.Size(100, 35);
             this.btnArttır.TabIndex = 9;
             this.btnArttır.Text = "Arttır";
+            this.btnArttır.Click += new System.EventHandler(this.btnArtir_Click);
             // 
             // btnEksilt
             // 
@@ -223,6 +224,7 @@
             this.btnSil.Size = new System.Drawing.Size(100, 35);
             this.btnSil.TabIndex = 11;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // FrmSiparis
             // 
