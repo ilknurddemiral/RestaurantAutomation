@@ -91,6 +91,7 @@
             this.gridViewSiparis.Name = "gridViewSiparis";
             this.gridViewSiparis.OptionsBehavior.Editable = false;
             this.gridViewSiparis.OptionsView.ShowGroupPanel = false;
+            this.gridViewSiparis.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewSiparis_RowClick);
             // 
             // tableLayoutPanel1
             // 

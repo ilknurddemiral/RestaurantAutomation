@@ -428,9 +428,9 @@ namespace BarkodluAdisyonSistemi
         private void btnArtir_Click(object sender, EventArgs e)
         {
             //siparis listesinden bir ürün seçilmiş mi
-            if (gridViewSiparis.FocusedRowHandle < 0)
+            if (!siparisSatiriSecildi || gridViewSiparis.FocusedRowHandle < 0)
             {
-                MessageBox.Show("Lütfen miktarı artırmak siteiğiniz ürünü seçiniz.",
+                MessageBox.Show("Lütfen miktarı artırmak istediğiniz ürünü siparişler tablosundan seçiniz.",
                     "Uyarı",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
@@ -528,12 +528,22 @@ namespace BarkodluAdisyonSistemi
             }
         }
 
-        private void gridViewUrunler_rowClick( object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        private bool siparisSatiriSecildi = false;
+        private void gridViewUrunler_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
+            siparisSatiriSecildi = false;
+
             gridViewSiparis.ClearSelection();
-            gridViewSiparis.FocusedRowHandle = -1;
+            gridViewSiparis.FocusedRowHandle = 
+                DevExpress.XtraGrid.GridControl.InvalidRowHandle; ;
         }
 
-        
+        private void gridViewSiparis_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if(e.RowHandle >= 0)
+            {
+                siparisSatiriSecildi = true;
+            }
+        }
     }
 }
