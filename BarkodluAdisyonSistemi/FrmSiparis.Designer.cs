@@ -72,6 +72,7 @@
             this.gridViewUrunler.Name = "gridViewUrunler";
             this.gridViewUrunler.OptionsBehavior.Editable = false;
             this.gridViewUrunler.OptionsView.ShowGroupPanel = false;
+            this.gridViewUrunler.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewUrunler_RowClick);
             // 
             // gridControlSiparis
             // 

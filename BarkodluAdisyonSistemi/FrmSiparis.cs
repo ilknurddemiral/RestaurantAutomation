@@ -462,7 +462,7 @@ namespace BarkodluAdisyonSistemi
                     {
                         SqlCommand miktarArtirKomutu = new SqlCommand(
                             @"Update TBL_SIPARISDETAY
-                              Set Miktar = Miktar + 1
+                              Set Miktar = Miktar + 1,
                                   SatisToplam = ( Miktar + 1) * BirimFiyat
                               Where SiparisDetayID = @SiparisDetayID",
                             baglanti,
@@ -508,6 +508,8 @@ namespace BarkodluAdisyonSistemi
                         int siparisID = Convert.ToInt32(siparisIDSonucu);
 
                         SiparisToplaminiGuncelle(baglanti, transaction, siparisID);
+
+                        transaction.Commit();
                     }
                     catch
                     {
@@ -525,5 +527,13 @@ namespace BarkodluAdisyonSistemi
                     MessageBoxIcon.Error);
             }
         }
+
+        private void gridViewUrunler_rowClick( object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            gridViewSiparis.ClearSelection();
+            gridViewSiparis.FocusedRowHandle = -1;
+        }
+
+        
     }
 }
