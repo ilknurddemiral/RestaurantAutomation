@@ -427,7 +427,103 @@ namespace BarkodluAdisyonSistemi
 
         private void btnArtir_Click(object sender, EventArgs e)
         {
+            //siparis listesinden bir ürün seçilmiş mi
+            if (gridViewSiparis.FocusedRowHandle < 0)
+            {
+                MessageBox.Show("Lütfen miktarı artırmak siteiğiniz ürünü seçiniz.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
 
+            
+            object detayIDDegeri = gridViewSiparis.GetFocusedRowCellValue("SiparisDetayID");
+
+            if (detayIDDegeri == null || detayIDDegeri == DBNull.Value)
+            {
+                MessageBox.Show("Seçilen siparisdetaybilgisi alınamadı.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            int siparisDetayID = Convert.ToInt32(detayIDDegeri);
+
+            try
+            {
+                using(SqlConnection baglanti = bgl.baglanti())
+                {
+                    SqlTransaction transaction = baglanti.BeginTransaction();
+
+                    try
+                    {
+                        SqlCommand miktarArtirKomutu = new SqlCommand(
+                            @"Update TBL_SIPARISDETAY
+                              Set Miktar = Miktar + 1
+                                  SatisToplam = ( Miktar + 1) * BirimFiyat
+                              Where SiparisDetayID = @SiparisDetayID",
+                            baglanti,
+                            transaction);
+
+                        miktarArtirKomutu.Parameters.AddWithValue("@SiparisDetayID", siparisDetayID);
+
+                        int etkilenenSatir = miktarArtirKomutu.ExecuteNonQuery();
+
+                        if (etkilenenSatir == 0)
+                        {
+                            transaction.Rollback();
+
+                            MessageBox.Show("Artılacak ürün bulunamadı.",
+                                "Uyarı",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+
+                            return;
+                        }
+                        // detayın bağlı olduğu SiparisID bulunuyor
+                        SqlCommand siparisIDBulKomutu = new SqlCommand(
+                            @"Select SiparisID
+                              From TBL_SIPARISDETAY
+                              Where SiparisDetayID = @SiparisDetayID",
+                            baglanti,
+                            transaction);
+
+                        siparisIDBulKomutu.Parameters.AddWithValue("@SiparisDetayID", siparisDetayID);
+
+                        object siparisIDSonucu = siparisIDBulKomutu.ExecuteScalar();
+
+                        if ( siparisIDSonucu == null)
+                        {
+                            transaction.Rollback();
+
+                            MessageBox.Show("Sipariş bilgisi bulunamadı.",
+                                "Uyarı",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                            return;
+                        }
+                        int siparisID = Convert.ToInt32(siparisIDSonucu);
+
+                        SiparisToplaminiGuncelle(baglanti, transaction, siparisID);
+                    }
+                    catch
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+                SiparisleriListele();
+            }
+            catch(Exception hata)
+            {
+                MessageBox.Show("Ürün miktarı artırılırken hata oluştu.\n" + hata.Message,
+                    "Hata",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
     }
 }
