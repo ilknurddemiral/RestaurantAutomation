@@ -518,7 +518,17 @@ namespace BarkodluAdisyonSistemi
                     }
                 }
                 SiparisleriListele();
-                siparisSatiriSecildi = true;
+                int satirHandle = gridViewSiparis.LocateByValue("SiparisDetayID", siparisDetayID);
+                if(satirHandle >= 0)
+                {
+                    gridViewSiparis.FocusedRowHandle = satirHandle;
+                    gridViewSiparis.SelectRow(satirHandle);
+                    siparisSatiriSecildi = true;
+                }
+                else
+                {
+                    siparisSatiriSecildi = false;
+                }
             }
             catch(Exception hata)
             {
