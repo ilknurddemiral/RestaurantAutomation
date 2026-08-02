@@ -518,6 +518,7 @@ namespace BarkodluAdisyonSistemi
                     }
                 }
                 SiparisleriListele();
+                siparisSatiriSecildi = true;
             }
             catch(Exception hata)
             {
@@ -543,6 +544,135 @@ namespace BarkodluAdisyonSistemi
             if(e.RowHandle >= 0)
             {
                 siparisSatiriSecildi = true;
+            }
+        }
+
+        private void btnAzalt_Click(object sender, EventArgs e)
+        {
+            if (!siparisSatiriSecildi || gridViewSiparis.FocusedRowHandle < 0)
+            {
+                MessageBox.Show("Lütfen miktarını azaltmak istediğiniz ürünü Siparişler Tablosundan seçiniz.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            object detayIDDegeri = gridViewSiparis.GetFocusedRowCellValue("SiparisDetayID");
+
+            object miktarDegeri = gridViewSiparis.GetFocusedRowCellValue("Miktar");
+
+            if (detayIDDegeri == null || detayIDDegeri == DBNull.Value 
+                || miktarDegeri == null|| miktarDegeri == DBNull.Value)
+            {
+                MessageBox.Show("Seçilen siparis detay bilgisi alınamadı.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            int siparisDetayID = Convert.ToInt32(detayIDDegeri);
+            int miktar = Convert.ToInt32(miktarDegeri);
+
+            if (miktar <= 1)
+            {
+                MessageBox.Show("Ürünün miktarı 1,\n" +
+                    "Ürünü tamamen kaldırmak için Sil butonunu kullanınız.",
+                    "Bilgi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                return;
+            }
+            try
+            {
+                using (SqlConnection baglanti = bgl.baglanti())
+                {
+                    SqlTransaction transaction = baglanti.BeginTransaction();
+
+                    try
+                    {
+                        // önce bu detayın bağlı olduğu SiparisID bulunuyor
+                        SqlCommand siparisIDBulKomutu = new SqlCommand(
+                            @"Select SiparisID
+                              From TBL_SIPARISDETAY
+                              Where SiparisDetayID = @SiparisDetayID",
+                            baglanti,
+                            transaction);
+
+                        siparisIDBulKomutu.Parameters.AddWithValue("@SiparisDetayID", siparisDetayID);
+
+                        object siparisIDSonucu = siparisIDBulKomutu.ExecuteScalar();
+
+                        if (siparisIDSonucu == null || siparisIDSonucu == DBNull.Value)
+                        {
+                            transaction.Rollback();
+
+                            MessageBox.Show("Siparis bilgisi bulunamadı.",
+                                "Uyarı",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        int siparisID = Convert.ToInt32(siparisIDSonucu);
+
+                        SqlCommand miktarAzaltKomutu = new SqlCommand(
+                            @"Update TBL_SIPARISDETAY
+                              Set Miktar = Miktar - 1,
+                                  SatisToplam = (Miktar - 1) * BirimFiyat
+                              Where SiparisDetayID = @SiparisDetayID
+                              And Miktar > 1",
+                            baglanti,
+                            transaction);
+
+                        miktarAzaltKomutu.Parameters.AddWithValue("@SiparisDetayID", siparisDetayID);
+
+                        int etkilenenSatir = miktarAzaltKomutu.ExecuteNonQuery();
+
+                        if(etkilenenSatir == 0)
+                        {
+                            transaction.Rollback();
+
+                            MessageBox.Show("Ürün mikatrı azaltılamadı.",
+                                "Uyarı",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        SiparisToplaminiGuncelle(baglanti, transaction, siparisID);
+
+                        transaction.Commit();
+                    }
+                    catch
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+
+                SiparisleriListele();
+
+                int satirHandle = gridViewSiparis.LocateByValue("SiparisDetayID", siparisDetayID);
+
+                if (satirHandle >= 0)
+                {
+                    gridViewSiparis.FocusedRowHandle = satirHandle;
+                    gridViewSiparis.SelectRow(satirHandle);
+                    siparisSatiriSecildi = true;
+                }
+                else
+                {
+                    siparisSatiriSecildi = false;
+                }
+            }
+            catch(Exception hata)
+            {
+                MessageBox.Show("Ürün miktarı azaltılırken hata oluştu:\n" + hata.Message,
+                    "Hata",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
     }

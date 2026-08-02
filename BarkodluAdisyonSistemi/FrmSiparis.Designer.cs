@@ -38,7 +38,7 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnEkle = new DevExpress.XtraEditors.SimpleButton();
             this.btnArttır = new DevExpress.XtraEditors.SimpleButton();
-            this.btnEksilt = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAzalt = new DevExpress.XtraEditors.SimpleButton();
             this.btnHesabiKapat = new DevExpress.XtraEditors.SimpleButton();
             this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -133,7 +133,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panelControl1, 2);
             this.panelControl1.Controls.Add(this.btnEkle);
             this.panelControl1.Controls.Add(this.btnArttır);
-            this.panelControl1.Controls.Add(this.btnEksilt);
+            this.panelControl1.Controls.Add(this.btnAzalt);
             this.panelControl1.Controls.Add(this.btnHesabiKapat);
             this.panelControl1.Controls.Add(this.txtToplamTutar);
             this.panelControl1.Controls.Add(this.btnkaydet);
@@ -170,17 +170,18 @@
             this.btnArttır.Text = "Arttır";
             this.btnArttır.Click += new System.EventHandler(this.btnArtir_Click);
             // 
-            // btnEksilt
+            // btnAzalt
             // 
-            this.btnEksilt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEksilt.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnEksilt.Appearance.Options.UseFont = true;
-            this.btnEksilt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEksilt.ImageOptions.Image")));
-            this.btnEksilt.Location = new System.Drawing.Point(748, 7);
-            this.btnEksilt.Name = "btnEksilt";
-            this.btnEksilt.Size = new System.Drawing.Size(100, 35);
-            this.btnEksilt.TabIndex = 10;
-            this.btnEksilt.Text = "Eksilt";
+            this.btnAzalt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAzalt.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAzalt.Appearance.Options.UseFont = true;
+            this.btnAzalt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEksilt.ImageOptions.Image")));
+            this.btnAzalt.Location = new System.Drawing.Point(748, 7);
+            this.btnAzalt.Name = "btnAzalt";
+            this.btnAzalt.Size = new System.Drawing.Size(100, 35);
+            this.btnAzalt.TabIndex = 10;
+            this.btnAzalt.Text = "Azalt";
+            this.btnAzalt.Click += new System.EventHandler(this.btnAzalt_Click);
             // 
             // btnHesabiKapat
             // 
@@ -260,7 +261,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.LabelControl lblMasaAdi;
         private DevExpress.XtraEditors.SimpleButton btnArttır;
-        private DevExpress.XtraEditors.SimpleButton btnEksilt;
+        private DevExpress.XtraEditors.SimpleButton btnAzalt;
         private DevExpress.XtraEditors.SimpleButton btnHesabiKapat;
         private DevExpress.XtraEditors.TextEdit txtToplamTutar;
         private DevExpress.XtraEditors.SimpleButton btnkaydet;
