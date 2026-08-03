@@ -704,7 +704,32 @@ namespace BarkodluAdisyonSistemi
         }
         private void MasalaraDon()
         {
-           
+            FrmMasalar masalarFormu = null;
+
+            foreach (Form form in this.MdiParent.MdiChildren)
+            {
+                if (form is FrmMasalar)
+                {
+                    masalarFormu = (FrmMasalar)form;
+                    break;
+                }
+            }
+
+            if (masalarFormu != null)
+            {
+                masalarFormu.Show();
+                masalarFormu.WindowState = FormWindowState.Maximized;
+                masalarFormu.Activate();
+            }
+            else
+            {
+                masalarFormu = new FrmMasalar();
+                masalarFormu.MdiParent = this.MdiParent;
+                masalarFormu.WindowState = FormWindowState.Maximized;
+                masalarFormu.Show();
+            }
+
+            this.Close();
         }
 
         private void btnMasalaraDon_Click(object sender, EventArgs e)
