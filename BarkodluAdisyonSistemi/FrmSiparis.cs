@@ -902,13 +902,7 @@ namespace BarkodluAdisyonSistemi
                     this.Hide();
                 }
             }
-            catch(Exception hata)
-            {
-                MessageBox.Show("Ödeme ekranı açılırken hata oluştu:\n" + hata.Message,
-                    "Hata",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-            }
+            
         }
     }
 }
