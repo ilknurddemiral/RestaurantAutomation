@@ -828,5 +828,87 @@ namespace BarkodluAdisyonSistemi
             }
         }
 
+        private void btnHesabiKapat_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using ( SqlConnection baglanti = bgl.baglanti())
+                {
+                    int siparisID = AcikSiparisIDGetir(baglanti);
+
+                    if (siparisID == 0)
+                    {
+                        MessageBox.Show("Kapatılacak açık sipariş bulunamadı.",
+                            "Uyarı",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+
+                        return;
+                    }
+
+                    SqlCommand urunSayisiKomutu = new SqlCommand(
+                        @"Select Count(*)
+                          From TBL_SIPARISDETAY
+                          Where SiparisID = @SiparisID",
+                        baglanti);
+
+                    urunSayisiKomutu.Parameters.AddWithValue("@SiparisID", siparisID);
+
+                    int urunSayisi = Convert.ToInt32(urunSayisiKomutu.ExecuteScalar());
+
+                    if( urunSayisi == 0)
+                    {
+                        MessageBox.Show("Siparişte ürün bulunmuyor." +
+                            "Hesabı kapatmadan önce ürün ekleyiniz",
+                            "Uyarı",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+
+                        return;
+                    }
+
+                    //Siparişin güncel toplam tutarı al
+                    SqlCommand toplamKomutu = new SqlCommand(
+                        @"Select IsNull(ToplamTutar, 0)
+                          From TBL_SIPARISLER
+                          Where SiparisID = @SiparisID",
+                        baglanti);
+
+                    toplamKomutu.Parameters.AddWithValue("@SiparisID", siparisID);
+
+                    decimal toplamTutar = Convert.ToDecimal(toplamKomutu.ExecuteScalar());
+
+                    DialogResult cevap = MessageBox.Show(
+                        "Ödeme ekranına geçmek istediğinize emin misiniz?",
+                        "Hesabı Kapat",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
+                    if(cevap != DialogResult.Yes)
+                    {
+                        return;
+                    }
+
+                    FrmOdeme odemeFormu = new FrmOdeme();
+
+                    odemeFormu.SiparisID = siparisID;
+                    odemeFormu.MasaID = SecilenMasaID;
+                    odemeFormu.ToplamTutar = toplamTutar;
+
+                    odemeFormu.MdiParent = this.MdiParent;
+                    odemeFormu.WindowState = FormWindowState.Maximized;
+                    odemeFormu.Show();
+
+                    this.Hide();
+                }
+            }
+            catch(Exception hata)
+            {
+                MessageBox.Show("Ödeme ekranı açılırken hata oluştu:\n" + hata.Message,
+                    "Hata",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -77,6 +77,12 @@
     <Compile Include="FrmMasalar.Designer.cs">
       <DependentUpon>FrmMasalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdeme.Designer.cs">
+      <DependentUpon>FrmOdeme.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSiparis.cs">
       <SubType>Form</SubType>
     </Compile>

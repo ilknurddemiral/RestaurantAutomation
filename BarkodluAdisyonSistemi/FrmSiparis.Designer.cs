@@ -36,6 +36,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblMasaAdi = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnEkle = new DevExpress.XtraEditors.SimpleButton();
             this.btnArttır = new DevExpress.XtraEditors.SimpleButton();
             this.btnAzalt = new DevExpress.XtraEditors.SimpleButton();
@@ -43,7 +44,6 @@
             this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSiparis)).BeginInit();
@@ -146,6 +146,18 @@
             this.panelControl1.Size = new System.Drawing.Size(1276, 183);
             this.panelControl1.TabIndex = 10;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Location = new System.Drawing.Point(640, 98);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(152, 29);
+            this.simpleButton1.TabIndex = 16;
+            this.simpleButton1.Text = "Masalara Dön";
+            this.simpleButton1.Click += new System.EventHandler(this.btnMasalaraDon_Click);
+            // 
             // btnEkle
             // 
             this.btnEkle.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -195,6 +207,7 @@
             this.btnHesabiKapat.Size = new System.Drawing.Size(152, 29);
             this.btnHesabiKapat.TabIndex = 13;
             this.btnHesabiKapat.Text = "Hesabı Kapat";
+            this.btnHesabiKapat.Click += new System.EventHandler(this.btnHesabiKapat_Click);
             // 
             // txtToplamTutar
             // 
@@ -237,18 +250,6 @@
             this.btnSil.TabIndex = 11;
             this.btnSil.Text = "Sil";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(640, 98);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(152, 29);
-            this.simpleButton1.TabIndex = 16;
-            this.simpleButton1.Text = "Masalara Dön";
-            this.simpleButton1.Click += new System.EventHandler(this.btnMasalaraDon_Click);
             // 
             // FrmSiparis
             // 
