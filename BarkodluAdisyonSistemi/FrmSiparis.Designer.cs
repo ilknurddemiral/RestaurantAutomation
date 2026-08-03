@@ -43,6 +43,7 @@
             this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewUrunler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlSiparis)).BeginInit();
@@ -131,6 +132,7 @@
             // panelControl1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panelControl1, 2);
+            this.panelControl1.Controls.Add(this.simpleButton1);
             this.panelControl1.Controls.Add(this.btnEkle);
             this.panelControl1.Controls.Add(this.btnArttır);
             this.panelControl1.Controls.Add(this.btnAzalt);
@@ -175,7 +177,7 @@
             this.btnAzalt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAzalt.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAzalt.Appearance.Options.UseFont = true;
-            this.btnAzalt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEksilt.ImageOptions.Image")));
+            this.btnAzalt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAzalt.ImageOptions.Image")));
             this.btnAzalt.Location = new System.Drawing.Point(748, 7);
             this.btnAzalt.Name = "btnAzalt";
             this.btnAzalt.Size = new System.Drawing.Size(100, 35);
@@ -188,7 +190,7 @@
             this.btnHesabiKapat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHesabiKapat.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnHesabiKapat.Appearance.Options.UseFont = true;
-            this.btnHesabiKapat.Location = new System.Drawing.Point(565, 145);
+            this.btnHesabiKapat.Location = new System.Drawing.Point(563, 145);
             this.btnHesabiKapat.Name = "btnHesabiKapat";
             this.btnHesabiKapat.Size = new System.Drawing.Size(152, 29);
             this.btnHesabiKapat.TabIndex = 13;
@@ -200,9 +202,15 @@
             this.txtToplamTutar.Enabled = false;
             this.txtToplamTutar.Location = new System.Drawing.Point(470, 58);
             this.txtToplamTutar.Name = "txtToplamTutar";
+            this.txtToplamTutar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtToplamTutar.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.txtToplamTutar.Properties.Appearance.Options.UseFont = true;
+            this.txtToplamTutar.Properties.Appearance.Options.UseForeColor = true;
+            this.txtToplamTutar.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtToplamTutar.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtToplamTutar.Properties.AutoHeight = false;
             this.txtToplamTutar.Properties.ReadOnly = true;
-            this.txtToplamTutar.Size = new System.Drawing.Size(340, 35);
+            this.txtToplamTutar.Size = new System.Drawing.Size(340, 25);
             this.txtToplamTutar.TabIndex = 14;
             // 
             // btnkaydet
@@ -210,7 +218,7 @@
             this.btnkaydet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnkaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnkaydet.Appearance.Options.UseFont = true;
-            this.btnkaydet.Location = new System.Drawing.Point(565, 99);
+            this.btnkaydet.Location = new System.Drawing.Point(470, 98);
             this.btnkaydet.Name = "btnkaydet";
             this.btnkaydet.Size = new System.Drawing.Size(152, 29);
             this.btnkaydet.TabIndex = 12;
@@ -228,6 +236,18 @@
             this.btnSil.TabIndex = 11;
             this.btnSil.Text = "Sil";
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Location = new System.Drawing.Point(640, 98);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(152, 29);
+            this.simpleButton1.TabIndex = 16;
+            this.simpleButton1.Text = "Masalara Dön";
+            this.simpleButton1.Click += new System.EventHandler(this.btnMasalaraDon_Click);
             // 
             // FrmSiparis
             // 
@@ -267,5 +287,6 @@
         private DevExpress.XtraEditors.SimpleButton btnkaydet;
         private DevExpress.XtraEditors.SimpleButton btnSil;
         private DevExpress.XtraEditors.SimpleButton btnEkle;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

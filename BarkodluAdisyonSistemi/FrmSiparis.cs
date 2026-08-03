@@ -94,7 +94,7 @@ namespace BarkodluAdisyonSistemi
 
                 gridControlSiparis.DataSource = dt;
 
-                ToplamTutarHesapla();
+                    SatisToplamiHesapla();
                 }
             }
             catch(Exception hata)
@@ -104,13 +104,13 @@ namespace BarkodluAdisyonSistemi
             }
         }
 
-        void ToplamTutarHesapla()
+        void SatisToplamiHesapla()
         {
             decimal SatisToplam = 0;
 
             for (int i=0; i< gridViewSiparis.RowCount; i++)
             {
-                object deger = gridViewSiparis.GetRowCellValue(i, "ToplamTutar");
+                object deger = gridViewSiparis.GetRowCellValue(i, "SatisToplam");
 
                 if ( deger != null && decimal.TryParse(deger.ToString(), out decimal tutar))
                 {
@@ -138,6 +138,7 @@ namespace BarkodluAdisyonSistemi
             komut.Parameters.AddWithValue("@SiparisID", siparisID);
 
             komut.ExecuteNonQuery();
+            
         }
         private int AcikSiparisIDGetir(SqlConnection baglanti)
         {
@@ -319,7 +320,7 @@ namespace BarkodluAdisyonSistemi
         private void btnSil_Click(object sender, EventArgs e)
         {
             //siparis gridinde satır seçilmiş mi
-            if (gridViewSiparis.FocusedRowHandle < 0)
+            if (!siparisSatiriSecildi || gridViewSiparis.FocusedRowHandle < 0)
             {
                 MessageBox.Show("Lütfen sipariş listesinden silmek istediğiniz ürünü seçiniz.",
                     "Uyarı",
@@ -356,24 +357,33 @@ namespace BarkodluAdisyonSistemi
             {
                 using (SqlConnection baglanti = bgl.baglanti())
                 {
-                    
-                    int siparisID = AcikSiparisIDGetir(baglanti);
-
-                    if (siparisID == 0)
-                    {
-                        MessageBox.Show(
-                            "Silinecek açık sipariş bulunamadı.",
-                            "Uyarı",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Warning);
-
-                        return;
-                    }
-
                     SqlTransaction transaction = baglanti.BeginTransaction();
 
                     try
                     {
+                        SqlCommand siparisIDBulKomutu = new SqlCommand(
+                            @"Select SiparisID
+                              From TBL_SIPARISDETAY
+                              Where SiparisDetayID = @SiparisDetayID",
+                            baglanti, 
+                            transaction);
+
+                        siparisIDBulKomutu.Parameters.AddWithValue("@SiparisDetayID", siparisDetayID);
+
+                        object siparisIDSonucu = siparisIDBulKomutu.ExecuteScalar();
+
+                        if (siparisIDSonucu == null || siparisIDSonucu == DBNull.Value)
+                        {
+                            transaction.Rollback();
+
+                            MessageBox.Show("Silinicek ürünün sipariş bilgisi bulunamadı.",
+                                "Uyarı",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                            return;
+                        }
+                        int siparisID = Convert.ToInt32(siparisIDSonucu);
+
                         // Seçilen ürünü sipariş detay tablosundan sil
                         SqlCommand detaySilKomutu = new SqlCommand(
                             @"Delete From TBL_SIPARISDETAY
@@ -388,12 +398,13 @@ namespace BarkodluAdisyonSistemi
 
                         if(etkilenenSatir == 0)
                         {
+                            transaction.Rollback();
+
                             MessageBox.Show("Silinecek ürün bulunamadı",
                                 "Uyarı",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
 
-                            transaction.Rollback();
                             return;
                         }
 
@@ -408,6 +419,12 @@ namespace BarkodluAdisyonSistemi
                 }
 
                 SiparisleriListele();
+
+                gridViewSiparis.ClearSelection();
+
+                gridViewSiparis.FocusedRowHandle = DevExpress.XtraGrid.GridControl.InvalidRowHandle;
+
+                siparisSatiriSecildi = false;
 
                 MessageBox.Show("Seçilen ürün siparişten silindi.",
                     "Başarılı",
@@ -684,6 +701,36 @@ namespace BarkodluAdisyonSistemi
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
+        }
+
+        private void btnMasalaraDon_Click(object sender, EventArgs e)
+        {
+            FrmMasalar masalarFormu = null;
+
+            foreach (Form form in this.MdiParent.MdiChildren)
+            {
+                if (form is FrmMasalar)
+                {
+                    masalarFormu = (FrmMasalar)form;
+                    break;
+                }
+            }
+
+            if (masalarFormu != null)
+            {
+                masalarFormu.Show();
+                masalarFormu.WindowState = FormWindowState.Maximized;
+                masalarFormu.Activate();
+            }
+            else
+            {
+                masalarFormu = new FrmMasalar();
+                masalarFormu.MdiParent = this.MdiParent;
+                masalarFormu.WindowState = FormWindowState.Maximized;
+                masalarFormu.Show();
+            }
+
+            this.Close();
         }
     }
 }
