@@ -717,6 +717,7 @@ namespace BarkodluAdisyonSistemi
 
             if (masalarFormu != null)
             {
+                masalarFormu.MasaDurumlariniGetir();
                 masalarFormu.Show();
                 masalarFormu.WindowState = FormWindowState.Maximized;
                 masalarFormu.Activate();
@@ -817,7 +818,6 @@ namespace BarkodluAdisyonSistemi
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
 
-                MasalaraDon();
             }
             catch( Exception hata)
             {
