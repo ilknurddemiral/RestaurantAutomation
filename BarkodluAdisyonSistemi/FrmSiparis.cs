@@ -702,35 +702,106 @@ namespace BarkodluAdisyonSistemi
                     MessageBoxIcon.Error);
             }
         }
+        private void MasalaraDon()
+        {
+           
+        }
 
         private void btnMasalaraDon_Click(object sender, EventArgs e)
         {
-            FrmMasalar masalarFormu = null;
-
-            foreach (Form form in this.MdiParent.MdiChildren)
-            {
-                if (form is FrmMasalar)
-                {
-                    masalarFormu = (FrmMasalar)form;
-                    break;
-                }
-            }
-
-            if (masalarFormu != null)
-            {
-                masalarFormu.Show();
-                masalarFormu.WindowState = FormWindowState.Maximized;
-                masalarFormu.Activate();
-            }
-            else
-            {
-                masalarFormu = new FrmMasalar();
-                masalarFormu.MdiParent = this.MdiParent;
-                masalarFormu.WindowState = FormWindowState.Maximized;
-                masalarFormu.Show();
-            }
-
-            this.Close();
+            MasalaraDon();
         }
+
+        private void btnkaydet_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection baglanti = bgl.baglanti())
+                {
+                    int siparisID = AcikSiparisIDGetir(baglanti);
+
+                    if (siparisID == 0)
+                    {
+                        MessageBox.Show("Kaydedilecek açık siparis bulunamadı.",
+                            "Uyarı",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                        return;
+                    }
+                    SqlTransaction transaction = baglanti.BeginTransaction();
+
+                    try
+                    {
+                        SqlCommand urunSayisiKomutu = new SqlCommand(
+                            @"Select Count(*)
+                              From TBL_SIPARISDETAY
+                              Where SiparisID = @SiparisID",
+                            baglanti,
+                            transaction);
+
+                        urunSayisiKomutu.Parameters.AddWithValue("@SiparisID", siparisID);
+
+                        int urunSayisi = Convert.ToInt32(urunSayisiKomutu.ExecuteScalar());
+
+                        if (urunSayisi == 0)
+                        {
+                            transaction.Rollback();
+
+                            MessageBox.Show("Siparişte ürün bulunamıyor.\n" +
+                                "Önce sipraişe ürün ekleyiniz.",
+                                "Uyarı",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        SiparisToplaminiGuncelle(baglanti, transaction, siparisID);
+
+                        SqlCommand siparisDurumKomutu = new SqlCommand(
+                            @"Update TBL_SIPARISLER
+                              Set SiparisDurumu = N'Açık'
+                              Where SiparisID = @SiparisID",
+                            baglanti,
+                            transaction);
+
+                        siparisDurumKomutu.Parameters.AddWithValue("@SiparisID", siparisID);
+
+                        siparisDurumKomutu.ExecuteNonQuery();
+
+                        SqlCommand masaDurumKomutu = new SqlCommand(
+                            @"Update TBL_MASALAR
+                              Set Durum = 1
+                              Where MasaID = @MasaID",
+                            baglanti,
+                            transaction);
+
+                        masaDurumKomutu.Parameters.AddWithValue("@MasaID", SecilenMasaID);
+
+                        masaDurumKomutu.ExecuteNonQuery();
+
+                        transaction.Commit();
+                    }
+                    catch
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+                MessageBox.Show("Siparis kaydedildi.",
+                    "Başarılı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                MasalaraDon();
+            }
+            catch( Exception hata)
+            {
+                MessageBox.Show("Siparis kaydedilirken hata oluştu:\n" + hata.Message,
+                    "Hata",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

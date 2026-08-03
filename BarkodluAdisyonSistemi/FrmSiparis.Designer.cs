@@ -223,6 +223,7 @@
             this.btnkaydet.Size = new System.Drawing.Size(152, 29);
             this.btnkaydet.TabIndex = 12;
             this.btnkaydet.Text = "Siparişi Kaydet";
+            this.btnkaydet.Click += new System.EventHandler(this.btnkaydet_Click);
             // 
             // btnSil
             // 
