@@ -50,7 +50,7 @@ namespace BarkodluAdisyonSistemi
             //verileri kaydetme
             SqlCommand komut = new SqlCommand("insert into TBL_URUNLER(UrunAd,KategoriID,AlisFiyat,SatisFiyat) values" +
                 "(@p1,@p2,@p3,@p4)", bgl.baglanti());
-            komut.Parameters.AddWithValue("@p1", textUrunAd.Text);
+            komut.Parameters.AddWithValue("@p1", txtUrunAd.Text);
             komut.Parameters.AddWithValue("@p2", lueKategori.EditValue);
             komut.Parameters.AddWithValue("@p3", ceAlisFiyat.EditValue);
             komut.Parameters.AddWithValue("@p4", ceSatisFiyat.EditValue);
@@ -58,8 +58,9 @@ namespace BarkodluAdisyonSistemi
             bgl.baglanti().Close();
             MessageBox.Show("Ürün sisteme eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();
+            AlanlariTemizle();
 
-            
+
         }
         void KategoriListede()
         {
@@ -89,16 +90,16 @@ namespace BarkodluAdisyonSistemi
         {
             DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
             txtUrunID.Text = dr["UrunID"].ToString();
-            textUrunAd.Text = dr["UrunAd"].ToString();
-            lueKategori.EditValue = dr["KategoriID"].ToString();
-            ceAlisFiyat.EditValue = dr["AlisFiyat"].ToString();
-            ceSatisFiyat.EditValue = dr["SatisFiyat"].ToString();
+            txtUrunAd.Text = dr["UrunAd"].ToString();
+            lueKategori.EditValue = dr["KategoriID"];
+            ceAlisFiyat.EditValue = dr["AlisFiyat"];
+            ceSatisFiyat.EditValue = dr["SatisFiyat"];
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("update TBL_URUNLER set UrunAd=@p1,KategoriId=@p2,AlisFiyat=@p3, SatisFiyat=@p4 where UrunID=@p5", bgl.baglanti());
-            komut.Parameters.AddWithValue("@p1", textUrunAd.Text);
+            komut.Parameters.AddWithValue("@p1", txtUrunAd.Text);
             komut.Parameters.AddWithValue("@p2", lueKategori.EditValue);
             komut.Parameters.AddWithValue("@p3", ceAlisFiyat.EditValue);
             komut.Parameters.AddWithValue("@p4", ceSatisFiyat.EditValue);
@@ -107,6 +108,21 @@ namespace BarkodluAdisyonSistemi
             bgl.baglanti().Close();
             MessageBox.Show("Ürün Bilgisi Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();
+        }
+
+        void AlanlariTemizle()
+        {
+            txtUrunID.Text = "";
+            txtUrunAd.Text = "";
+            lueKategori.EditValue = null;
+            ceAlisFiyat.EditValue = null;
+            ceSatisFiyat.EditValue = null;
+
+            txtUrunAd.Focus();
+        }
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            AlanlariTemizle();
         }
     }
 }

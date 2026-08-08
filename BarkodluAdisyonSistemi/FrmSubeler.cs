@@ -30,5 +30,30 @@ namespace BarkodluAdisyonSistemi
         {
             subeListesi();
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if(dr != null)
+            {
+                txtSubeID.Text = dr["SubeID"].ToString();
+                txtSubeAd.Text = dr["Ad"].ToString(); 
+                txtYetkiliAd.Text = dr["YetkiliAdSoyad"].ToString();
+                txtStatu.Text = dr["YetkiliStatu"].ToString();
+                txtTC.Text = dr["YetkiliTC"].ToString();
+                txtTelefon1.Text = dr["Telefon1"].ToString();
+                txtTelefon2.Text = dr["Telefon2"].ToString();
+                txtTelefon3.Text = dr["Telefon3"].ToString();
+                txtMail.Text = dr["Mail"].ToString();
+                txtFax.Text = dr["Fax"].ToString();
+                lueIL.Text = dr["IL"].ToString();
+                lueIlce.Text = dr["ILCE"].ToString();
+                txtVergiDairesi.Text = dr["VergiDaire"].ToString();
+                rtbAdres.Text = dr["Adres"].ToString();
+                txtKod1.Text = dr["OzelKod1"].ToString();
+                txtKod2.Text = dr["OzelKod2"].ToString();
+                txtKod3.Text = dr["OzelKod3"].ToString();
+            }
+        }
     }
 }

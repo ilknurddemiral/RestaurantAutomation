@@ -44,8 +44,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textUrunAd = new DevExpress.XtraEditors.TextEdit();
+            this.txtUrunAd = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnYeniUrun = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -54,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ceSatisFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceAlisFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueKategori.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textUrunAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +84,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnYeniUrun);
             this.groupControl1.Controls.Add(this.label1);
             this.groupControl1.Controls.Add(this.txtUrunID);
             this.groupControl1.Controls.Add(this.BtnGuncelle);
@@ -95,7 +97,7 @@
             this.groupControl1.Controls.Add(this.label5);
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label2);
-            this.groupControl1.Controls.Add(this.textUrunAd);
+            this.groupControl1.Controls.Add(this.txtUrunAd);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupControl1.Location = new System.Drawing.Point(850, 2);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
@@ -243,15 +245,15 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Ad:";
             // 
-            // textUrunAd
+            // txtUrunAd
             // 
-            this.textUrunAd.Location = new System.Drawing.Point(114, 92);
-            this.textUrunAd.Margin = new System.Windows.Forms.Padding(4);
-            this.textUrunAd.Name = "textUrunAd";
-            this.textUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textUrunAd.Properties.Appearance.Options.UseFont = true;
-            this.textUrunAd.Size = new System.Drawing.Size(163, 30);
-            this.textUrunAd.TabIndex = 3;
+            this.txtUrunAd.Location = new System.Drawing.Point(114, 92);
+            this.txtUrunAd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUrunAd.Name = "txtUrunAd";
+            this.txtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUrunAd.Properties.Appearance.Options.UseFont = true;
+            this.txtUrunAd.Size = new System.Drawing.Size(163, 30);
+            this.txtUrunAd.TabIndex = 3;
             // 
             // panelControl1
             // 
@@ -262,6 +264,18 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1282, 653);
             this.panelControl1.TabIndex = 2;
+            // 
+            // btnYeniUrun
+            // 
+            this.btnYeniUrun.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYeniUrun.Appearance.Options.UseFont = true;
+            this.btnYeniUrun.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnYeniUrun.Location = new System.Drawing.Point(114, 426);
+            this.btnYeniUrun.Name = "btnYeniUrun";
+            this.btnYeniUrun.Size = new System.Drawing.Size(162, 29);
+            this.btnYeniUrun.TabIndex = 23;
+            this.btnYeniUrun.Text = "Yeni Ürün";
+            this.btnYeniUrun.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // FrmUrunler
             // 
@@ -283,7 +297,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ceSatisFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ceAlisFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lueKategori.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textUrunAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -296,7 +310,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.TextEdit textUrunAd;
+        private DevExpress.XtraEditors.TextEdit txtUrunAd;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
@@ -309,5 +323,6 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.TextEdit txtUrunID;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.SimpleButton btnYeniUrun;
     }
 }

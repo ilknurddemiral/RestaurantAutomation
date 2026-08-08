@@ -76,6 +76,9 @@
             this.ribbonSistem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonSubeler = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.BtnSubeler = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -113,15 +116,17 @@
             this.barButtonItem20,
             this.btnMasalar,
             this.btnMasaIslemleri,
-            this.btnSiparis});
+            this.btnSiparis,
+            this.BtnSubeler});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl1.MaxItemId = 29;
+            this.ribbonControl1.MaxItemId = 30;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 450;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonAnaSayfa,
             this.ribbonUrunYonetici,
+            this.ribbonSubeler,
             this.ribbonMasalar,
             this.ribbonSatis,
             this.ribbonAlis,
@@ -492,7 +497,6 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnUrunler);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnStoklar);
-            this.ribbonPageGroup1.ItemLinks.Add(this.BtnFirmalar);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
@@ -608,6 +612,31 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // ribbonSubeler
+            // 
+            this.ribbonSubeler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ribbonSubeler.Appearance.Options.UseFont = true;
+            this.ribbonSubeler.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup9});
+            this.ribbonSubeler.Name = "ribbonSubeler";
+            this.ribbonSubeler.Text = "ŞUBELER";
+            // 
+            // ribbonPageGroup9
+            // 
+            this.ribbonPageGroup9.ItemLinks.Add(this.BtnSubeler);
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "ribbonPageGroup9";
+            // 
+            // BtnSubeler
+            // 
+            this.BtnSubeler.Caption = "ŞUBELER";
+            this.BtnSubeler.Id = 29;
+            this.BtnSubeler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSubeler.ImageOptions.Image")));
+            this.BtnSubeler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnSubeler.ImageOptions.LargeImage")));
+            this.BtnSubeler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSubeler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnSubeler.Name = "BtnSubeler";
+            // 
             // FrmAnaModul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -676,6 +705,9 @@
         private DevExpress.XtraBars.BarButtonItem btnMasalar;
         private DevExpress.XtraBars.BarButtonItem btnMasaIslemleri;
         private DevExpress.XtraBars.BarButtonItem btnSiparis;
+        private DevExpress.XtraBars.BarButtonItem BtnSubeler;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonSubeler;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
     }
 }
 
