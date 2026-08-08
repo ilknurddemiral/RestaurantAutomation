@@ -503,6 +503,7 @@
             this.ribbonSubeler.Appearance.Options.UseFont = true;
             this.ribbonSubeler.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup9});
+            this.ribbonSubeler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonSubeler.ImageOptions.Image")));
             this.ribbonSubeler.Name = "ribbonSubeler";
             this.ribbonSubeler.Text = "ŞUBELER";
             // 
