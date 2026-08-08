@@ -34,7 +34,6 @@
             this.BtnUrunler = new DevExpress.XtraBars.BarButtonItem();
             this.BtnStoklar = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnFirmalar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnKategoriler = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
@@ -59,10 +58,13 @@
             this.btnMasalar = new DevExpress.XtraBars.BarButtonItem();
             this.btnMasaIslemleri = new DevExpress.XtraBars.BarButtonItem();
             this.btnSiparis = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnSubeler = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonAnaSayfa = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonUrunYonetici = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonUrunYonetimi = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonSubeler = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonMasalar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonSatis = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -76,9 +78,6 @@
             this.ribbonSistem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.ribbonSubeler = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.BtnSubeler = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +91,6 @@
             this.BtnUrunler,
             this.BtnStoklar,
             this.barButtonItem3,
-            this.BtnFirmalar,
             this.BtnKategoriler,
             this.barButtonItem6,
             this.barButtonItem7,
@@ -125,7 +123,7 @@
             this.ribbonControl1.OptionsMenuMinWidth = 450;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonAnaSayfa,
-            this.ribbonUrunYonetici,
+            this.ribbonUrunYonetimi,
             this.ribbonSubeler,
             this.ribbonMasalar,
             this.ribbonSatis,
@@ -133,7 +131,7 @@
             this.ribbonCariİslermler,
             this.ribbonRaporlar,
             this.ribbonSistem});
-            this.ribbonControl1.Size = new System.Drawing.Size(1165, 199);
+            this.ribbonControl1.Size = new System.Drawing.Size(1482, 199);
             // 
             // BtnUrunler
             // 
@@ -171,18 +169,6 @@
             this.barButtonItem3.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // BtnFirmalar
-            // 
-            this.BtnFirmalar.Caption = "ŞUBELER";
-            this.BtnFirmalar.Id = 4;
-            this.BtnFirmalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnFirmalar.ImageOptions.Image")));
-            this.BtnFirmalar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnFirmalar.ImageOptions.LargeImage")));
-            this.BtnFirmalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnFirmalar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnFirmalar.Name = "BtnFirmalar";
-            this.BtnFirmalar.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.BtnFirmalar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFirmalar_ItemClick);
             // 
             // BtnKategoriler
             // 
@@ -466,6 +452,17 @@
             this.btnSiparis.Name = "btnSiparis";
             this.btnSiparis.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSiparis_ItemClick);
             // 
+            // BtnSubeler
+            // 
+            this.BtnSubeler.Caption = "ŞUBELER";
+            this.BtnSubeler.Id = 29;
+            this.BtnSubeler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSubeler.ImageOptions.Image")));
+            this.BtnSubeler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnSubeler.ImageOptions.LargeImage")));
+            this.BtnSubeler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSubeler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnSubeler.Name = "BtnSubeler";
+            this.BtnSubeler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnSubeler_ItemClick);
+            // 
             // ribbonAnaSayfa
             // 
             this.ribbonAnaSayfa.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -483,15 +480,15 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "ribbonPageGroup2";
             // 
-            // ribbonUrunYonetici
+            // ribbonUrunYonetimi
             // 
-            this.ribbonUrunYonetici.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ribbonUrunYonetici.Appearance.Options.UseFont = true;
-            this.ribbonUrunYonetici.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonUrunYonetimi.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ribbonUrunYonetimi.Appearance.Options.UseFont = true;
+            this.ribbonUrunYonetimi.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
-            this.ribbonUrunYonetici.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonUrunYonetici.ImageOptions.Image")));
-            this.ribbonUrunYonetici.Name = "ribbonUrunYonetici";
-            this.ribbonUrunYonetici.Text = "ÜRÜN YÖNETİMİ";
+            this.ribbonUrunYonetimi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonUrunYonetimi.ImageOptions.Image")));
+            this.ribbonUrunYonetimi.Name = "ribbonUrunYonetimi";
+            this.ribbonUrunYonetimi.Text = "ÜRÜN YÖNETİMİ";
             // 
             // ribbonPageGroup1
             // 
@@ -499,6 +496,21 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnStoklar);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // ribbonSubeler
+            // 
+            this.ribbonSubeler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ribbonSubeler.Appearance.Options.UseFont = true;
+            this.ribbonSubeler.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup9});
+            this.ribbonSubeler.Name = "ribbonSubeler";
+            this.ribbonSubeler.Text = "ŞUBELER";
+            // 
+            // ribbonPageGroup9
+            // 
+            this.ribbonPageGroup9.ItemLinks.Add(this.BtnSubeler);
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "ribbonPageGroup9";
             // 
             // ribbonMasalar
             // 
@@ -612,36 +624,11 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // ribbonSubeler
-            // 
-            this.ribbonSubeler.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ribbonSubeler.Appearance.Options.UseFont = true;
-            this.ribbonSubeler.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup9});
-            this.ribbonSubeler.Name = "ribbonSubeler";
-            this.ribbonSubeler.Text = "ŞUBELER";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.BtnSubeler);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "ribbonPageGroup9";
-            // 
-            // BtnSubeler
-            // 
-            this.BtnSubeler.Caption = "ŞUBELER";
-            this.BtnSubeler.Id = 29;
-            this.BtnSubeler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSubeler.ImageOptions.Image")));
-            this.BtnSubeler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnSubeler.ImageOptions.LargeImage")));
-            this.BtnSubeler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSubeler.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnSubeler.Name = "BtnSubeler";
-            // 
             // FrmAnaModul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 599);
+            this.ClientSize = new System.Drawing.Size(1482, 653);
             this.Controls.Add(this.ribbonControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IsMdiContainer = true;
@@ -661,11 +648,10 @@
 
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.BarButtonItem BtnUrunler;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonUrunYonetici;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonUrunYonetimi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem BtnStoklar;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem BtnFirmalar;
         private DevExpress.XtraBars.BarButtonItem BtnKategoriler;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;

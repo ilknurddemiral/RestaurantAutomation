@@ -46,7 +46,7 @@ namespace BarkodluAdisyonSistemi
             }
         }
         FrmSubeler fr3;
-        private void btnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void BtnSubeler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (fr3 == null)
             {
@@ -159,6 +159,6 @@ namespace BarkodluAdisyonSistemi
 
         }
 
-
+        
     }
 }
