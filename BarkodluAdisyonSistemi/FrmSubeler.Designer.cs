@@ -32,6 +32,7 @@
             this.XtraTabControl = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.txtFax = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefon3 = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefon2 = new System.Windows.Forms.MaskedTextBox();
             this.txtTelefon1 = new System.Windows.Forms.MaskedTextBox();
@@ -55,7 +56,6 @@
             this.txtSubeAd = new DevExpress.XtraEditors.TextEdit();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.btnYeniKayıt = new DevExpress.XtraEditors.SimpleButton();
             this.cmbilce = new System.Windows.Forms.ComboBox();
             this.cmbil = new System.Windows.Forms.ComboBox();
             this.rtbAdres = new System.Windows.Forms.RichTextBox();
@@ -69,7 +69,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.txtFax = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.XtraTabControl)).BeginInit();
             this.XtraTabControl.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -132,6 +131,15 @@
             this.groupControl4.Size = new System.Drawing.Size(411, 272);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "groupControl4";
+            // 
+            // txtFax
+            // 
+            this.txtFax.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtFax.Location = new System.Drawing.Point(148, 168);
+            this.txtFax.Mask = "(0000) 000-0000";
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Size = new System.Drawing.Size(157, 29);
+            this.txtFax.TabIndex = 49;
             // 
             // txtTelefon3
             // 
@@ -374,7 +382,6 @@
             // 
             // groupControl5
             // 
-            this.groupControl5.Controls.Add(this.btnYeniKayıt);
             this.groupControl5.Controls.Add(this.cmbilce);
             this.groupControl5.Controls.Add(this.cmbil);
             this.groupControl5.Controls.Add(this.rtbAdres);
@@ -392,17 +399,6 @@
             this.groupControl5.Size = new System.Drawing.Size(410, 588);
             this.groupControl5.TabIndex = 24;
             this.groupControl5.Text = "groupControl5";
-            // 
-            // btnYeniKayıt
-            // 
-            this.btnYeniKayıt.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnYeniKayıt.Appearance.Options.UseFont = true;
-            this.btnYeniKayıt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniKayıt.ImageOptions.Image")));
-            this.btnYeniKayıt.Location = new System.Drawing.Point(136, 519);
-            this.btnYeniKayıt.Name = "btnYeniKayıt";
-            this.btnYeniKayıt.Size = new System.Drawing.Size(253, 29);
-            this.btnYeniKayıt.TabIndex = 36;
-            this.btnYeniKayıt.Text = "Yeni Kayıt";
             // 
             // cmbilce
             // 
@@ -440,6 +436,7 @@
             this.btnGuncelle.Size = new System.Drawing.Size(253, 29);
             this.btnGuncelle.TabIndex = 30;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -451,6 +448,7 @@
             this.btnSil.Size = new System.Drawing.Size(253, 29);
             this.btnSil.TabIndex = 29;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
@@ -535,15 +533,6 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
-            // txtFax
-            // 
-            this.txtFax.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtFax.Location = new System.Drawing.Point(148, 168);
-            this.txtFax.Mask = "(0000) 000-0000";
-            this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(157, 29);
-            this.txtFax.TabIndex = 49;
-            // 
             // FrmSubeler
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -619,7 +608,6 @@
         private System.Windows.Forms.RichTextBox rtbAdres;
         private System.Windows.Forms.ComboBox cmbilce;
         private System.Windows.Forms.ComboBox cmbil;
-        private DevExpress.XtraEditors.SimpleButton btnYeniKayıt;
         private System.Windows.Forms.MaskedTextBox txtTelefon1;
         private System.Windows.Forms.MaskedTextBox txtTelefon3;
         private System.Windows.Forms.MaskedTextBox txtTelefon2;
