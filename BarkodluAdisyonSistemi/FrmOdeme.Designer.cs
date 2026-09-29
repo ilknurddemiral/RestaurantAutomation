@@ -33,7 +33,7 @@
             this.lblToplamTutar = new DevExpress.XtraEditors.LabelControl();
             this.lblToplamTutarDeger = new DevExpress.XtraEditors.LabelControl();
             this.lblOdemeTuru = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cmbOdemeTuru = new DevExpress.XtraEditors.ComboBoxEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.lblAlinanTutar = new DevExpress.XtraEditors.LabelControl();
             this.txtAlinanTutar = new System.Windows.Forms.TextBox();
@@ -41,7 +41,7 @@
             this.lblParaUstuDegeri = new DevExpress.XtraEditors.LabelControl();
             this.btnIptal = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbOdemeTuru.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
@@ -86,14 +86,14 @@
             this.lblOdemeTuru.TabIndex = 3;
             this.lblOdemeTuru.Text = "Ödeme Türü:";
             // 
-            // comboBoxEdit1
+            // cmbOdemeTuru
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(188, 187);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmbOdemeTuru.Location = new System.Drawing.Point(188, 187);
+            this.cmbOdemeTuru.Name = "cmbOdemeTuru";
+            this.cmbOdemeTuru.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(125, 22);
-            this.comboBoxEdit1.TabIndex = 4;
+            this.cmbOdemeTuru.Size = new System.Drawing.Size(125, 22);
+            this.cmbOdemeTuru.TabIndex = 4;
             // 
             // panelControl1
             // 
@@ -106,7 +106,7 @@
             this.panelControl1.Controls.Add(this.txtAlinanTutar);
             this.panelControl1.Controls.Add(this.lblAlinanTutar);
             this.panelControl1.Controls.Add(this.lblBaslık);
-            this.panelControl1.Controls.Add(this.comboBoxEdit1);
+            this.panelControl1.Controls.Add(this.cmbOdemeTuru);
             this.panelControl1.Controls.Add(this.lblToplamTutar);
             this.panelControl1.Controls.Add(this.lblOdemeTuru);
             this.panelControl1.Controls.Add(this.lblToplamTutarDeger);
@@ -183,7 +183,8 @@
             this.Controls.Add(this.panelControl1);
             this.Name = "FrmOdeme";
             this.Text = "FrmOdeme";
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.FrmOdeme_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.cmbOdemeTuru.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -197,7 +198,7 @@
         private DevExpress.XtraEditors.LabelControl lblToplamTutar;
         private DevExpress.XtraEditors.LabelControl lblToplamTutarDeger;
         private DevExpress.XtraEditors.LabelControl lblOdemeTuru;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbOdemeTuru;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.TextBox txtAlinanTutar;
         private DevExpress.XtraEditors.LabelControl lblAlinanTutar;

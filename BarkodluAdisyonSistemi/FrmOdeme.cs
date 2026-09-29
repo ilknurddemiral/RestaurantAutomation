@@ -19,5 +19,12 @@ namespace BarkodluAdisyonSistemi
         public int SiparisID { get; set; }
         public int MasaID { get; set; }
         public decimal ToplamTutar { get; set; }
+
+        private void FrmOdeme_Load(object sender, EventArgs e)
+        {
+            lblToplamTutarDeger.Text = ToplamTutar.ToString("N2") + "₺";
+
+            cmbOdemeTuru.Items.Clear();
+        }
     }
 }
