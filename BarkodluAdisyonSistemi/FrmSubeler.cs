@@ -69,12 +69,8 @@ namespace BarkodluAdisyonSistemi
         private void Cmbil_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbilce.Items.Clear();
-
-        }
-        void IlceleriGetir()
-        {
             SqlCommand komut = new SqlCommand(
-                "Select ILCE From TBL_ILCELER Where IL = @P1",
+                "Select ILCE From TBL_ILCELER Where ILID = @P1 ORDER BY ILCE",
                 bgl.baglanti());
             komut.Parameters.AddWithValue("@P1", cmbil.SelectedIndex + 1);
 
@@ -82,9 +78,14 @@ namespace BarkodluAdisyonSistemi
 
             while (dr.Read())
             {
-                cmbilce.Items.Add(dr[0]);
+                cmbilce.Items.Add(dr["ILCE"].ToString());
             }
             bgl.baglanti().Close();
+
+        }
+        void IlceleriGetir()
+        {
+            
         }
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
@@ -226,7 +227,7 @@ namespace BarkodluAdisyonSistemi
             komut.Parameters.AddWithValue("@P11", cmbilce.Text);
             komut.Parameters.AddWithValue("@P12", txtVergiDairesi.Text);
             komut.Parameters.AddWithValue("@P13", rtbAdres.Text);
-            komut.Parameters.AddWithValue("@P14", txtSubeID.Text);
+            komut.Parameters.AddWithValue("@P14", Convert.ToInt32(txtSubeID.Text));
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Şube bilgileri güncellendi.",

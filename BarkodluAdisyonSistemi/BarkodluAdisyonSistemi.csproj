@@ -116,6 +116,9 @@
     <EmbeddedResource Include="FrmMasalar.resx">
       <DependentUpon>FrmMasalar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdeme.resx">
+      <DependentUpon>FrmOdeme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSiparis.resx">
       <DependentUpon>FrmSiparis.cs</DependentUpon>
     </EmbeddedResource>

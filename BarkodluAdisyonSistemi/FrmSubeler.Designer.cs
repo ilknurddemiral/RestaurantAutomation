@@ -417,6 +417,7 @@
             this.cmbil.Name = "cmbil";
             this.cmbil.Size = new System.Drawing.Size(253, 30);
             this.cmbil.TabIndex = 34;
+            this.cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // rtbAdres
             // 
