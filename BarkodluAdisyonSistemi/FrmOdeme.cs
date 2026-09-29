@@ -25,6 +25,12 @@ namespace BarkodluAdisyonSistemi
             lblToplamTutarDeger.Text = ToplamTutar.ToString("N2") + "₺";
 
             cmbOdemeTuru.Items.Clear();
+            cmbOdemeTuru.Items.Add("Nakit");
+            cmbOdemeTuru.Items.Add("Kart");
+
+            cmbOdemeTuru.SelectedIndex = 0;
+
+            lblParaUstuDegeri.Text = "0,00 ₺";
         }
     }
 }

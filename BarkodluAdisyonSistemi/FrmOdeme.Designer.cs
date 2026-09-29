@@ -33,7 +33,6 @@
             this.lblToplamTutar = new DevExpress.XtraEditors.LabelControl();
             this.lblToplamTutarDeger = new DevExpress.XtraEditors.LabelControl();
             this.lblOdemeTuru = new DevExpress.XtraEditors.LabelControl();
-            this.cmbOdemeTuru = new DevExpress.XtraEditors.ComboBoxEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.lblAlinanTutar = new DevExpress.XtraEditors.LabelControl();
             this.txtAlinanTutar = new System.Windows.Forms.TextBox();
@@ -41,7 +40,7 @@
             this.lblParaUstuDegeri = new DevExpress.XtraEditors.LabelControl();
             this.btnIptal = new DevExpress.XtraEditors.SimpleButton();
             this.btnOdeme = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbOdemeTuru.Properties)).BeginInit();
+            this.cmbOdemeTuru = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
@@ -86,19 +85,11 @@
             this.lblOdemeTuru.TabIndex = 3;
             this.lblOdemeTuru.Text = "Ödeme Türü:";
             // 
-            // cmbOdemeTuru
-            // 
-            this.cmbOdemeTuru.Location = new System.Drawing.Point(188, 187);
-            this.cmbOdemeTuru.Name = "cmbOdemeTuru";
-            this.cmbOdemeTuru.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbOdemeTuru.Size = new System.Drawing.Size(125, 22);
-            this.cmbOdemeTuru.TabIndex = 4;
-            // 
             // panelControl1
             // 
             this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Controls.Add(this.cmbOdemeTuru);
             this.panelControl1.Controls.Add(this.btnOdeme);
             this.panelControl1.Controls.Add(this.btnIptal);
             this.panelControl1.Controls.Add(this.lblParaUstuDegeri);
@@ -106,7 +97,6 @@
             this.panelControl1.Controls.Add(this.txtAlinanTutar);
             this.panelControl1.Controls.Add(this.lblAlinanTutar);
             this.panelControl1.Controls.Add(this.lblBaslık);
-            this.panelControl1.Controls.Add(this.cmbOdemeTuru);
             this.panelControl1.Controls.Add(this.lblToplamTutar);
             this.panelControl1.Controls.Add(this.lblOdemeTuru);
             this.panelControl1.Controls.Add(this.lblToplamTutarDeger);
@@ -174,6 +164,14 @@
             this.btnOdeme.TabIndex = 10;
             this.btnOdeme.Text = "Ödemeyi\r\nTamamla";
             // 
+            // cmbOdemeTuru
+            // 
+            this.cmbOdemeTuru.FormattingEnabled = true;
+            this.cmbOdemeTuru.Location = new System.Drawing.Point(188, 189);
+            this.cmbOdemeTuru.Name = "cmbOdemeTuru";
+            this.cmbOdemeTuru.Size = new System.Drawing.Size(121, 24);
+            this.cmbOdemeTuru.TabIndex = 6;
+            // 
             // FrmOdeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -184,7 +182,6 @@
             this.Name = "FrmOdeme";
             this.Text = "FrmOdeme";
             this.Load += new System.EventHandler(this.FrmOdeme_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.cmbOdemeTuru.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -198,7 +195,6 @@
         private DevExpress.XtraEditors.LabelControl lblToplamTutar;
         private DevExpress.XtraEditors.LabelControl lblToplamTutarDeger;
         private DevExpress.XtraEditors.LabelControl lblOdemeTuru;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbOdemeTuru;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.TextBox txtAlinanTutar;
         private DevExpress.XtraEditors.LabelControl lblAlinanTutar;
@@ -206,5 +202,6 @@
         private DevExpress.XtraEditors.SimpleButton btnIptal;
         private DevExpress.XtraEditors.LabelControl lblParaUstuDegeri;
         private DevExpress.XtraEditors.LabelControl lblParaUstu;
+        private System.Windows.Forms.ComboBox cmbOdemeTuru;
     }
 }
