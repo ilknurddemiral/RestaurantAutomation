@@ -42,7 +42,7 @@ namespace BarkodluAdisyonSistemi
             using (SqlConnection baglanti = bgl.baglanti())
                 using (SqlDataAdapter da = new SqlDataAdapter(sorgu, baglanti))
             {
-                DataTable dt = new DataTable();
+                DataTable dt = new DataTable();.
                 da.Fill(dt);
 
                 cmbOdemeTuru.DataSource = dt;
