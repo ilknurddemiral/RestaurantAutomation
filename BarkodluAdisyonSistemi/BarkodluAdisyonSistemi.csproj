@@ -107,6 +107,7 @@
     <Compile Include="FrmUrunler.Designer.cs">
       <DependentUpon>FrmUrunler.cs</DependentUpon>
     </Compile>
+    <Compile Include="OdemeKayitServices.cs" />
     <Compile Include="PosOdemeSonucu.cs" />
     <Compile Include="PosServicecs.cs" />
     <Compile Include="Program.cs" />
