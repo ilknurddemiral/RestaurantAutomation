@@ -8,7 +8,7 @@ namespace BarkodluAdisyonSistemi
 {
     public class PosOdemeSonucu
     {
-        public bool Bsarasili { get; set; }
+        public bool Basarili { get; set; }
         public decimal Tutar { get; set; }
         public string ReferansNo { get; set; }
         public string Mesaj { get; set; }

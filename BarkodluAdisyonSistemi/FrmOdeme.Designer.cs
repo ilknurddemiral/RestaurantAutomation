@@ -34,13 +34,13 @@
             this.lblToplamTutarDeger = new DevExpress.XtraEditors.LabelControl();
             this.lblOdemeTuru = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.lblAlinanTutar = new DevExpress.XtraEditors.LabelControl();
-            this.txtAlinanTutar = new System.Windows.Forms.TextBox();
-            this.lblParaUstu = new DevExpress.XtraEditors.LabelControl();
-            this.lblParaUstuDegeri = new DevExpress.XtraEditors.LabelControl();
-            this.btnIptal = new DevExpress.XtraEditors.SimpleButton();
-            this.btnOdeme = new DevExpress.XtraEditors.SimpleButton();
             this.cmbOdemeTuru = new System.Windows.Forms.ComboBox();
+            this.btnOdeme = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIptal = new DevExpress.XtraEditors.SimpleButton();
+            this.lblParaUstuDegeri = new DevExpress.XtraEditors.LabelControl();
+            this.lblParaUstu = new DevExpress.XtraEditors.LabelControl();
+            this.txtAlinanTutar = new System.Windows.Forms.TextBox();
+            this.lblAlinanTutar = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
@@ -105,42 +105,25 @@
             this.panelControl1.Size = new System.Drawing.Size(378, 436);
             this.panelControl1.TabIndex = 5;
             // 
-            // lblAlinanTutar
+            // cmbOdemeTuru
             // 
-            this.lblAlinanTutar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAlinanTutar.Appearance.Options.UseFont = true;
-            this.lblAlinanTutar.Location = new System.Drawing.Point(60, 235);
-            this.lblAlinanTutar.Name = "lblAlinanTutar";
-            this.lblAlinanTutar.Size = new System.Drawing.Size(102, 22);
-            this.lblAlinanTutar.TabIndex = 5;
-            this.lblAlinanTutar.Text = "Alınan Tutar:";
+            this.cmbOdemeTuru.FormattingEnabled = true;
+            this.cmbOdemeTuru.Location = new System.Drawing.Point(188, 189);
+            this.cmbOdemeTuru.Name = "cmbOdemeTuru";
+            this.cmbOdemeTuru.Size = new System.Drawing.Size(121, 24);
+            this.cmbOdemeTuru.TabIndex = 6;
             // 
-            // txtAlinanTutar
+            // btnOdeme
             // 
-            this.txtAlinanTutar.Location = new System.Drawing.Point(188, 234);
-            this.txtAlinanTutar.Name = "txtAlinanTutar";
-            this.txtAlinanTutar.Size = new System.Drawing.Size(125, 23);
-            this.txtAlinanTutar.TabIndex = 6;
-            // 
-            // lblParaUstu
-            // 
-            this.lblParaUstu.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblParaUstu.Appearance.Options.UseFont = true;
-            this.lblParaUstu.Location = new System.Drawing.Point(60, 282);
-            this.lblParaUstu.Name = "lblParaUstu";
-            this.lblParaUstu.Size = new System.Drawing.Size(82, 22);
-            this.lblParaUstu.TabIndex = 7;
-            this.lblParaUstu.Text = "Para Üstü:";
-            // 
-            // lblParaUstuDegeri
-            // 
-            this.lblParaUstuDegeri.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblParaUstuDegeri.Appearance.Options.UseFont = true;
-            this.lblParaUstuDegeri.Location = new System.Drawing.Point(188, 282);
-            this.lblParaUstuDegeri.Name = "lblParaUstuDegeri";
-            this.lblParaUstuDegeri.Size = new System.Drawing.Size(128, 22);
-            this.lblParaUstuDegeri.TabIndex = 8;
-            this.lblParaUstuDegeri.Text = "para üstü değeri";
+            this.btnOdeme.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdeme.Appearance.Options.UseFont = true;
+            this.btnOdeme.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOdeme.ImageOptions.Image")));
+            this.btnOdeme.Location = new System.Drawing.Point(201, 343);
+            this.btnOdeme.Name = "btnOdeme";
+            this.btnOdeme.Size = new System.Drawing.Size(128, 49);
+            this.btnOdeme.TabIndex = 10;
+            this.btnOdeme.Text = "Ödemeyi\r\nTamamla";
+            this.btnOdeme.Click += new System.EventHandler(this.btnOdeme_Click);
             // 
             // btnIptal
             // 
@@ -153,24 +136,42 @@
             this.btnIptal.TabIndex = 9;
             this.btnIptal.Text = "İptal";
             // 
-            // btnOdeme
+            // lblParaUstuDegeri
             // 
-            this.btnOdeme.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdeme.Appearance.Options.UseFont = true;
-            this.btnOdeme.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOdeme.ImageOptions.Image")));
-            this.btnOdeme.Location = new System.Drawing.Point(201, 343);
-            this.btnOdeme.Name = "btnOdeme";
-            this.btnOdeme.Size = new System.Drawing.Size(128, 49);
-            this.btnOdeme.TabIndex = 10;
-            this.btnOdeme.Text = "Ödemeyi\r\nTamamla";
+            this.lblParaUstuDegeri.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblParaUstuDegeri.Appearance.Options.UseFont = true;
+            this.lblParaUstuDegeri.Location = new System.Drawing.Point(188, 282);
+            this.lblParaUstuDegeri.Name = "lblParaUstuDegeri";
+            this.lblParaUstuDegeri.Size = new System.Drawing.Size(128, 22);
+            this.lblParaUstuDegeri.TabIndex = 8;
+            this.lblParaUstuDegeri.Text = "para üstü değeri";
             // 
-            // cmbOdemeTuru
+            // lblParaUstu
             // 
-            this.cmbOdemeTuru.FormattingEnabled = true;
-            this.cmbOdemeTuru.Location = new System.Drawing.Point(188, 189);
-            this.cmbOdemeTuru.Name = "cmbOdemeTuru";
-            this.cmbOdemeTuru.Size = new System.Drawing.Size(121, 24);
-            this.cmbOdemeTuru.TabIndex = 6;
+            this.lblParaUstu.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblParaUstu.Appearance.Options.UseFont = true;
+            this.lblParaUstu.Location = new System.Drawing.Point(60, 282);
+            this.lblParaUstu.Name = "lblParaUstu";
+            this.lblParaUstu.Size = new System.Drawing.Size(82, 22);
+            this.lblParaUstu.TabIndex = 7;
+            this.lblParaUstu.Text = "Para Üstü:";
+            // 
+            // txtAlinanTutar
+            // 
+            this.txtAlinanTutar.Location = new System.Drawing.Point(188, 234);
+            this.txtAlinanTutar.Name = "txtAlinanTutar";
+            this.txtAlinanTutar.Size = new System.Drawing.Size(125, 23);
+            this.txtAlinanTutar.TabIndex = 6;
+            // 
+            // lblAlinanTutar
+            // 
+            this.lblAlinanTutar.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAlinanTutar.Appearance.Options.UseFont = true;
+            this.lblAlinanTutar.Location = new System.Drawing.Point(60, 235);
+            this.lblAlinanTutar.Name = "lblAlinanTutar";
+            this.lblAlinanTutar.Size = new System.Drawing.Size(102, 22);
+            this.lblAlinanTutar.TabIndex = 5;
+            this.lblAlinanTutar.Text = "Alınan Tutar:";
             // 
             // FrmOdeme
             // 

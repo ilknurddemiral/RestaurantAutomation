@@ -51,5 +51,42 @@ namespace BarkodluAdisyonSistemi
             }
         }
 
+        private void btnOdeme_Click(object sender, EventArgs e)
+        {
+            string odemeTuru = cmbOdemeTuru.SelectedItem.ToString();
+
+            if (odemeTuru == "Nakit")
+            {
+                MessageBox.Show("Nakit ödeme Seçildi.");
+            }
+            else if ( odemeTuru == "Kart")
+            {
+                PosServicecs pos = new PosServicecs();
+
+                PosOdemeSonucu sonuc = new PosOdemeSonucu();
+
+                if (sonuc.Basarili)
+                {
+                    MessageBox.Show(
+                        "Kart ödemesi başarılı.\n" +
+                        "Tutar:" + sonuc.Tutar.ToString("N2") + "₺\n" +
+                        "Referans No: " + sonuc.ReferansNo,
+                        "Ödeme Başarılı",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                        );
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "Kart ödemesi başarısız.\n" +
+                        sonuc.Mesaj,
+                        "Ödeme Başarısız",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                        );
+                }
+            }
+        }
     }
 }
