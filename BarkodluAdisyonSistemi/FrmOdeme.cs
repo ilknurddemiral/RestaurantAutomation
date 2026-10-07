@@ -23,6 +23,8 @@ namespace BarkodluAdisyonSistemi
         public int MasaID { get; set; }
         public decimal ToplamTutar { get; set; }
 
+        private OdemeKayitServices odemeKayitServies = new OdemeKayitServices();
+
         private void FrmOdeme_Load(object sender, EventArgs e)
         {
             lblToplamTutarDeger.Text = ToplamTutar.ToString("N2") + "₺";
@@ -42,7 +44,7 @@ namespace BarkodluAdisyonSistemi
             using (SqlConnection baglanti = bgl.baglanti())
                 using (SqlDataAdapter da = new SqlDataAdapter(sorgu, baglanti))
             {
-                DataTable dt = new DataTable();.
+                DataTable dt = new DataTable();
                 da.Fill(dt);
 
                 cmbOdemeTuru.DataSource = dt;
@@ -67,7 +69,13 @@ namespace BarkodluAdisyonSistemi
 
                 if (sonuc.Basarili)
                 {
-                    MessageBox.Show(
+                    bool kaydedildi = odemeKayitServies.OdemeKaydet(
+                        SiparisID, 2, null, ToplamTutar, ToplamTutar, 0,
+                        "Başarılı", sonuc.ReferansNo, "Kart ödemesi"
+                        );
+                    if (kaydedildi)
+                    {
+                        MessageBox.Show(
                         "Kart ödemesi başarılı.\n" +
                         "Tutar:" + sonuc.Tutar.ToString("N2") + "₺\n" +
                         "Referans No: " + sonuc.ReferansNo,
@@ -75,6 +83,8 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
                         );
+                    }
+                    
                 }
                 else
                 {
