@@ -39,7 +39,7 @@
             this.btnIptal = new DevExpress.XtraEditors.SimpleButton();
             this.lblParaUstuDegeri = new DevExpress.XtraEditors.LabelControl();
             this.lblParaUstu = new DevExpress.XtraEditors.LabelControl();
-            this.txtAlinanTutar = new System.Windows.Forms.TextBox();
+            this.txtOdenenTutar = new System.Windows.Forms.TextBox();
             this.lblAlinanTutar = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -94,7 +94,7 @@
             this.panelControl1.Controls.Add(this.btnIptal);
             this.panelControl1.Controls.Add(this.lblParaUstuDegeri);
             this.panelControl1.Controls.Add(this.lblParaUstu);
-            this.panelControl1.Controls.Add(this.txtAlinanTutar);
+            this.panelControl1.Controls.Add(this.txtOdenenTutar);
             this.panelControl1.Controls.Add(this.lblAlinanTutar);
             this.panelControl1.Controls.Add(this.lblBaslık);
             this.panelControl1.Controls.Add(this.lblToplamTutar);
@@ -156,12 +156,13 @@
             this.lblParaUstu.TabIndex = 7;
             this.lblParaUstu.Text = "Para Üstü:";
             // 
-            // txtAlinanTutar
+            // txtOdenenTutar
             // 
-            this.txtAlinanTutar.Location = new System.Drawing.Point(188, 234);
-            this.txtAlinanTutar.Name = "txtAlinanTutar";
-            this.txtAlinanTutar.Size = new System.Drawing.Size(125, 23);
-            this.txtAlinanTutar.TabIndex = 6;
+            this.txtOdenenTutar.Location = new System.Drawing.Point(188, 234);
+            this.txtOdenenTutar.Name = "txtOdenenTutar";
+            this.txtOdenenTutar.Size = new System.Drawing.Size(125, 23);
+            this.txtOdenenTutar.TabIndex = 6;
+            this.txtOdenenTutar.TextChanged += new System.EventHandler(this.txtOdenenTutar_TextChanged);
             // 
             // lblAlinanTutar
             // 
@@ -169,9 +170,9 @@
             this.lblAlinanTutar.Appearance.Options.UseFont = true;
             this.lblAlinanTutar.Location = new System.Drawing.Point(60, 235);
             this.lblAlinanTutar.Name = "lblAlinanTutar";
-            this.lblAlinanTutar.Size = new System.Drawing.Size(102, 22);
+            this.lblAlinanTutar.Size = new System.Drawing.Size(115, 22);
             this.lblAlinanTutar.TabIndex = 5;
-            this.lblAlinanTutar.Text = "Alınan Tutar:";
+            this.lblAlinanTutar.Text = "Ödenen Tutar:";
             // 
             // FrmOdeme
             // 
@@ -197,7 +198,7 @@
         private DevExpress.XtraEditors.LabelControl lblToplamTutarDeger;
         private DevExpress.XtraEditors.LabelControl lblOdemeTuru;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private System.Windows.Forms.TextBox txtAlinanTutar;
+        private System.Windows.Forms.TextBox txtOdenenTutar;
         private DevExpress.XtraEditors.LabelControl lblAlinanTutar;
         private DevExpress.XtraEditors.SimpleButton btnOdeme;
         private DevExpress.XtraEditors.SimpleButton btnIptal;

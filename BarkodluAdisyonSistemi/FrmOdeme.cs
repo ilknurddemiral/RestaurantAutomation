@@ -59,13 +59,13 @@ namespace BarkodluAdisyonSistemi
 
             if (odemeTuru == "Nakit")
             {
-                MessageBox.Show("Nakit ödeme Seçildi.");
+                decimal odenenTutar;
             }
             else if ( odemeTuru == "Kart")
             {
                 PosServicecs pos = new PosServicecs();
 
-                PosOdemeSonucu sonuc = new PosOdemeSonucu();
+                PosOdemeSonucu sonuc = pos.OdemeAl(ToplamTutar);
 
                 if (sonuc.Basarili)
                 {
@@ -97,6 +97,35 @@ namespace BarkodluAdisyonSistemi
                         );
                 }
             }
+        }
+
+        private void ParaUstuHesapla()
+        {
+            decimal odenenTutar;
+            if ( decimal.TryParse(txtOdenenTutar.Text, out odenenTutar))
+            {
+                decimal paraUstu = odenenTutar - ToplamTutar;
+
+                if (paraUstu >= 0)
+                {
+                    lblParaUstuDegeri.Text = paraUstu.ToString("N2") + "₺";
+                }
+                else
+                {
+                    lblParaUstuDegeri.Text = "Yetersiz ödeme";
+                }
+            }
+            else
+            {
+                lblParaUstuDegeri.Text = "0,00 ₺";
+            }
+        }
+
+        
+
+        private void txtOdenenTutar_TextChanged(object sender, EventArgs e)
+        {
+            ParaUstuHesapla();
         }
     }
 }

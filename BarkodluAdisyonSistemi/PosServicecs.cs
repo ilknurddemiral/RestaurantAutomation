@@ -8,6 +8,7 @@ namespace BarkodluAdisyonSistemi
 {
     public class PosServicecs
     {
+         // Pos cihazını simüle ediyoruz.
         public PosOdemeSonucu OdemeAl(decimal tutar)
         {
             PosOdemeSonucu sonuc = new PosOdemeSonucu();
