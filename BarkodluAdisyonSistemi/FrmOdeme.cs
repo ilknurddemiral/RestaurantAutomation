@@ -74,8 +74,45 @@ namespace BarkodluAdisyonSistemi
                     return;
                 }
 
+                decimal paraUstu = odenenTutar - ToplamTutar;
+
+                bool kaydedildi = odemeKayitServies.OdemeKaydet(
+                    SiparisID,
+                    1,
+                    null,
+                    ToplamTutar,
+                    odenenTutar,
+                    paraUstu,
+                    "Başarılı",
+                    "NAKIT-" + Guid.NewGuid().ToString("N").Substring(0, 10),
+                    "Nakit ödemesi"
+                    );
+
+                if (kaydedildi)
+                {
+                    MessageBox.Show(
+                        "Nakit ödeme başarılı.\n" +
+                        "Toplam Tutar: " + ToplamTutar.ToString("N2") + "₺\n" +
+                        "Ödenen Tutar: " + odenenTutar.ToString("N2") + "₺\n" +
+                        "Para Üstü: " + paraUstu.ToString("N2") + " ₺",
+                        "Ödeme Başarılı",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                        );
+                }
+                else
+                {
+
+                    MessageBox.Show(
+                        "Ödeme veritabanına kaydedilmedi.",
+                        "Hata",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                        );
+                }
 
             }
+
             else if ( odemeTuru == "Kart")
             {
                 PosServicecs pos = new PosServicecs();
