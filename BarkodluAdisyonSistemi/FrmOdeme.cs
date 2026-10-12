@@ -60,6 +60,21 @@ namespace BarkodluAdisyonSistemi
             if (odemeTuru == "Nakit")
             {
                 decimal odenenTutar;
+                //girilen tutar sayı mı kontol et
+                if(!decimal.TryParse(txtOdenenTutar.Text, out odenenTutar))
+                {
+                    MessageBox.Show("Lütfen geçerli bir tutar giriniz.");
+                    return;
+                }
+
+                //Müşterinin verdiği para yetrli mi
+                if  (odenenTutar < ToplamTutar)
+                {
+                    MessageBox.Show("Girilen tutar yetersiz.");
+                    return;
+                }
+
+
             }
             else if ( odemeTuru == "Kart")
             {
@@ -120,8 +135,6 @@ namespace BarkodluAdisyonSistemi
                 lblParaUstuDegeri.Text = "0,00 ₺";
             }
         }
-
-        
 
         private void txtOdenenTutar_TextChanged(object sender, EventArgs e)
         {
