@@ -24,7 +24,8 @@ namespace BarkodluAdisyonSistemi
         public int MasaID { get; set; }
         public decimal ToplamTutar { get; set; }
 
-        private OdemeKayitServices odemeKayitServies = new OdemeKayitServices();
+        private OdemeService odemeService = new OdemeService();
+        private FrmSiparis masalaraDon = new FrmSiparis();
 
         private void FrmOdeme_Load(object sender, EventArgs e)
         {
@@ -62,8 +63,7 @@ namespace BarkodluAdisyonSistemi
                 return;
             }
             string odemeTuru = cmbOdemeTuru.Text;
-            MessageBox.Show("Seçilen ödeme türü: " + odemeTuru);
-
+            
             if (odemeTuru == "Nakit")
             {
                 decimal odenenTutar;
@@ -83,20 +83,19 @@ namespace BarkodluAdisyonSistemi
 
                 decimal paraUstu = odenenTutar - ToplamTutar;
 
-                bool kaydedildi = odemeKayitServies.OdemeKaydet(
+                bool basarili = odemeService.OdemeIsleminiTamamla(
                     SiparisID,
+                    MasaID,
                     1,
-                    null,
                     ToplamTutar,
                     odenenTutar,
                     paraUstu,
-                    "Başarılı",
-                    "NAKIT-" + Guid.NewGuid().ToString("N").Substring(0, 10),
+                    null,
                     "Nakit ödemesi"
                     );
-                MessageBox.Show("Kayıt sonucu: " + kaydedildi);
+                
 
-                if (kaydedildi)
+                if (basarili)
                 {
                     MessageBox.Show(
                         "Nakit ödeme başarılı.\n" +
@@ -107,16 +106,12 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
                         );
+
+                    MasalarEkraninaDon();
                 }
                 else
                 {
-
-                    MessageBox.Show(
-                        "Ödeme veritabanına kaydedilmedi.",
-                        "Hata",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                        );
+                    MessageBox.Show("Ödeme tamamlanamadı.");
                 }
 
             }
@@ -127,30 +122,7 @@ namespace BarkodluAdisyonSistemi
 
                 PosOdemeSonucu sonuc = pos.OdemeAl(ToplamTutar);
 
-                if (sonuc.Basarili)
-                {
-                    bool kaydedildi = odemeKayitServies.OdemeKaydet(
-                        SiparisID, 2, null, ToplamTutar, ToplamTutar, 0,
-                        "Başarılı", sonuc.ReferansNo, "Kart ödemesi"
-                        );
-                    if (kaydedildi)
-                    {
-                        MessageBox.Show(
-                        "Kart ödemesi başarılı.\n" +
-                        "Tutar:" + sonuc.Tutar.ToString("N2") + "₺\n" +
-                        "Referans No: " + sonuc.ReferansNo,
-                        "Ödeme Başarılı",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                        );
-                    }
-                    else
-                    {
-                        MessageBox.Show("Kart ödemesi gerçekleşti ancaj veritabanına kaydedilmedi.");
-                    }
-                    
-                }
-                else
+                if (!sonuc.Basarili)
                 {
                     MessageBox.Show(
                         "Kart ödemesi başarısız.\n" +
@@ -159,6 +131,38 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error
                         );
+                    return;
+                }
+                bool basarili = odemeService.OdemeIsleminiTamamla(
+                    SiparisID,
+                    MasaID,
+                    2,
+                    ToplamTutar,
+                    ToplamTutar,
+                    0,
+                    sonuc.ReferansNo,
+                    "Kart ödemesi"
+                    );
+                if (basarili)
+                {
+                    MessageBox.Show(
+                        "Kart ödeme başarılı.\n" +
+                        "Tutar: " + sonuc.Tutar.ToString("N2") + "₺\n" +
+                        "Referans No: " + sonuc.ReferansNo,
+                        "Ödeme Başarılı",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    MasalarEkraninaDon();
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "Kart ödemesi alındı ancak kayıt veya sipariş kapatma işlemi tamamlanamadı.",
+                        "Uyarı",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
                 }
             }
         }
