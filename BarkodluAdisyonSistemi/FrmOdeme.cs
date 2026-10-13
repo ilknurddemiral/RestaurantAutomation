@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Ödeme ekranı, kullanıcı girişleri, para üstü ve başarı/hata mesajları
 namespace BarkodluAdisyonSistemi
 {
     public partial class FrmOdeme : Form
@@ -55,7 +56,13 @@ namespace BarkodluAdisyonSistemi
 
         private void btnOdeme_Click(object sender, EventArgs e)
         {
-            string odemeTuru = cmbOdemeTuru.SelectedItem.ToString();
+            if (cmbOdemeTuru.SelectedItem == null)
+            {
+                MessageBox.Show("lütfen ödeme türünü seçiniz.");
+                return;
+            }
+            string odemeTuru = cmbOdemeTuru.Text;
+            MessageBox.Show("Seçilen ödeme türü: " + odemeTuru);
 
             if (odemeTuru == "Nakit")
             {
@@ -87,6 +94,7 @@ namespace BarkodluAdisyonSistemi
                     "NAKIT-" + Guid.NewGuid().ToString("N").Substring(0, 10),
                     "Nakit ödemesi"
                     );
+                MessageBox.Show("Kayıt sonucu: " + kaydedildi);
 
                 if (kaydedildi)
                 {
@@ -135,6 +143,10 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
                         );
+                    }
+                    else
+                    {
+                        MessageBox.Show("Kart ödemesi gerçekleşti ancaj veritabanına kaydedilmedi.");
                     }
                     
                 }

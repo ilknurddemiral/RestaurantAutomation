@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Ödeme bilgilerinin veritabanına kaydedilmesi
 namespace BarkodluAdisyonSistemi
 {
     public class OdemeKayitServices
@@ -28,7 +29,7 @@ namespace BarkodluAdisyonSistemi
                 using (SqlConnection baglanti = bgl.baglanti())
                 {
                     string sorgu = @"
-                        INSET INTO TBL_ODEME
+                        INSERT INTO TBL_ODEME
                         (
                           SiparisID, OdemeTuruID, BankaID,Tutar, OdenenTutar,
                           ParaUstu, OdemeTarihi, OdemeDurumu, ReferansNo, Aciklama
