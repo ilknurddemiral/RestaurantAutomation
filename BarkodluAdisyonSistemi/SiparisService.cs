@@ -22,7 +22,7 @@ namespace BarkodluAdisyonSistemi
                     //Siparişi kapat
                     SqlCommand siparisKapatKomutu = new SqlCommand(
                         @"UPDATE TBL_SIPARISLER 
-                          SET SiparisDurumu =n'Kapalı'
+                          SET SiparisDurumu =N'Kapalı'
                           WHERE SiparisID = @SiparisID
                           AND MasaID = @MasaID
                           AND SiparisDurumu = N'Açık'",

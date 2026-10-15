@@ -702,7 +702,7 @@ namespace BarkodluAdisyonSistemi
                     MessageBoxIcon.Error);
             }
         }
-        private void MasalaraDon()
+        public void MasalaraDon()
         {
             FrmMasalar masalarFormu = null;
 

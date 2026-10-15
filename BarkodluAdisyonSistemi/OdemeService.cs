@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 //Nakit ve kart ödeme akışını yönetecek. Başarılı ödeme sonrası gerekli işlemleri başlatacak.
 namespace BarkodluAdisyonSistemi
@@ -29,12 +30,35 @@ namespace BarkodluAdisyonSistemi
 
             if (!kaydedildi)
             {
+                MessageBox.Show("Hata: Ödeme veritabanına kaydedilemedi.");
                 return false;
             }
 
             //siparişi kapat ve masayı boşalt
-            bool siparisKapatildi = siparisService.SiparisKapatveMasayiBosalt(siparisID, masaID);
-            return siparisKapatildi;
+            try
+            {
+                bool siparisKapatildi =
+                    siparisService.SiparisKapatveMasayiBosalt(
+                        siparisID,
+                        masaID
+                    );
+
+                if (!siparisKapatildi)
+                {
+                    MessageBox.Show("Hata: Sipariş kapatılamadı veya masa boşaltılamadı.");
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Siparişi kapatma veya masayı boşaltma hatası:\n" + ex.Message
+                );
+
+                return false;
+            }
         }
     }
 }

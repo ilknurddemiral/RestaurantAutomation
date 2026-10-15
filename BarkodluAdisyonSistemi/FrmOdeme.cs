@@ -107,7 +107,7 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxIcon.Information
                         );
 
-                    MasalarEkraninaDon();
+                    masalaraDon.MasalaraDon();
                 }
                 else
                 {
@@ -153,7 +153,7 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
-                    MasalarEkraninaDon();
+                    masalaraDon.MasalaraDon();
                 }
                 else
                 {

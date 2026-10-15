@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 //Ödeme bilgilerinin veritabanına kaydedilmesi
 namespace BarkodluAdisyonSistemi
@@ -47,7 +48,7 @@ namespace BarkodluAdisyonSistemi
 
                         if (bankaID.HasValue)
                         {
-                            komut.Parameters.AddWithValue("@bankaID", bankaID.Value);
+                            komut.Parameters.AddWithValue("@BankaID", bankaID.Value);
                         }
                         else
                         {
@@ -59,7 +60,15 @@ namespace BarkodluAdisyonSistemi
                         komut.Parameters.AddWithValue("@ParaUstu", paraUstu);
                         komut.Parameters.AddWithValue("@OdemeTarihi", DateTime.Now);
                         komut.Parameters.AddWithValue("@OdemeDurumu", odemeDurumu);
-                        komut.Parameters.AddWithValue("@ReferansNo", referansNo);
+
+                        if (string.IsNullOrEmpty(referansNo))
+                        {
+                            komut.Parameters.AddWithValue("@ReferansNo", DBNull.Value);
+                        }
+                        else
+                        {
+                            komut.Parameters.AddWithValue("@ReferansNo", referansNo);
+                        }
 
                         if (string.IsNullOrEmpty(aciklama))
                             komut.Parameters.AddWithValue("@Aciklama", DBNull.Value);
@@ -70,8 +79,14 @@ namespace BarkodluAdisyonSistemi
                     }
                 }
             }
-            catch
+            catch(System.Exception hata)
             {
+                MessageBox.Show(
+                "Ödeme kayıt hatası:\n" + hata.Message,
+                "Veritabanı Hatası",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+                );
                 return false;
             }
         }
