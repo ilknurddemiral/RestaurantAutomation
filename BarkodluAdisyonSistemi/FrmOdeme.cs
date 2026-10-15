@@ -25,7 +25,7 @@ namespace BarkodluAdisyonSistemi
         public decimal ToplamTutar { get; set; }
 
         private OdemeService odemeService = new OdemeService();
-        private FrmSiparis masalaraDon = new FrmSiparis();
+        public FrmSiparis SiparisFormu { get; set; }
 
         private void FrmOdeme_Load(object sender, EventArgs e)
         {
@@ -107,7 +107,10 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxIcon.Information
                         );
 
-                    masalaraDon.MasalaraDon();
+                    if( SiparisFormu != null)
+                    {
+                        SiparisFormu.MasalaraDon();
+                    }
                 }
                 else
                 {
@@ -153,7 +156,10 @@ namespace BarkodluAdisyonSistemi
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
-                    masalaraDon.MasalaraDon();
+                    if (SiparisFormu != null)
+                    {
+                        SiparisFormu.MasalaraDon();
+                    }
                 }
                 else
                 {

@@ -895,6 +895,8 @@ namespace BarkodluAdisyonSistemi
                     odemeFormu.MasaID = SecilenMasaID;
                     odemeFormu.ToplamTutar = toplamTutar;
 
+                    odemeFormu.SiparisFormu = this;
+
                     odemeFormu.MdiParent = this.MdiParent;
                     odemeFormu.WindowState = FormWindowState.Maximized;
                     odemeFormu.Show();
